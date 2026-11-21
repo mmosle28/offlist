@@ -1,0 +1,28 @@
+# Where jobs are allowed to be. A job is kept if its location matches any region.
+# Matching is case insensitive and looks for the city name in the job's location text.
+
+regions:
+  - id: atl
+    name: Metro Atlanta
+    places: [atlanta, alpharetta, kennesaw, marietta, smyrna, sandy springs, dunwoody,
+             roswell, duluth, norcross, lawrenceville, peachtree corners, johns creek,
+             cumming, buford, suwanee, decatur, brookhaven, chamblee, tucker, doraville,
+             woodstock, acworth, canton, cartersville, douglasville, lithia springs, austell,
+             mableton, fayetteville, peachtree city, newnan, mcdonough, stockbridge, conyers,
+             covington, college park, east point, hapeville, union city, fairburn,
+             forest park, morrow, jonesboro, vinings, cobb, gwinnett, milton, braselton]
+  - id: aug
+    name: Augusta
+    places: [augusta, evans, martinez, grovetown, north augusta]
+  - id: ga
+    name: Elsewhere in Georgia
+    places: [", ga", "georgia"]
+  - id: remote
+    name: Remote (US)
+    places: [remote, anywhere, "work from home", virtual]
+
+# A remote job is dropped if its location only names one of these and not the US.
+non_us_markers: [canada, united kingdom, " uk", london, india, philippines, mexico,
+                 brazil, germany, ireland, poland, australia, singapore, emea, apac, latam,
+                 europe, toronto, vancouver, costa rica, colombia, argentina, spain, france,
+                 netherlands, japan, israel]

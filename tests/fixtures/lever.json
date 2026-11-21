@@ -1,0 +1,39 @@
+[
+ {
+  "text": "Business Systems Analyst",
+  "hostedUrl": "https://example.test/lv/1",
+  "categories": {
+   "location": "Alpharetta, GA"
+  },
+  "createdAt": 1763000000000,
+  "descriptionPlain": "Two years of experience preferred.",
+  "lists": [
+   {
+    "text": "Requirements",
+    "content": "<li>Excel</li>"
+   }
+  ],
+  "salaryRange": {
+   "min": 65000,
+   "max": 75000
+  }
+ },
+ {
+  "text": "Marketing Manager",
+  "hostedUrl": "https://example.test/lv/2",
+  "categories": {
+   "location": "Atlanta, GA"
+  },
+  "createdAt": 1763000000000,
+  "descriptionPlain": ""
+ },
+ {
+  "text": "Management Trainee",
+  "hostedUrl": "https://example.test/lv/3",
+  "categories": {
+   "location": "Augusta, GA"
+  },
+  "createdAt": 1763000000000,
+  "descriptionPlain": "No experience required. Starting at $55K a year."
+ }
+]

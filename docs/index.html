@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>offlist jobs</title>
+<meta name="description" content="Entry level jobs that never make the job boards, pulled daily from company careers sites around Atlanta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE work tool, used daily on a phone
+   IDEA a transit departures board: what's arriving today, by line, then the timetable
+   PICTURE live bars of open roles per family, tap a bar to ride that line
+   COLOUR deep green ground up top, white below, lime for good, coral for warnings
+   TYPE Inter Tight 700 for headings and figures, Inter for text
+   LAYOUT laptop: title and figures left, bars right, list below; phone: title, bars, filters, list */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0e1513);--ink:light-dark(#0f1a17,#e9f1ee);--mute:light-dark(#5a6b66,#97aaa4);--line:light-dark(#dfe6e3,#24302c);--card:light-dark(#ffffff,#141d1a);--top:#00463c;--topink:#ffffff;--lime:#e6f5c8;--good:light-dark(#1d7a3e,#8fd99f);--goodbg:light-dark(#e8f6ec,#173322);--warn:#ff6f59;--warnbg:light-dark(#ffece8,#3a1d18);--chip:light-dark(#f1f5f3,#1b2623)}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.5 Inter,system-ui,sans-serif;overflow-x:clip}
+h1,h2,h3,.num{font-family:"Inter Tight",Inter,sans-serif;letter-spacing:-.02em;line-height:1.05;margin:0}
+a{color:inherit}
+.band{padding:clamp(22px,4vw,48px) max(5vw,16px)}
+.wrap{max-width:1240px;margin:0 auto}
+.top{background:var(--top);color:var(--topink)}
+.topgrid{display:grid;gap:24px}
+@media(min-width:860px){.topgrid{grid-template-columns:minmax(0,5fr) minmax(0,7fr);align-items:end}}
+h1{font-size:clamp(40px,6vw,64px)}
+.lede{color:var(--lime);max-width:34em;margin:12px 0 20px}
+.figs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;border-top:1px solid #ffffff33;padding-top:14px}
+.figs .num{font-size:30px}
+.figs small{display:block;color:#cfe3dc;font-size:13px}
+.bars{display:grid;gap:8px}
+.bar{display:grid;grid-template-columns:minmax(0,15em) minmax(0,1fr) 3em;align-items:center;gap:10px;background:none;border:0;color:inherit;font:inherit;text-align:left;padding:4px 0;cursor:pointer;border-radius:6px}
+.bar .lab{font-size:14px;color:#dff0ea}
+.bar .trk{display:block;height:22px;background:#ffffff1a;border-radius:4px;overflow:hidden}
+.bar .fill{display:block;height:100%;background:var(--lime);border-radius:4px;transition:width .5s}
+.bar .ct{font:700 16px "Inter Tight",sans-serif;text-align:right;white-space:nowrap}
+.bar[aria-pressed=true] .fill{background:var(--warn)}
+.bar:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+nav{display:flex;gap:4px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5;padding:0 max(5vw,16px)}
+nav button{font:600 15px Inter,sans-serif;background:none;border:0;border-bottom:3px solid transparent;color:var(--mute);padding:14px 12px 11px;cursor:pointer}
+nav button[aria-selected=true]{color:var(--ink);border-color:var(--top)}
+:root[data-theme=dark] nav button[aria-selected=true]{border-color:var(--lime)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) nav button[aria-selected=true]{border-color:var(--lime)}}
+.filters{display:grid;gap:12px;margin-bottom:18px}
+#q{font:16px Inter,sans-serif;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:500 14px Inter,sans-serif;padding:8px 12px;min-height:40px;border-radius:999px;border:1px solid var(--line);background:var(--chip);color:var(--ink);cursor:pointer}
+.chip[aria-pressed=true]{background:var(--top);color:#fff;border-color:var(--top)}
+.count{color:var(--mute);font-size:14px;margin:0 0 10px}
+.list{display:grid;gap:12px}
+@media(min-width:900px){.list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.job{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:8px}
+.job h3{font-size:19px}
+.co{color:var(--mute);font-size:14px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:13px;padding:3px 9px;border-radius:999px;background:var(--chip);white-space:nowrap}
+.tag.good{background:var(--goodbg);color:var(--good)}
+.tag.warn{background:var(--warnbg);color:var(--warn)}
+.tag.new{background:var(--lime);color:#0f1a17;font-weight:600}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.btn{font:600 14px Inter,sans-serif;padding:10px 14px;min-height:44px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink);text-decoration:none;cursor:pointer;display:inline-flex;align-items:center}
+.btn.go{background:var(--top);color:#fff;border-color:var(--top)}
+.btn[aria-pressed=true]{background:var(--goodbg);color:var(--good);border-color:transparent}
+.empty{border:1px dashed var(--line);border-radius:12px;padding:24px;color:var(--mute)}
+.roles{display:grid;gap:16px}
+@media(min-width:820px){.roles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.role{border-top:4px solid var(--top);padding-top:12px}
+.role h3{font-size:22px;display:flex;justify-content:space-between;gap:10px}
+.role p{margin:8px 0}
+.role .k{font-weight:600}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+td.n{white-space:nowrap;font-variant-numeric:tabular-nums}
+.bad{color:var(--warn)}
+.okc{color:var(--good)}
+footer{color:var(--mute);font-size:14px}
+[hidden]{display:none!important}
+@media(max-width:600px){.figs{grid-template-columns:repeat(2,minmax(0,1fr))}.bar{grid-template-columns:minmax(0,8.5em) minmax(0,1fr) 2.6em}.bar .lab{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.bar .fill{transition:none}}
+</style>
+</head>
+<body>
+<header class="band top">
+  <div class="wrap topgrid">
+    <div>
+      <h1>offlist</h1>
+      <p class="lede">Entry level jobs most people never search for, pulled every day straight from company careers sites around Atlanta and Augusta.</p>
+      <div class="figs">
+        <div><span class="num" id="fTotal">0</span><small>open roles</small></div>
+        <div><span class="num" id="fNew">0</span><small>new this week</small></div>
+        <div><span class="num" id="fCos">0</span><small>companies checked</small></div>
+        <div><span class="num" id="fUpd">–</span><small>last update</small></div>
+      </div>
+    </div>
+    <div class="bars" id="bars" aria-label="Open roles by type. Tap one to filter."></div>
+  </div>
+</header>
+<nav role="tablist">
+  <button role="tab" id="tab-jobs" aria-selected="true" data-tab="jobs">Jobs</button>
+  <button role="tab" id="tab-roles" aria-selected="false" data-tab="roles">Hidden roles</button>
+  <button role="tab" id="tab-cos" aria-selected="false" data-tab="cos">Companies</button>
+</nav>
+<main class="band">
+  <div class="wrap">
+    <section id="jobs">
+      <div class="filters">
+        <input id="q" type="search" placeholder="Search title or company" autocomplete="off">
+        <div class="chips" id="regionChips"></div>
+        <div class="chips">
+          <button class="chip" id="optYears" aria-pressed="true">Hide 3+ years required</button>
+          <button class="chip" id="optNew" aria-pressed="false">New this week</button>
+          <button class="chip" id="optSaved" aria-pressed="false">Saved</button>
+          <button class="chip" id="optApplied" aria-pressed="false">Hide applied</button>
+        </div>
+      </div>
+      <p class="count" id="count"></p>
+      <div class="list" id="list"></div>
+    </section>
+    <section id="roles" hidden>
+      <p class="count">Job titles that fit an Information Systems or business degree but rarely show up when you search "IS jobs". Tap a count to see what's open.</p>
+      <div class="roles" id="roleList"></div>
+    </section>
+    <section id="cos" hidden>
+      <p class="count" id="cosNote"></p>
+      <div class="scroll"><table><thead><tr><th>Company</th><th>System</th><th>Jobs seen</th><th>Matches</th><th>Status</th></tr></thead><tbody id="cosBody"></tbody></table></div>
+    </section>
+  </div>
+</main>
+<footer class="band"><div class="wrap">Always apply on the company's own site. Pay and experience are read from each posting and can be missed, so check the posting. Data refreshes daily.</div></footer>
+<script>
+{
+const REGIONS=[["all","All areas"],["atl","Metro Atlanta"],["aug","Augusta"],["remote","Remote"],["ga","Rest of Georgia"]];
+const st={jobs:[],fams:[],maxOk:2,region:"all",fam:null,q:"",years:true,fresh:false,saved:false,hideApplied:false,marks:{}};
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+try{st.marks=JSON.parse(localStorage.getItem("offlist-marks")||"{}")}catch(e){}
+const saveMarks=()=>{try{localStorage.setItem("offlist-marks",JSON.stringify(st.marks))}catch(e){}};
+const today=new Date();
+const daysAgo=d=>d?Math.floor((today-new Date(d+"T12:00:00"))/864e5):999;
+const famName=id=>(st.fams.find(f=>f.id===id)||{}).name||id;
+const regName=id=>(REGIONS.find(r=>r[0]===id)||[0,id])[1];
+
+function visible(){
+  const q=st.q.toLowerCase();
+  return st.jobs.filter(j=>
+    (st.region==="all"||j.region===st.region)&&
+    (!st.fam||j.family===st.fam)&&
+    (!q||(j.title+" "+j.company).toLowerCase().includes(q))&&
+    (!st.years||j.min_years==null||j.min_years<=st.maxOk)&&
+    (!st.fresh||daysAgo(j.first_seen)<=7)&&
+    (!st.saved||st.marks[j.id]?.saved)&&
+    (!st.hideApplied||!st.marks[j.id]?.applied));
+}
+
+function yearsTag(y){
+  if(y==null)return '<span class="tag">Years not stated</span>';
+  if(y<=st.maxOk)return `<span class="tag good">${y===0?"No experience needed":y+"+ yr asked"}</span>`;
+  return `<span class="tag warn">${y}+ years required</span>`;
+}
+
+function card(j){
+  const m=st.marks[j.id]||{};
+  const isNew=daysAgo(j.first_seen)<=3;
+  const when=j.posted?`Posted ${j.posted}`:(j.posted_text||`Found ${j.first_seen}`);
+  return `<article class="job">
+    <h3>${esc(j.title)}</h3>
+    <div class="co">${esc(j.company)} · ${esc(j.location||regName(j.region))}</div>
+    <div class="tags">${isNew?'<span class="tag new">New</span>':""}<span class="tag">${esc(famName(j.family))}</span>${yearsTag(j.min_years)}${j.pay?`<span class="tag good">${esc(j.pay)}</span>`:""}${j.remote?'<span class="tag">Remote</span>':""}</div>
+    <div class="co">${esc(when)}</div>
+    <div class="acts"><a class="btn go" href="${esc(j.url)}" target="_blank" rel="noopener">Open posting</a>
+    <button class="btn" data-mark="saved" data-id="${j.id}" aria-pressed="${!!m.saved}">${m.saved?"Saved":"Save"}</button>
+    <button class="btn" data-mark="applied" data-id="${j.id}" aria-pressed="${!!m.applied}">${m.applied?"Applied":"Mark applied"}</button></div>
+  </article>`;
+}
+
+function renderBars(){
+  const counts=st.fams.map(f=>[f,st.jobs.filter(j=>j.family===f.id&&(st.region==="all"||j.region===st.region)).length]);
+  const max=Math.max(1,...counts.map(c=>c[1]));
+  $("bars").innerHTML=counts.map(([f,n])=>`<button class="bar" data-fam="${f.id}" aria-pressed="${st.fam===f.id}">
+    <span class="lab">${esc(f.name)}</span><span class="trk"><span class="fill" style="width:${n/max*100}%"></span></span><span class="ct">${n}</span></button>`).join("");
+}
+
+function render(){
+  const v=visible();
+  $("list").innerHTML=v.length?v.map(card).join(""):`<div class="empty">${st.jobs.length?"Nothing matches these filters. Try All areas or turn off a filter.":"No jobs yet. The first daily update hasn't run. Once it does, roles show up here automatically."}</div>`;
+  $("count").textContent=st.jobs.length?`${v.length} of ${st.jobs.length} roles${st.fam?" in "+famName(st.fam):""}`:"";
+  renderBars();
+}
+
+function renderRoles(){
+  $("roleList").innerHTML=st.fams.map(f=>{
+    const n=st.jobs.filter(j=>j.family===f.id).length;
+    return `<div class="role"><h3><span>${esc(f.name)}</span><button class="chip" data-gofam="${f.id}">${n} open</button></h3>
+    <p><span class="k">What it is.</span> ${esc(f.what)}</p>
+    <p><span class="k">Why you fit.</span> ${esc(f.why)}</p>
+    <p class="co"><span class="k">Search for:</span> ${f.titles.slice(0,10).map(esc).join(", ")}</p></div>`}).join("");
+}
+
+function renderCos(s){
+  const rows=(s.companies||[]);
+  const ok=rows.filter(r=>r.ok).length;
+  $("fCos").textContent=rows.length;
+  $("cosNote").textContent=rows.length?`${ok} of ${rows.length} careers sites read on the last update. Red rows need a corrected link in config/companies.yaml.`:"No update has run yet.";
+  $("cosBody").innerHTML=rows.map(r=>`<tr><td>${esc(r.name)}</td><td>${esc(r.ats||"")}</td><td class="n">${r.fetched||0}</td><td class="n">${r.matched||0}</td><td class="${r.ok?"okc":"bad"}">${r.ok?"OK":esc(r.error||"failed")}</td></tr>`).join("");
+}
+
+document.addEventListener("click",e=>{
+  const t=e.target.closest("button");if(!t)return;
+  if(t.dataset.tab){for(const b of document.querySelectorAll("nav button"))b.setAttribute("aria-selected",b===t);
+    for(const id of ["jobs","roles","cos"])$(id).hidden=id!==t.dataset.tab;return}
+  if(t.dataset.fam!==undefined){st.fam=st.fam===t.dataset.fam?null:t.dataset.fam;$("tab-jobs").click();render();return}
+  if(t.dataset.gofam){st.fam=t.dataset.gofam;$("tab-jobs").click();render();window.scrollTo({top:$("jobs").offsetTop-60});return}
+  if(t.dataset.region){st.region=t.dataset.region;for(const c of $("regionChips").children)c.setAttribute("aria-pressed",c===t);render();return}
+  if(t.dataset.mark){const m=st.marks[t.dataset.id]||={};m[t.dataset.mark]=!m[t.dataset.mark];saveMarks();render();return}
+  const opt={optYears:"years",optNew:"fresh",optSaved:"saved",optApplied:"hideApplied"}[t.id];
+  if(opt){st[opt]=!st[opt];t.setAttribute("aria-pressed",st[opt]);render()}
+});
+$("q").addEventListener("input",e=>{st.q=e.target.value;render()});
+$("regionChips").innerHTML=REGIONS.map(([id,n])=>`<button class="chip" data-region="${id}" aria-pressed="${id==="all"}">${n}</button>`).join("");
+
+const get=p=>fetch(p,{cache:"no-store"}).then(r=>r.ok?r.json():null).catch(()=>null);
+Promise.all([get("data/jobs.json"),get("data/roles.json"),get("data/status.json")]).then(([jd,rd,sd])=>{
+  st.jobs=(jd&&jd.jobs)||[];st.fams=(rd&&rd.families)||[];st.maxOk=(rd&&rd.max_years_ok)??2;
+  $("fTotal").textContent=st.jobs.length;
+  $("fNew").textContent=st.jobs.filter(j=>daysAgo(j.first_seen)<=7).length;
+  $("fUpd").textContent=jd&&jd.updated?new Date(jd.updated.replace("Z",":00Z")).toLocaleDateString(undefined,{month:"short",day:"numeric"}):"Pending";
+  renderCos(sd||{});renderRoles();render();
+});
+}
+</script>
+</body>
+</html>

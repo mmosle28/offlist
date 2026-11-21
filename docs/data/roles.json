@@ -1,0 +1,150 @@
+{
+ "families": [
+  {
+   "id": "revops",
+   "name": "Sales & Revenue Operations",
+   "what": "The team behind the sales team. You keep the CRM clean, build reports and dashboards on the pipeline, set up territories and quotas, and fix the processes that slow sellers down. You support sales without carrying a quota.\n",
+   "why": "Uses Excel, CRM tools, and reporting from an IS degree plus an understanding of how selling works. Sales experience is a real advantage here.\n",
+   "titles": [
+    "sales operations",
+    "sales ops",
+    "revenue operations",
+    "revops",
+    "gtm operations",
+    "go-to-market operations",
+    "commercial operations",
+    "deal desk",
+    "sales enablement",
+    "sales analyst",
+    "pricing analyst",
+    "partner operations",
+    "channel operations",
+    "sales support analyst",
+    "sales coordinator",
+    "order management"
+   ]
+  },
+  {
+   "id": "systems",
+   "name": "Business Systems & CRM Admin",
+   "what": "You run the software a company uses every day (Salesforce, HubSpot, an ERP like SAP, an HR system like Workday). You gather what people need, change settings, build fields and reports, test updates, and train users. Mostly configuration, not coding.\n",
+   "why": "This is what Systems Analysis and Design and Information Systems Management courses are built for.\n",
+   "titles": [
+    "business systems analyst",
+    "business systems associate",
+    "business applications analyst",
+    "systems analyst",
+    "crm administrator",
+    "crm analyst",
+    "crm specialist",
+    "salesforce administrator",
+    "salesforce admin",
+    "salesforce analyst",
+    "hubspot",
+    "erp analyst",
+    "sap analyst",
+    "it business analyst",
+    "hris analyst",
+    "hris specialist",
+    "application analyst",
+    "applications analyst",
+    "systems administrator"
+   ]
+  },
+  {
+   "id": "implementation",
+   "name": "Implementation & Onboarding",
+   "what": "When a company buys software, you get them set up: learn what they need, configure the product, move their data over, and train their team. Project work with customers, usually with heavy training at the start.\n",
+   "why": "Mixes technical setup with talking to customers, so it rewards both an IS background and sales or service experience.\n",
+   "titles": [
+    "implementation",
+    "onboarding specialist",
+    "onboarding consultant",
+    "onboarding analyst",
+    "deployment specialist",
+    "customer deployment",
+    "solutions consultant",
+    "solution consultant",
+    "solution advisor",
+    "professional services",
+    "technical consultant",
+    "technology consultant",
+    "associate consultant",
+    "customer training",
+    "training specialist",
+    "product specialist",
+    "client product specialist"
+   ]
+  },
+  {
+   "id": "success",
+   "name": "Customer Success & Tech Support",
+   "what": "You keep customers happy after the sale: answer questions, solve problems, run check ins, and help them get value from the product so they renew. Support roles troubleshoot issues and escalate the hard ones.\n",
+   "why": "Customer facing work where explaining technical things clearly matters more than coding.\n",
+   "titles": [
+    "customer success",
+    "client success",
+    "customer support analyst",
+    "customer support specialist",
+    "technical support",
+    "product support",
+    "application support",
+    "support specialist",
+    "support analyst",
+    "client solutions",
+    "client services",
+    "account coordinator",
+    "technical account",
+    "customer experience analyst",
+    "renewals"
+   ]
+  },
+  {
+   "id": "analyst",
+   "name": "Business & Operations Analyst",
+   "what": "You turn data into decisions: pull numbers, build reports and dashboards, spot problems, and recommend fixes for operations, supply chain, marketing, or the business overall.\n",
+   "why": "Excel, Tableau, data mining, and operations coursework line up directly.\n",
+   "titles": [
+    "business analyst",
+    "business operations",
+    "operations analyst",
+    "data analyst",
+    "reporting analyst",
+    "business intelligence analyst",
+    "bi analyst",
+    "supply chain analyst",
+    "procurement analyst",
+    "inventory analyst",
+    "demand planner",
+    "marketing operations",
+    "marketing analyst",
+    "product operations",
+    "support operations",
+    "workforce management",
+    "strategy analyst",
+    "associate analyst",
+    "analyst i",
+    "junior analyst"
+   ]
+  },
+  {
+   "id": "programs",
+   "name": "Rotational & Trainee Programs",
+   "what": "Structured new grad programs that rotate you through departments and train you for management or a specialty. Built for people with little experience.\n",
+   "why": "Designed for graduating seniors. Your degree and any work experience count.\n",
+   "titles": [
+    "management trainee",
+    "leadership development",
+    "development program",
+    "rotational",
+    "trainee",
+    "early career",
+    "new grad",
+    "graduate program",
+    "associate program",
+    "academy"
+   ]
+  }
+ ],
+ "max_years_ok": 2
+}

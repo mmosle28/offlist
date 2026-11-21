@@ -1,0 +1,60 @@
+# Companies offlist checks every day.
+#
+# Add a company with ONE of these:
+#   url:   paste the company's careers page link. Works for Greenhouse, Lever, Ashby,
+#          SmartRecruiters and Workday links (myworkdayjobs.com). Easiest option.
+#   guess: a short name. offlist tries it on Greenhouse, Lever, Ashby and SmartRecruiters
+#          and remembers whichever works. Good when you don't know their system.
+#   greenhouse / lever / ashby / smartrecruiters: the board name, if you know it.
+#
+# Companies that fail show up on the site's "Companies" tab so they can be fixed.
+# Entries marked "unverified" were added from memory and may need a corrected link.
+
+companies:
+  # Atlanta tech and SaaS
+  - {name: Salesloft, guess: salesloft}
+  - {name: Calendly, guess: calendly}
+  - {name: OneTrust, guess: onetrust}
+  - {name: Greenlight, guess: greenlight}
+  - {name: Bakkt, guess: bakkt}
+  - {name: Cardlytics, guess: cardlytics}
+  - {name: Flock Safety, guess: flocksafety}
+  - {name: Fullstory, guess: fullstory}
+  - {name: Stord, guess: stord}
+  - {name: Pindrop, guess: pindrop}
+  - {name: Florence Healthcare, guess: florencehc}
+  - {name: Sharecare, guess: sharecare}
+  - {name: Terminus, guess: terminus}
+  - {name: RoadSync, guess: roadsync}
+  - {name: ParkMobile, guess: parkmobile}
+  - {name: PrizePicks, guess: prizepicks}
+  - {name: BitPay, guess: bitpay}
+  - {name: Rubicon, guess: rubicon}
+  - {name: Ingenious Med, guess: ingeniousmed}
+  - {name: Patientco, guess: patientco}
+  - {name: Agilysys, guess: agilysys}
+  - {name: Rently, guess: rently}
+  - {name: Vendavo, guess: vendavo}
+  - {name: Bark, guess: bark}
+  - {name: Kaseya, guess: kaseya}
+  - {name: Insightsoftware, guess: insightsoftware}
+  - {name: Axon, guess: axon}
+  - {name: Gotham Enterprises, guess: gotham}
+  - {name: Homebound, guess: homebound}
+  - {name: Carvana, guess: carvana}
+
+  # Big Atlanta employers on Workday (unverified links)
+  - {name: The Home Depot, url: "https://homedepot.wd5.myworkdayjobs.com/CareerDepot"}
+  - {name: Equifax, url: "https://equifax.wd5.myworkdayjobs.com/External"}
+  - {name: Global Payments, url: "https://tsys.wd1.myworkdayjobs.com/TSYS"}
+  - {name: Coca-Cola, url: "https://coke.wd1.myworkdayjobs.com/coca-cola-careers"}
+  - {name: Truist, url: "https://truist.wd1.myworkdayjobs.com/Careers"}
+  - {name: Elevance Health, url: "https://elevancehealth.wd1.myworkdayjobs.com/ANT"}
+  - {name: Sage, url: "https://sage.wd3.myworkdayjobs.com/Sage"}
+  - {name: Cox Enterprises, url: "https://cox.wd1.myworkdayjobs.com/Cox_External"}
+  - {name: NCR Voyix, url: "https://ncr.wd1.myworkdayjobs.com/ext_non_china"}
+  - {name: Manhattan Associates, url: "https://manh.wd5.myworkdayjobs.com/External"}
+  - {name: Intercontinental Exchange, url: "https://ice.wd1.myworkdayjobs.com/ICE"}
+  - {name: Southern Company, url: "https://southernco.wd1.myworkdayjobs.com/SouthernCompany"}
+  - {name: Genuine Parts, url: "https://genpt.wd1.myworkdayjobs.com/Careers"}
+  - {name: Inspire Brands, url: "https://inspirebrands.wd5.myworkdayjobs.com/External"}
