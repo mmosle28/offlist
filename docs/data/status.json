@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-22T22:09Z",
+ "updated": "2026-11-22T22:41Z",
  "companies": [
+  {
+   "name": "1406 Consulting",
+   "ats": "guess",
+   "key": [
+    "1406consulting",
+    "1406-consulting",
+    "1406"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: 1406consulting, 1406-consulting, 1406)",
+   "discovered": true,
+   "matched": 0
+  },
   {
    "name": "Bakkt",
    "ats": "guess",
@@ -42,6 +56,72 @@
    "matched": 0
   },
   {
+   "name": "Cerner Technologies",
+   "ats": "guess",
+   "key": [
+    "cernertechnologies",
+    "cerner-technologies",
+    "cerner"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: cernertechnologies, cerner-technologies, cerner)",
+   "discovered": true,
+   "matched": 0
+  },
+  {
+   "name": "Evidence Based Associates",
+   "ats": "guess",
+   "key": [
+    "evidencebasedassociates",
+    "evidence-based-associates",
+    "evidence"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: evidencebasedassociates, evidence-based-associates, evidence)",
+   "discovered": true,
+   "matched": 0
+  },
+  {
+   "name": "Ferguson Enterprises, LLC.",
+   "ats": "guess",
+   "key": [
+    "fergusonenterprises",
+    "ferguson-enterprises",
+    "ferguson"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: fergusonenterprises, ferguson-enterprises, ferguson)",
+   "discovered": true,
+   "matched": 0
+  },
+  {
+   "name": "Guidehouse",
+   "ats": "guess",
+   "key": [
+    "guidehouse"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: guidehouse)",
+   "discovered": true,
+   "matched": 0
+  },
+  {
+   "name": "INTRALOT",
+   "ats": "guess",
+   "key": [
+    "intralot"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: intralot)",
+   "discovered": true,
+   "matched": 0
+  },
+  {
    "name": "Ingenious Med",
    "ats": "guess",
    "key": [
@@ -80,6 +160,32 @@
    "matched": 0
   },
   {
+   "name": "Mindray North America",
+   "ats": "guess",
+   "key": [
+    "mindraynorthamerica",
+    "mindray-north-america",
+    "mindray"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: mindraynorthamerica, mindray-north-america, mindray)",
+   "discovered": true,
+   "matched": 0
+  },
+  {
+   "name": "Nexxaworks",
+   "ats": "guess",
+   "key": [
+    "nexxaworks"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: nexxaworks)",
+   "discovered": true,
+   "matched": 0
+  },
+  {
    "name": "ParkMobile",
    "ats": "guess",
    "key": [
@@ -103,6 +209,18 @@
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: patientco, patient-co)",
    "discovered": false,
+   "matched": 0
+  },
+  {
+   "name": "PwC",
+   "ats": "guess",
+   "key": [
+    "pwc"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: pwc)",
+   "discovered": true,
    "matched": 0
   },
   {
@@ -211,6 +329,20 @@
    "matched": 0
   },
   {
+   "name": "The Mortgage Dealer",
+   "ats": "guess",
+   "key": [
+    "mortgagedealer",
+    "mortgage-dealer",
+    "mortgage"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: mortgagedealer, mortgage-dealer, mortgage)",
+   "discovered": true,
+   "matched": 0
+  },
+  {
    "name": "The Muse (search)",
    "ats": "themuse",
    "key": null,
@@ -218,6 +350,34 @@
    "fetched": 0,
    "error": "HTTP 404",
    "feed": true,
+   "matched": 0
+  },
+  {
+   "name": "Tidal Wave Management",
+   "ats": "guess",
+   "key": [
+    "tidalwavemanagement",
+    "tidal-wave-management",
+    "tidal"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: tidalwavemanagement, tidal-wave-management, tidal)",
+   "discovered": true,
+   "matched": 0
+  },
+  {
+   "name": "Tidewater Consulting",
+   "ats": "guess",
+   "key": [
+    "tidewaterconsulting",
+    "tidewater-consulting",
+    "tidewater"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: tidewaterconsulting, tidewater-consulting, tidewater)",
+   "discovered": true,
    "matched": 0
   },
   {
@@ -461,7 +621,7 @@
    "ats": "workday",
    "key": "https://genpt.wd1.myworkdayjobs.com/Careers",
    "ok": true,
-   "fetched": 452,
+   "fetched": 451,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -627,6 +787,16 @@
    "matched": 5
   },
   {
+   "name": "Scan.com",
+   "ats": "ashby",
+   "key": "scan-com",
+   "ok": true,
+   "fetched": 18,
+   "error": null,
+   "discovered": true,
+   "matched": 2
+  },
+  {
    "name": "The Home Depot",
    "ats": "workday",
    "key": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot",
@@ -644,7 +814,7 @@
    "fetched": 324,
    "error": null,
    "discovered": false,
-   "matched": 1
+   "matched": 0
   },
   {
    "name": "Truist",

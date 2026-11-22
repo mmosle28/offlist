@@ -2,27 +2,17 @@
  "1406 Consulting": {
   "first": "2026-11-22",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-22",
   "slugs": [
    "1406consulting",
    "1406-consulting",
    "1406"
   ]
  },
- "Atlanta GA": {
-  "first": "2026-11-22",
-  "found": false,
-  "last_try": "2000-01-01",
-  "slugs": [
-   "atlantaga",
-   "atlanta-ga",
-   "atlanta"
-  ]
- },
  "Cerner Technologies": {
   "first": "2026-11-22",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-22",
   "slugs": [
    "cernertechnologies",
    "cerner-technologies",
@@ -32,25 +22,17 @@
  "Evidence Based Associates": {
   "first": "2026-11-22",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-22",
   "slugs": [
    "evidencebasedassociates",
    "evidence-based-associates",
    "evidence"
   ]
  },
- "Experis": {
-  "first": "2026-11-22",
-  "found": false,
-  "last_try": "2000-01-01",
-  "slugs": [
-   "experis"
-  ]
- },
  "Ferguson Enterprises, LLC.": {
   "first": "2026-11-22",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-22",
   "slugs": [
    "fergusonenterprises",
    "ferguson-enterprises",
@@ -60,7 +42,7 @@
  "Guidehouse": {
   "first": "2026-11-22",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-22",
   "slugs": [
    "guidehouse"
   ]
@@ -78,7 +60,7 @@
  "INTRALOT": {
   "first": "2026-11-22",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-22",
   "slugs": [
    "intralot"
   ]
@@ -86,7 +68,7 @@
  "Mindray North America": {
   "first": "2026-11-22",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-22",
   "slugs": [
    "mindraynorthamerica",
    "mindray-north-america",
@@ -96,7 +78,7 @@
  "Nexxaworks": {
   "first": "2026-11-22",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-22",
   "slugs": [
    "nexxaworks"
   ]
@@ -104,25 +86,15 @@
  "PwC": {
   "first": "2026-11-22",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-22",
   "slugs": [
    "pwc"
   ]
  },
- "Robert Half": {
-  "first": "2026-11-22",
-  "found": false,
-  "last_try": "2000-01-01",
-  "slugs": [
-   "roberthalf",
-   "robert-half",
-   "robert"
-  ]
- },
  "Scan.com": {
   "first": "2026-11-22",
-  "found": false,
-  "last_try": "2000-01-01",
+  "found": true,
+  "last_try": "2026-11-22",
   "slugs": [
    "scancom",
    "scan-com",
@@ -132,7 +104,7 @@
  "The Mortgage Dealer": {
   "first": "2026-11-22",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-22",
   "slugs": [
    "mortgagedealer",
    "mortgage-dealer",
@@ -142,7 +114,7 @@
  "Tidal Wave Management": {
   "first": "2026-11-22",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-22",
   "slugs": [
    "tidalwavemanagement",
    "tidal-wave-management",
@@ -152,7 +124,7 @@
  "Tidewater Consulting": {
   "first": "2026-11-22",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-22",
   "slugs": [
    "tidewaterconsulting",
    "tidewater-consulting",
