@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T21:59Z",
+ "updated": "2026-11-22T22:01Z",
  "companies": [
   {
    "name": "Bakkt",
@@ -384,7 +384,7 @@
    "fetched": 1634,
    "error": null,
    "discovered": false,
-   "matched": 24
+   "matched": 5
   },
   {
    "name": "Coca-Cola",
