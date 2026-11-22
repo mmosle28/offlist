@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T03:59Z",
+ "updated": "2026-11-22T04:01Z",
  "companies": [
   {
    "name": "Bakkt",
@@ -442,7 +442,7 @@
    "ok": true,
    "fetched": 82,
    "error": null,
-   "matched": 2
+   "matched": 1
   },
   {
    "name": "Homebound",

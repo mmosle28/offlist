@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T03:59Z",
+ "updated": "2026-11-22T04:01Z",
  "jobs": [
   {
    "id": "19f881f81bee",
@@ -476,25 +476,6 @@
     "SQL",
     "Python",
     "Tableau"
-   ]
-  },
-  {
-   "id": "05e6001e0795",
-   "title": "Future Opportunities: Early Career Sales Talent",
-   "company": "Gusto",
-   "family": "programs",
-   "region": "atl",
-   "location": "Atlanta, GA - Hybrid; Denver, CO - Hybrid; Phoenix, AZ - Hybrid",
-   "remote": false,
-   "url": "https://job-boards.greenhouse.io/gusto/jobs/8001931",
-   "ats": "greenhouse",
-   "posted": "2026-06-11",
-   "posted_text": null,
-   "first_seen": "2026-11-22",
-   "min_years": 1,
-   "pay": "$20.00\u2013$28.00 per hour",
-   "tools": [
-    "Salesforce"
    ]
   }
  ]
