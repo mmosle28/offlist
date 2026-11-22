@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T04:01Z",
+ "updated": "2026-11-22T17:56Z",
  "companies": [
   {
    "name": "Bakkt",
@@ -341,7 +341,7 @@
    "ats": "greenhouse",
    "key": "carvana",
    "ok": true,
-   "fetched": 1637,
+   "fetched": 1634,
    "error": null,
    "matched": 3
   },
@@ -350,7 +350,7 @@
    "ats": "workday",
    "key": "https://coke.wd1.myworkdayjobs.com/coca-cola-careers",
    "ok": true,
-   "fetched": 182,
+   "fetched": 181,
    "error": null,
    "matched": 0
   },
@@ -359,7 +359,7 @@
    "ats": "workday",
    "key": "https://elevancehealth.wd1.myworkdayjobs.com/ANT",
    "ok": true,
-   "fetched": 177,
+   "fetched": 176,
    "error": null,
    "matched": 0
   },
@@ -413,7 +413,7 @@
    "ats": "workday",
    "key": "https://tsys.wd1.myworkdayjobs.com/TSYS",
    "ok": true,
-   "fetched": 320,
+   "fetched": 319,
    "error": null,
    "matched": 0
   },
@@ -566,7 +566,7 @@
    "ats": "greenhouse",
    "key": "toast",
    "ok": true,
-   "fetched": 326,
+   "fetched": 324,
    "error": null,
    "matched": 0
   },
