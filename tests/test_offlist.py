@@ -36,6 +36,7 @@ class TestTitles(unittest.TestCase):
         for title in ["Senior Sales Operations Analyst", "Sr. Business Analyst",
                       "Sales Operations Manager", "Software Engineer", "Data Analyst II",
                       "Implementation Lead", "Customer Success Intern", "Marketing Manager",
+                      "Product Owner, Agile - Sales Enablement / Salesforce",
                       "Barista"]:
             self.assertIsNone(ROLES.family(title), title)
 
