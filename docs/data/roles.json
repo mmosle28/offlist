@@ -144,6 +144,13 @@
     "associate program",
     "academy"
    ]
+  },
+  {
+   "id": "other",
+   "name": "Other entry level",
+   "what": "Jobs with less common titles where the posting itself says it is meant for new grads or entry level candidates.",
+   "why": "Unusual titles are often the least crowded openings, because people don't think to search for them.",
+   "titles": []
   }
  ],
  "max_years_ok": 2

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T17:56Z",
+ "updated": "2026-11-22T21:59Z",
  "companies": [
   {
    "name": "Bakkt",
@@ -12,6 +12,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: bakkt, bakktholdings, bakktinc)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -24,6 +25,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: bitpay, bitpayinc)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -36,6 +38,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: cardlytics, cardlyticsinc)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -48,6 +51,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: ingeniousmed, ingenious-med)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -60,6 +64,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: insightsoftware, insight-software)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -71,6 +76,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: mailchimp)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -83,6 +89,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: parkmobile, parkmobilellc)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -95,6 +102,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: patientco, patient-co)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -107,6 +115,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: rently, rentlyinc)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -118,6 +127,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: rippling)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -130,6 +140,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: roadsync, road-sync)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -143,6 +154,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: rubicon, rubicontechnologies, rubiconglobal)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -154,6 +166,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: secureworks)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -166,6 +179,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: sharecare, sharecareinc)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -179,6 +193,7 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: stord, stordinc, stord-inc)",
+   "discovered": false,
    "matched": 0
   },
   {
@@ -192,6 +207,17 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: terminus, terminusplatform, terminussoftware)",
+   "discovered": false,
+   "matched": 0
+  },
+  {
+   "name": "The Muse (search)",
+   "ats": "themuse",
+   "key": null,
+   "ok": false,
+   "fetched": 0,
+   "error": "HTTP 404",
+   "feed": true,
    "matched": 0
   },
   {
@@ -201,6 +227,7 @@
    "ok": false,
    "fetched": 0,
    "error": null,
+   "discovered": false,
    "manual": true,
    "url": "https://jobs.coxenterprises.com/",
    "matched": 0
@@ -212,6 +239,7 @@
    "ok": false,
    "fetched": 0,
    "error": null,
+   "discovered": false,
    "manual": true,
    "url": "https://www.delta.com/us/en/careers/overview",
    "matched": 0
@@ -223,6 +251,7 @@
    "ok": false,
    "fetched": 0,
    "error": null,
+   "discovered": false,
    "manual": true,
    "url": "https://hdsupply.jobs/",
    "matched": 0
@@ -234,6 +263,7 @@
    "ok": false,
    "fetched": 0,
    "error": null,
+   "discovered": false,
    "manual": true,
    "url": "https://www.ice.com/careers",
    "matched": 0
@@ -245,6 +275,7 @@
    "ok": false,
    "fetched": 0,
    "error": null,
+   "discovered": false,
    "manual": true,
    "url": "https://www.ncrvoyix.com/careers",
    "matched": 0
@@ -256,6 +287,7 @@
    "ok": false,
    "fetched": 0,
    "error": null,
+   "discovered": false,
    "manual": true,
    "url": "https://www.sage.com/en-us/company/careers/job-search/",
    "matched": 0
@@ -267,6 +299,7 @@
    "ok": false,
    "fetched": 0,
    "error": null,
+   "discovered": false,
    "manual": true,
    "url": "https://southerncompany.jobs/",
    "matched": 0
@@ -278,6 +311,7 @@
    "ok": false,
    "fetched": 0,
    "error": null,
+   "discovered": false,
    "manual": true,
    "url": "https://www.jobs-ups.com/",
    "matched": 0
@@ -289,6 +323,7 @@
    "ok": true,
    "fetched": 14,
    "error": null,
+   "discovered": false,
    "matched": 1
   },
   {
@@ -298,6 +333,7 @@
    "ok": true,
    "fetched": 472,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -307,6 +343,7 @@
    "ok": true,
    "fetched": 21,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -316,6 +353,7 @@
    "ok": true,
    "fetched": 1,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -325,6 +363,7 @@
    "ok": true,
    "fetched": 249,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -334,6 +373,7 @@
    "ok": true,
    "fetched": 4,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -343,15 +383,17 @@
    "ok": true,
    "fetched": 1634,
    "error": null,
-   "matched": 3
+   "discovered": false,
+   "matched": 24
   },
   {
    "name": "Coca-Cola",
    "ats": "workday",
    "key": "https://coke.wd1.myworkdayjobs.com/coca-cola-careers",
    "ok": true,
-   "fetched": 181,
+   "fetched": 182,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -361,6 +403,7 @@
    "ok": true,
    "fetched": 176,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -368,8 +411,9 @@
    "ats": "workday",
    "key": "https://equifax.wd5.myworkdayjobs.com/External",
    "ok": true,
-   "fetched": 178,
+   "fetched": 177,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -379,6 +423,7 @@
    "ok": true,
    "fetched": 12,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -388,6 +433,7 @@
    "ok": true,
    "fetched": 19,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -397,6 +443,7 @@
    "ok": true,
    "fetched": 10,
    "error": null,
+   "discovered": false,
    "matched": 1
   },
   {
@@ -406,6 +453,7 @@
    "ok": true,
    "fetched": 452,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -413,8 +461,9 @@
    "ats": "workday",
    "key": "https://tsys.wd1.myworkdayjobs.com/TSYS",
    "ok": true,
-   "fetched": 319,
+   "fetched": 318,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -424,6 +473,7 @@
    "ok": true,
    "fetched": 15,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -433,6 +483,7 @@
    "ok": true,
    "fetched": 2,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -442,6 +493,7 @@
    "ok": true,
    "fetched": 82,
    "error": null,
+   "discovered": false,
    "matched": 1
   },
   {
@@ -451,6 +503,7 @@
    "ok": true,
    "fetched": 10,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -460,7 +513,8 @@
    "ok": true,
    "fetched": 141,
    "error": null,
-   "matched": 0
+   "discovered": false,
+   "matched": 1
   },
   {
    "name": "Kaseya",
@@ -469,6 +523,7 @@
    "ok": true,
    "fetched": 95,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -476,8 +531,9 @@
    "ats": "greenhouse",
    "key": "klaviyo",
    "ok": true,
-   "fetched": 126,
+   "fetched": 124,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -487,6 +543,7 @@
    "ok": true,
    "fetched": 11,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -496,6 +553,7 @@
    "ok": true,
    "fetched": 36,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -505,7 +563,8 @@
    "ok": true,
    "fetched": 84,
    "error": null,
-   "matched": 2
+   "discovered": false,
+   "matched": 3
   },
   {
    "name": "Pindrop",
@@ -514,6 +573,7 @@
    "ok": true,
    "fetched": 20,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -523,6 +583,7 @@
    "ok": true,
    "fetched": 32,
    "error": null,
+   "discovered": false,
    "matched": 1
   },
   {
@@ -532,6 +593,7 @@
    "ok": true,
    "fetched": 1,
    "error": null,
+   "discovered": false,
    "matched": 0
   },
   {
@@ -541,6 +603,7 @@
    "ok": true,
    "fetched": 25,
    "error": null,
+   "discovered": false,
    "matched": 1
   },
   {
@@ -548,8 +611,9 @@
    "ats": "greenhouse",
    "key": "samsara",
    "ok": true,
-   "fetched": 299,
+   "fetched": 300,
    "error": null,
+   "discovered": false,
    "matched": 5
   },
   {
@@ -559,6 +623,7 @@
    "ok": true,
    "fetched": 635,
    "error": null,
+   "discovered": false,
    "matched": 9
   },
   {
@@ -568,7 +633,8 @@
    "ok": true,
    "fetched": 324,
    "error": null,
-   "matched": 0
+   "discovered": false,
+   "matched": 1
   },
   {
    "name": "Truist",
@@ -577,7 +643,8 @@
    "ok": true,
    "fetched": 562,
    "error": null,
-   "matched": 2
+   "discovered": false,
+   "matched": 9
   },
   {
    "name": "Vendavo",
@@ -586,6 +653,7 @@
    "ok": true,
    "fetched": 7,
    "error": null,
+   "discovered": false,
    "matched": 0
   }
  ]
