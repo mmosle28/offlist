@@ -1,21 +1,24 @@
 {
- "updated": "2026-11-22T03:48Z",
+ "updated": "2026-11-22T03:59Z",
  "jobs": [
   {
-   "id": "374da4079836",
-   "title": "Sales Rotational Development Associate",
-   "company": "Equifax",
-   "family": "programs",
-   "region": "atl",
-   "location": "USA - Georgia - Alpharetta - 30005",
-   "remote": false,
-   "url": "https://equifax.wd5.myworkdayjobs.com/External/job/USA---Georgia---Alpharetta---30005/Sales-Rotational-Development-Associate_J00178815-1",
-   "ats": "workday",
+   "id": "19f881f81bee",
+   "title": "Customer Success Adoption Specialist",
+   "company": "Samsara",
+   "family": "success",
+   "region": "remote",
+   "location": "Remote - CA; Remote - Chicago; Remote - Houston",
+   "remote": true,
+   "url": "https://www.samsara.com/company/careers/roles/8400979?gh_jid=8400979",
+   "ats": "greenhouse",
    "posted": "2026-11-20",
-   "posted_text": "Posted Yesterday",
+   "posted_text": null,
    "first_seen": "2026-11-22",
-   "min_years": null,
-   "pay": null
+   "min_years": 3,
+   "pay": "$88,089",
+   "tools": [
+    "Salesforce"
+   ]
   },
   {
    "id": "8efbe2d16835",
@@ -31,7 +34,27 @@
    "posted_text": "Posted 2 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": 1,
-   "pay": null
+   "pay": null,
+   "tools": []
+  },
+  {
+   "id": "ca843fe976a8",
+   "title": "Implementation Consultant",
+   "company": "Samsara",
+   "family": "implementation",
+   "region": "remote",
+   "location": "Remote - CA; Remote - Chicago; Remote - Seattle; Remote - TX",
+   "remote": true,
+   "url": "https://www.samsara.com/company/careers/roles/8367418?gh_jid=8367418",
+   "ats": "greenhouse",
+   "posted": "2026-11-18",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
+   "min_years": 3,
+   "pay": "$66,261",
+   "tools": [
+    "Python"
+   ]
   },
   {
    "id": "122811bcc6f1",
@@ -47,7 +70,8 @@
    "posted_text": "Posted 3 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": 1,
-   "pay": "$50,000"
+   "pay": "$50,000",
+   "tools": []
   },
   {
    "id": "16155a4e857b",
@@ -63,23 +87,13 @@
    "posted_text": "Posted 4 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": null,
-   "pay": null
-  },
-  {
-   "id": "78711bef533b",
-   "title": "Sales Support Specialist/ Inside Sales, Enterprise Mobility",
-   "company": "Manhattan Associates",
-   "family": "success",
-   "region": "atl",
-   "location": "Atlanta, GA",
-   "remote": false,
-   "url": "https://manh.wd5.myworkdayjobs.com/External/job/Atlanta-GA/Inside-Sales-Support-Specialist--Enterprise-Mobility_17025",
-   "ats": "workday",
-   "posted": "2026-11-17",
-   "posted_text": "Posted 4 Days Ago",
-   "first_seen": "2026-11-22",
-   "min_years": null,
-   "pay": null
+   "pay": null,
+   "tools": [
+    "SQL",
+    "Python",
+    "Tableau",
+    "Power BI"
+   ]
   },
   {
    "id": "a5c7eb751299",
@@ -95,7 +109,12 @@
    "posted_text": "Posted 5 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": null,
-   "pay": null
+   "pay": null,
+   "tools": [
+    "SQL",
+    "Python",
+    "Tableau"
+   ]
   },
   {
    "id": "bc5ce3712ab8",
@@ -111,7 +130,8 @@
    "posted_text": "Posted 5 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": null,
-   "pay": null
+   "pay": null,
+   "tools": []
   },
   {
    "id": "6ecb7e6b9c4d",
@@ -127,7 +147,10 @@
    "posted_text": "Posted 5 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": 2,
-   "pay": null
+   "pay": null,
+   "tools": [
+    "SQL"
+   ]
   },
   {
    "id": "12f958e5df40",
@@ -143,7 +166,10 @@
    "posted_text": null,
    "first_seen": "2026-11-22",
    "min_years": 3,
-   "pay": "$104,325"
+   "pay": "$104,325",
+   "tools": [
+    "Salesforce"
+   ]
   },
   {
    "id": "51fdf421a6b6",
@@ -159,7 +185,76 @@
    "posted_text": "Posted 12 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": 1,
-   "pay": null
+   "pay": null,
+   "tools": []
+  },
+  {
+   "id": "2a7d50ef663b",
+   "title": "Enterprise Implementation Consultant (East/Central)",
+   "company": "Samsara",
+   "family": "implementation",
+   "region": "remote",
+   "location": "Remote - US",
+   "remote": true,
+   "url": "https://www.samsara.com/company/careers/roles/8359847?gh_jid=8359847",
+   "ats": "greenhouse",
+   "posted": "2026-11-06",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
+   "min_years": 4,
+   "pay": "$88,979",
+   "tools": []
+  },
+  {
+   "id": "8975debbe421",
+   "title": "Enterprise Select Implementation Consultant (West)",
+   "company": "Samsara",
+   "family": "implementation",
+   "region": "remote",
+   "location": "Remote - US",
+   "remote": true,
+   "url": "https://www.samsara.com/company/careers/roles/8359531?gh_jid=8359531",
+   "ats": "greenhouse",
+   "posted": "2026-11-06",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
+   "min_years": 6,
+   "pay": "$100,406",
+   "tools": []
+  },
+  {
+   "id": "614433667530",
+   "title": "Strategic Implementation Consultant",
+   "company": "Samsara",
+   "family": "implementation",
+   "region": "remote",
+   "location": "Remote - US",
+   "remote": true,
+   "url": "https://www.samsara.com/company/careers/roles/8359860?gh_jid=8359860",
+   "ats": "greenhouse",
+   "posted": "2026-11-06",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
+   "min_years": 6,
+   "pay": "$100,406",
+   "tools": []
+  },
+  {
+   "id": "885a9acdc830",
+   "title": "People Tech Business Systems Analyst",
+   "company": "Gusto",
+   "family": "systems",
+   "region": "atl",
+   "location": "Atlanta, GA - Hybrid; Denver, CO - Hybrid; New York, NY - Hybrid; San Francisco, CA - Hybrid; Scottsdale, AZ - Hybrid",
+   "remote": false,
+   "url": "https://job-boards.greenhouse.io/gusto/jobs/8257482",
+   "ats": "greenhouse",
+   "posted": "2026-11-04",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
+   "min_years": null,
+   "pay": "$107,000/yr",
+   "tools": []
   },
   {
    "id": "6a63a8556134",
@@ -175,7 +270,8 @@
    "posted_text": "Posted 17 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": null,
-   "pay": null
+   "pay": null,
+   "tools": []
   },
   {
    "id": "4dc100b4de63",
@@ -191,7 +287,8 @@
    "posted_text": null,
    "first_seen": "2026-11-22",
    "min_years": null,
-   "pay": null
+   "pay": null,
+   "tools": []
   },
   {
    "id": "e9923d5a16d8",
@@ -207,7 +304,8 @@
    "posted_text": null,
    "first_seen": "2026-11-22",
    "min_years": null,
-   "pay": null
+   "pay": null,
+   "tools": []
   },
   {
    "id": "1da0bf6c5ccf",
@@ -223,7 +321,8 @@
    "posted_text": null,
    "first_seen": "2026-11-22",
    "min_years": null,
-   "pay": null
+   "pay": null,
+   "tools": []
   },
   {
    "id": "65a8dbe7f603",
@@ -239,7 +338,10 @@
    "posted_text": "Posted 19 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": 5,
-   "pay": "$65,000"
+   "pay": "$65,000",
+   "tools": [
+    "SQL"
+   ]
   },
   {
    "id": "d67abd852d48",
@@ -255,7 +357,10 @@
    "posted_text": null,
    "first_seen": "2026-11-22",
    "min_years": 5,
-   "pay": null
+   "pay": null,
+   "tools": [
+    "Salesforce"
+   ]
   },
   {
    "id": "090f00145169",
@@ -271,7 +376,10 @@
    "posted_text": null,
    "first_seen": "2026-11-22",
    "min_years": 3,
-   "pay": null
+   "pay": null,
+   "tools": [
+    "SQL"
+   ]
   },
   {
    "id": "9498ca468098",
@@ -287,7 +395,12 @@
    "posted_text": "Posted 30+ Days Ago",
    "first_seen": "2026-11-22",
    "min_years": null,
-   "pay": null
+   "pay": null,
+   "tools": [
+    "SQL",
+    "Tableau",
+    "Salesforce"
+   ]
   },
   {
    "id": "ffdfae039058",
@@ -303,7 +416,10 @@
    "posted_text": null,
    "first_seen": "2026-11-22",
    "min_years": null,
-   "pay": "$95,000 - $110,000"
+   "pay": "$95,000 - $110,000",
+   "tools": [
+    "Python"
+   ]
   },
   {
    "id": "95e19df9c927",
@@ -319,23 +435,8 @@
    "posted_text": "Posted 30+ Days Ago",
    "first_seen": "2026-11-22",
    "min_years": 1,
-   "pay": null
-  },
-  {
-   "id": "ac53c215f0da",
-   "title": "Outside Sales Representative Trainee - Atlanta, GA",
-   "company": "The Home Depot",
-   "family": "programs",
-   "region": "ga",
-   "location": "GEORGIA - VIRTUAL - GA01",
-   "remote": false,
-   "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/GEORGIA---VIRTUAL---GA01/Outside-Sales-Representative-Trainee---Atlanta--GA_Req192027",
-   "ats": "workday",
-   "posted": "2026-09-01",
-   "posted_text": "Posted 30+ Days Ago",
-   "first_seen": "2026-11-22",
-   "min_years": null,
-   "pay": null
+   "pay": null,
+   "tools": []
   },
   {
    "id": "47e402ee1faa",
@@ -351,7 +452,10 @@
    "posted_text": null,
    "first_seen": "2026-11-22",
    "min_years": 2,
-   "pay": null
+   "pay": null,
+   "tools": [
+    "Salesforce"
+   ]
   },
   {
    "id": "72c07f35fb7b",
@@ -367,7 +471,31 @@
    "posted_text": null,
    "first_seen": "2026-11-22",
    "min_years": null,
-   "pay": "$80,000 to $110,000"
+   "pay": "$80,000 to $110,000",
+   "tools": [
+    "SQL",
+    "Python",
+    "Tableau"
+   ]
+  },
+  {
+   "id": "05e6001e0795",
+   "title": "Future Opportunities: Early Career Sales Talent",
+   "company": "Gusto",
+   "family": "programs",
+   "region": "atl",
+   "location": "Atlanta, GA - Hybrid; Denver, CO - Hybrid; Phoenix, AZ - Hybrid",
+   "remote": false,
+   "url": "https://job-boards.greenhouse.io/gusto/jobs/8001931",
+   "ats": "greenhouse",
+   "posted": "2026-06-11",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
+   "min_years": 1,
+   "pay": "$20.00\u2013$28.00 per hour",
+   "tools": [
+    "Salesforce"
+   ]
   }
  ]
 }

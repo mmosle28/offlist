@@ -1,211 +1,285 @@
 {
- "updated": "2026-11-22T03:48Z",
+ "updated": "2026-11-22T03:59Z",
  "companies": [
   {
    "name": "Bakkt",
    "ats": "guess",
-   "key": "bakkt",
+   "key": [
+    "bakkt",
+    "bakktholdings",
+    "bakktinc"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "ashby: HTTP 404",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: bakkt, bakktholdings, bakktinc)",
    "matched": 0
   },
   {
    "name": "BitPay",
    "ats": "guess",
-   "key": "bitpay",
+   "key": [
+    "bitpay",
+    "bitpayinc"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "ashby: HTTP 404",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: bitpay, bitpayinc)",
    "matched": 0
   },
   {
    "name": "Cardlytics",
    "ats": "guess",
-   "key": "cardlytics",
+   "key": [
+    "cardlytics",
+    "cardlyticsinc"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "lever: HTTP 404",
-   "matched": 0
-  },
-  {
-   "name": "Cox Enterprises",
-   "ats": "workday",
-   "key": "https://cox.wd1.myworkdayjobs.com/Cox_External",
-   "ok": false,
-   "fetched": 0,
-   "error": "HTTP 404",
-   "matched": 0
-  },
-  {
-   "name": "Flock Safety",
-   "ats": "guess",
-   "key": "flocksafety",
-   "ok": false,
-   "fetched": 0,
-   "error": "ashby: HTTP 404",
-   "matched": 0
-  },
-  {
-   "name": "Florence Healthcare",
-   "ats": "guess",
-   "key": "florencehc",
-   "ok": false,
-   "fetched": 0,
-   "error": "ashby: HTTP 404",
-   "matched": 0
-  },
-  {
-   "name": "Gotham Enterprises",
-   "ats": "guess",
-   "key": "gotham",
-   "ok": false,
-   "fetched": 0,
-   "error": "ashby: HTTP 404",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: cardlytics, cardlyticsinc)",
    "matched": 0
   },
   {
    "name": "Ingenious Med",
    "ats": "guess",
-   "key": "ingeniousmed",
+   "key": [
+    "ingeniousmed",
+    "ingenious-med"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "ashby: HTTP 404",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: ingeniousmed, ingenious-med)",
    "matched": 0
   },
   {
    "name": "Insightsoftware",
    "ats": "guess",
-   "key": "insightsoftware",
+   "key": [
+    "insightsoftware",
+    "insight-software"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "ashby: HTTP 404",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: insightsoftware, insight-software)",
    "matched": 0
   },
   {
-   "name": "Inspire Brands",
-   "ats": "workday",
-   "key": "https://inspirebrands.wd5.myworkdayjobs.com/External",
+   "name": "Mailchimp",
+   "ats": "guess",
+   "key": [
+    "mailchimp"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "HTTP 404",
-   "matched": 0
-  },
-  {
-   "name": "Intercontinental Exchange",
-   "ats": "workday",
-   "key": "https://ice.wd1.myworkdayjobs.com/ICE",
-   "ok": false,
-   "fetched": 0,
-   "error": "HTTP 422",
-   "matched": 0
-  },
-  {
-   "name": "NCR Voyix",
-   "ats": "workday",
-   "key": "https://ncr.wd1.myworkdayjobs.com/ext_non_china",
-   "ok": false,
-   "fetched": 0,
-   "error": "HTTP 404",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: mailchimp)",
    "matched": 0
   },
   {
    "name": "ParkMobile",
    "ats": "guess",
-   "key": "parkmobile",
+   "key": [
+    "parkmobile",
+    "parkmobilellc"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "ashby: HTTP 404",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: parkmobile, parkmobilellc)",
    "matched": 0
   },
   {
    "name": "Patientco",
    "ats": "guess",
-   "key": "patientco",
+   "key": [
+    "patientco",
+    "patient-co"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "ashby: HTTP 404",
-   "matched": 0
-  },
-  {
-   "name": "Pindrop",
-   "ats": "guess",
-   "key": "pindrop",
-   "ok": false,
-   "fetched": 0,
-   "error": "ashby: HTTP 404",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: patientco, patient-co)",
    "matched": 0
   },
   {
    "name": "Rently",
    "ats": "guess",
-   "key": "rently",
+   "key": [
+    "rently",
+    "rentlyinc"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "ashby: HTTP 404",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: rently, rentlyinc)",
+   "matched": 0
+  },
+  {
+   "name": "Rippling",
+   "ats": "guess",
+   "key": [
+    "rippling"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: rippling)",
    "matched": 0
   },
   {
    "name": "RoadSync",
    "ats": "guess",
-   "key": "roadsync",
+   "key": [
+    "roadsync",
+    "road-sync"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "ashby: HTTP 404",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: roadsync, road-sync)",
    "matched": 0
   },
   {
    "name": "Rubicon",
    "ats": "guess",
-   "key": "rubicon",
+   "key": [
+    "rubicon",
+    "rubicontechnologies",
+    "rubiconglobal"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "ashby: HTTP 404",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: rubicon, rubicontechnologies, rubiconglobal)",
    "matched": 0
   },
   {
-   "name": "Sage",
-   "ats": "workday",
-   "key": "https://sage.wd3.myworkdayjobs.com/Sage",
+   "name": "SecureWorks",
+   "ats": "guess",
+   "key": [
+    "secureworks"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "HTTP 422",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: secureworks)",
    "matched": 0
   },
   {
    "name": "Sharecare",
    "ats": "guess",
-   "key": "sharecare",
+   "key": [
+    "sharecare",
+    "sharecareinc"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "ashby: HTTP 404",
-   "matched": 0
-  },
-  {
-   "name": "Southern Company",
-   "ats": "workday",
-   "key": "https://southernco.wd1.myworkdayjobs.com/SouthernCompany",
-   "ok": false,
-   "fetched": 0,
-   "error": "HTTP 422",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: sharecare, sharecareinc)",
    "matched": 0
   },
   {
    "name": "Stord",
    "ats": "guess",
-   "key": "stord",
+   "key": [
+    "stord",
+    "stordinc",
+    "stord-inc"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "ashby: HTTP 404",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: stord, stordinc, stord-inc)",
    "matched": 0
   },
   {
    "name": "Terminus",
    "ats": "guess",
-   "key": "terminus",
+   "key": [
+    "terminus",
+    "terminusplatform",
+    "terminussoftware"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "ashby: HTTP 404",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: terminus, terminusplatform, terminussoftware)",
+   "matched": 0
+  },
+  {
+   "name": "Cox Enterprises",
+   "ats": "manual",
+   "key": "https://jobs.coxenterprises.com/",
+   "ok": false,
+   "fetched": 0,
+   "error": null,
+   "manual": true,
+   "url": "https://jobs.coxenterprises.com/",
+   "matched": 0
+  },
+  {
+   "name": "Delta Air Lines",
+   "ats": "manual",
+   "key": "https://www.delta.com/us/en/careers/overview",
+   "ok": false,
+   "fetched": 0,
+   "error": null,
+   "manual": true,
+   "url": "https://www.delta.com/us/en/careers/overview",
+   "matched": 0
+  },
+  {
+   "name": "HD Supply",
+   "ats": "manual",
+   "key": "https://hdsupply.jobs/",
+   "ok": false,
+   "fetched": 0,
+   "error": null,
+   "manual": true,
+   "url": "https://hdsupply.jobs/",
+   "matched": 0
+  },
+  {
+   "name": "Intercontinental Exchange",
+   "ats": "manual",
+   "key": "https://www.ice.com/careers",
+   "ok": false,
+   "fetched": 0,
+   "error": null,
+   "manual": true,
+   "url": "https://www.ice.com/careers",
+   "matched": 0
+  },
+  {
+   "name": "NCR Voyix",
+   "ats": "manual",
+   "key": "https://www.ncrvoyix.com/careers",
+   "ok": false,
+   "fetched": 0,
+   "error": null,
+   "manual": true,
+   "url": "https://www.ncrvoyix.com/careers",
+   "matched": 0
+  },
+  {
+   "name": "Sage",
+   "ats": "manual",
+   "key": "https://www.sage.com/en-us/company/careers/job-search/",
+   "ok": false,
+   "fetched": 0,
+   "error": null,
+   "manual": true,
+   "url": "https://www.sage.com/en-us/company/careers/job-search/",
+   "matched": 0
+  },
+  {
+   "name": "Southern Company / Georgia Power",
+   "ats": "manual",
+   "key": "https://southerncompany.jobs/",
+   "ok": false,
+   "fetched": 0,
+   "error": null,
+   "manual": true,
+   "url": "https://southerncompany.jobs/",
+   "matched": 0
+  },
+  {
+   "name": "UPS",
+   "ats": "manual",
+   "key": "https://www.jobs-ups.com/",
+   "ok": false,
+   "fetched": 0,
+   "error": null,
+   "manual": true,
+   "url": "https://www.jobs-ups.com/",
    "matched": 0
   },
   {
@@ -227,11 +301,29 @@
    "matched": 0
   },
   {
+   "name": "Bandwidth",
+   "ats": "greenhouse",
+   "key": "bandwidth",
+   "ok": true,
+   "fetched": 21,
+   "error": null,
+   "matched": 0
+  },
+  {
    "name": "Bark",
    "ats": "greenhouse",
    "key": "bark",
    "ok": true,
    "fetched": 1,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "Brex",
+   "ats": "greenhouse",
+   "key": "brex",
+   "ok": true,
+   "fetched": 249,
    "error": null,
    "matched": 0
   },
@@ -278,7 +370,25 @@
    "ok": true,
    "fetched": 178,
    "error": null,
-   "matched": 1
+   "matched": 0
+  },
+  {
+   "name": "Flock Safety",
+   "ats": "ashby",
+   "key": "flock",
+   "ok": true,
+   "fetched": 12,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "Florence Healthcare",
+   "ats": "lever",
+   "key": "florence",
+   "ok": true,
+   "fetched": 19,
+   "error": null,
+   "matched": 0
   },
   {
    "name": "Fullstory",
@@ -317,11 +427,38 @@
    "matched": 0
   },
   {
+   "name": "Groundfloor",
+   "ats": "greenhouse",
+   "key": "groundfloorfinance",
+   "ok": true,
+   "fetched": 2,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "Gusto",
+   "ats": "greenhouse",
+   "key": "gusto",
+   "ok": true,
+   "fetched": 82,
+   "error": null,
+   "matched": 2
+  },
+  {
    "name": "Homebound",
    "ats": "ashby",
    "key": "homebound",
    "ok": true,
    "fetched": 10,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "HubSpot",
+   "ats": "greenhouse",
+   "key": "hubspotjobs",
+   "ok": true,
+   "fetched": 141,
    "error": null,
    "matched": 0
   },
@@ -335,13 +472,31 @@
    "matched": 0
   },
   {
+   "name": "Klaviyo",
+   "ats": "greenhouse",
+   "key": "klaviyo",
+   "ok": true,
+   "fetched": 126,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "Litmos",
+   "ats": "greenhouse",
+   "key": "litmos",
+   "ok": true,
+   "fetched": 11,
+   "error": null,
+   "matched": 0
+  },
+  {
    "name": "Manhattan Associates",
    "ats": "workday",
    "key": "https://manh.wd5.myworkdayjobs.com/External",
    "ok": true,
    "fetched": 36,
    "error": null,
-   "matched": 1
+   "matched": 0
   },
   {
    "name": "OneTrust",
@@ -353,6 +508,15 @@
    "matched": 2
   },
   {
+   "name": "Pindrop",
+   "ats": "greenhouse",
+   "key": "pindropsecurity",
+   "ok": true,
+   "fetched": 20,
+   "error": null,
+   "matched": 0
+  },
+  {
    "name": "PrizePicks",
    "ats": "greenhouse",
    "key": "prizepicks",
@@ -360,6 +524,15 @@
    "fetched": 32,
    "error": null,
    "matched": 1
+  },
+  {
+   "name": "Ramp",
+   "ats": "greenhouse",
+   "key": "ramp",
+   "ok": true,
+   "fetched": 1,
+   "error": null,
+   "matched": 0
   },
   {
    "name": "Salesloft",
@@ -371,13 +544,31 @@
    "matched": 1
   },
   {
+   "name": "Samsara",
+   "ats": "greenhouse",
+   "key": "samsara",
+   "ok": true,
+   "fetched": 299,
+   "error": null,
+   "matched": 5
+  },
+  {
    "name": "The Home Depot",
    "ats": "workday",
    "key": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot",
    "ok": true,
    "fetched": 635,
    "error": null,
-   "matched": 10
+   "matched": 9
+  },
+  {
+   "name": "Toast",
+   "ats": "greenhouse",
+   "key": "toast",
+   "ok": true,
+   "fetched": 326,
+   "error": null,
+   "matched": 0
   },
   {
    "name": "Truist",
