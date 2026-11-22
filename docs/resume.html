@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tailored resume</title>
+<style>
+/* VOICE work: a printed one page resume, plus a slim toolbar that never prints
+   IDEA the exact resume Micah sends, retuned for one posting
+   PICTURE the resume page itself, at real proportions
+   COLOUR white page on a grey desk, green toolbar
+   TYPE Times for the resume (matches his PDFs), system sans for the toolbar
+   LAYOUT toolbar on top, page below scaled to fit the phone */
+:root{color-scheme:light;--top:#00463c}
+*{box-sizing:border-box;min-width:0}
+html,body{margin:0}
+body{background:#e9ecea;font:15px/1.45 system-ui,sans-serif;color:#111}
+.bar{position:sticky;top:0;z-index:2;background:var(--top);color:#fff;padding:12px 16px;display:grid;gap:10px}
+.bar b{font-size:16px}
+.bar small{color:#cfe3dc}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.row input{font:16px system-ui;padding:10px 12px;border-radius:8px;border:0;flex:1 1 220px}
+.btn{font:600 15px system-ui;padding:10px 14px;min-height:44px;border-radius:8px;border:0;background:#e6f5c8;color:#0f1a17;cursor:pointer;text-decoration:none}
+.btn.ghost{background:transparent;color:#fff;border:1px solid #ffffff66}
+.tip{font-size:13px;color:#cfe3dc}
+.desk{padding:16px;overflow-x:auto}
+.page{width:8.5in;min-height:11in;margin:0 auto;background:#fff;padding:.45in .5in;box-shadow:0 1px 6px #0002;font:10pt/1.22 "Times New Roman",Times,serif;transform-origin:top left}
+.page h1{font:700 20pt/1.1 "Times New Roman",Times,serif;text-align:center;margin:0}
+.contact{text-align:center;font-size:10pt;margin:2px 0 4px}
+.contact span+span::before{content:" | "}
+.page h2{font:400 11.5pt "Times New Roman",Times,serif;text-transform:uppercase;margin:7px 0 0;border-bottom:.6pt solid #000;padding-bottom:1px}
+.two{display:flex;justify-content:space-between;gap:12px}
+.two>:last-child{text-align:right;white-space:nowrap}
+.page ul{margin:1px 0 3px;padding-left:22px}
+.page li{margin:0}
+.job{margin-top:3px;break-inside:avoid}
+.page p{margin:2px 0}
+.err{max-width:600px;margin:40px auto;background:#fff;padding:20px;border-radius:10px}
+@media print{
+  @page{size:letter;margin:0}
+  body{background:#fff}
+  .bar,.err{display:none}
+  .desk{padding:0;overflow:visible}
+  .page{box-shadow:none;margin:0;transform:none!important}
+}
+</style>
+</head>
+<body>
+<div class="bar" id="bar">
+  <div><b id="forJob">Tailored resume</b><br><small id="forWhy"></small></div>
+  <div class="row">
+    <input id="email" type="email" inputmode="email" placeholder="Your email (saved only on this phone)" autocomplete="email">
+    <button class="btn" id="save">Save as PDF</button>
+    <a class="btn ghost" id="apply" target="_blank" rel="noopener">Open posting</a>
+    <a class="btn ghost" href="./">Back</a>
+  </div>
+  <div class="tip">On iPhone: Save as PDF, then the share button, then Save to Files. Built only from facts on your real resume.</div>
+</div>
+<div class="desk"><div class="page" id="page"></div></div>
+<script>
+{
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ALL=["solar","founder","grove","ta","walmart","starbucks"];
+const NO_SB=["solar","founder","grove","ta","walmart"];
+// One plan per job family. Every sentence restates facts from Micah's resume.
+const PLANS={
+ revops:{why:"Leads with the $143K pipeline, cross team work and your data tools, since sales ops supports sellers.",
+  summary:"Information Systems senior (December 2026) with field sales experience and an understanding of how selling works. Built a solar sales pipeline from zero that generated $143K+ in revenue across four territories in two states, and relayed customer needs to other teams to keep deals moving. Skilled in Excel and Tableau, with coursework in Information Systems Management and Systems Analysis and Design.",
+  exp:NO_SB,courses:["ism","sad","dm","sales","ops","mkt"],proj:["ncsc","hack"],skills:["data","sales","tools2"],
+  bul:{solar:["s_pipe","s_relay","s_trans","s_vol"],founder:["f_ai","f_launch","f_cold"]}},
+ systems:{why:"Puts your IS degree and systems coursework first; business systems roles hire on that.",
+  summary:"Information Systems senior (December 2026) with coursework in Systems Analysis and Design, Information Systems Management, and Data Mining. Learns new software quickly, uses AI tools daily, and explains technical details clearly to non technical users from field sales experience.",
+  exp:NO_SB,courses:["sad","ism","dm","ops","sales","mkt"],proj:["hack","ama"],skills:["tech","data","tools2"],order:["edu","exp","proj","sk"],
+  bul:{solar:["s_trans","s_relay","s_pipe"],founder:["f_ai","f_launch","f_cold"]}},
+ implementation:{why:"Leads with explaining technical details to customers and working across teams.",
+  summary:"Information Systems senior (December 2026) with coursework in Systems Analysis and Design and Operations Management. Explains technical details clearly to customers from field sales experience, coordinates across teams to keep work moving, and learns new software quickly. Taught students Logic Pro as a Teaching Assistant.",
+  exp:NO_SB,courses:["sad","ops","ism","dm","sales","mkt"],proj:["hack","ncsc"],skills:["tech","tools2","sales"],
+  bul:{solar:["s_trans","s_relay","s_pipe"]}},
+ success:{why:"Leads with service and support: answering technical questions, resolving customer issues.",
+  summary:"Information Systems senior (December 2026) with customer service and technical communication experience. Answered technical questions in real time as a Teaching Assistant, resolved order issues at Walmart, and explained technical details clearly to customers in field sales. Patient listener who documents problems and follows through.",
+  exp:ALL,courses:["sad","ism","ops","dm","sales","mkt"],proj:["hack"],skills:["tech","tools2","sales"],
+  bul:{solar:["s_trans","s_relay"]}},
+ analyst:{why:"Puts education and data coursework first, then experience; analyst roles screen on tools.",
+  summary:"Information Systems senior (December 2026) with coursework in Data Mining (CRISP-DM, RapidMiner), Systems Analysis and Design, and Information Systems Management. Skilled in Excel and Tableau, and experienced researching buyers and setting pricing as an e-commerce founder. Analytical and quick to learn a new industry.",
+  exp:NO_SB,courses:["dm","sad","ism","ops","sales","mkt"],proj:["ama","hack"],skills:["data","tools2","sales"],order:["edu","exp","proj","sk"],
+  bul:{founder:["f_launch","f_ai","f_cold"],solar:["s_pipe","s_relay","s_trans"]}},
+ programs:{why:"Leads with leadership, operations coursework and customer facing work; trainee programs hire on potential.",
+  summary:"Information Systems senior (December 2026) with leadership experience as chapter Secretary of Phi Beta Sigma and coursework in Operations Management. Built a solar sales pipeline that generated $143K+ in revenue across four territories in two states, relayed customer needs across teams, and fulfilled high volume orders at Walmart. Coachable and ready to learn every part of the business.",
+  exp:ALL,courses:["ops","ism","sad","dm","sales","mkt"],proj:["ncsc","hack"],skills:["sales","data","tools2"],
+  bul:{solar:["s_pipe","s_relay","s_vol"]}},
+ other:{why:"A balanced version: degree, real results, and customer facing work.",
+  summary:"Information Systems senior (December 2026) who learns new systems quickly and works well with people. Built a solar sales pipeline from zero that generated $143K+ in revenue, relayed customer needs across teams, and served customers at Walmart and Starbucks. Coursework in Systems Analysis and Design, Operations Management, and Data Mining.",
+  exp:ALL,courses:["sad","ops","dm","ism","sales","mkt"],proj:["hack","ncsc"],skills:["data","tools2","sales"],
+  bul:{solar:["s_pipe","s_relay","s_trans"]}}
+};
+
+function tweak(plan,job){
+  const p=JSON.parse(JSON.stringify(plan)),tools=job.tools||[];
+  // Salesforce or Tableau in the posting: lead skills with the data line, which lists them
+  if(tools.includes("Tableau")&&p.skills[0]!=="data")p.skills=["data",...p.skills.filter(s=>s!=="data")];
+  return p;
+}
+
+function render(prof,job,email){
+  const plan=tweak(PLANS[job.family]||PLANS.other,job);
+  const contact=[prof.location,email,prof.linkedin].filter(Boolean).map(x=>`<span>${esc(x)}</span>`).join("");
+  const sec=t=>`<h2>${t}</h2>`;
+  const two=(a,b,i)=>`<div class="two"${i?' style="font-style:italic"':""}><span>${i?esc(a):"<b>"+esc(a)+"</b>"}</span><span>${esc(b)}</span></div>`;
+  const e=prof.education;
+  const edu=sec("Education")+two(e.school,e.place)+two(e.degree,e.date,1)+`<ul>
+    <li><b>Relevant Coursework:</b> ${plan.courses.map(c=>esc(prof.courses[c])).join(", ")}</li>
+    <li><b>Leadership:</b> ${esc(e.leadership)}</li><li><b>Involvement:</b> ${esc(e.involvement)}</li></ul>`;
+  const order=prof.chronology.filter(k=>plan.exp.includes(k));
+  const exp=sec("Experience")+order.map(k=>{const x=prof.experience[k];
+    const bl=(plan.bul[k]||prof.bullets_by_job[k]).map(b=>`<li>${esc(prof.bullets[b])}</li>`).join("");
+    return `<div class="job">${two(x.title,x.dates)}${two(x.org,x.place,1)}<ul>${bl}</ul></div>`}).join("");
+  const proj=plan.proj.length?sec("Competitions &amp; Projects")+`<ul>${plan.proj.map(k=>`<li><b>${esc(prof.projects[k].label)}</b>${/^[,.:]/.test(prof.projects[k].text)?"":" "}${esc(prof.projects[k].text)}</li>`).join("")}</ul>`:"";
+  const sk=sec("Skills")+plan.skills.map(k=>`<p><b>${esc(prof.skills[k].label)}:</b> ${esc(prof.skills[k].text)}</p>`).join("");
+  const parts={edu,exp,proj,sk};
+  $("page").innerHTML=`<h1>${esc(prof.name)}</h1><div class="contact">${contact}</div>${sec("Summary")}<p>${esc(plan.summary)}</p>`+
+    (plan.order||["exp","edu","proj","sk"]).map(k=>parts[k]).join("");
+  $("forWhy").textContent=plan.why;
+  fit();
+}
+
+function fit(){
+  const pg=$("page"),avail=document.documentElement.clientWidth-32,w=8.5*96;
+  const s=Math.min(1,avail/w);
+  pg.style.transform=s<1?`scale(${s})`:"";
+  pg.parentElement.style.height=s<1?(pg.offsetHeight*s+32)+"px":"";
+}
+
+const id=new URLSearchParams(location.search).get("id");
+let email="";try{email=localStorage.getItem("offlist-email")||""}catch(e){}
+$("email").value=email;
+Promise.all([fetch("data/profile.json").then(r=>r.json()),fetch("data/jobs.json",{cache:"no-store"}).then(r=>r.json())])
+.then(([prof,jd])=>{
+  const job=(jd.jobs||[]).find(j=>j.id===id);
+  if(!job){document.querySelector(".desk").innerHTML='<div class="err">That job is no longer in today\'s list. Go back and pick another.</div>';return}
+  $("forJob").textContent=`For ${job.title} at ${job.company}`;
+  $("apply").href=job.url;
+  document.title=`Micah Mosley Resume ${job.company}`;
+  render(prof,job,email);
+  $("email").addEventListener("input",ev=>{email=ev.target.value.trim();try{localStorage.setItem("offlist-email",email)}catch(e){}render(prof,job,email)});
+  $("save").addEventListener("click",()=>{if(!email&&!confirm("No email on the resume yet. Save anyway?"))return;window.print()});
+  window.addEventListener("resize",fit);
+}).catch(()=>{document.querySelector(".desk").innerHTML='<div class="err">Couldn\'t load your resume facts. Try again in a minute.</div>'});
+}
+</script>
+</body>
+</html>

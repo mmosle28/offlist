@@ -149,3 +149,59 @@ def tools_mentioned(text):
     if not text:
         return []
     return [name for name, rx in _TOOLS if rx.search(text)]
+
+
+# ---------------------------------------------------------------- entry level signals
+_ENTRY_TEXT = re.compile(
+    r"\b(entry[\s-]level|new grad(?:uate)?s?|recent (?:college )?grad(?:uate)?s?|early[\s-]career|"
+    r"graduating (?:seniors?|students?)|class of 202\d|no (?:prior )?experience (?:required|necessary|needed)|"
+    r"0\s*(?:-|–|to)\s*[12]\s*years?|will train|paid training|training program)\b",
+    re.I,
+)
+_ENTRY_TITLE = re.compile(
+    r"\b(entry[\s-]level|junior|jr\.?|associate|new grad|graduate|trainee|apprentice|"
+    r"analyst i|specialist i|coordinator i|level i|tier 1|early career)\b",
+    re.I,
+)
+# Generic office titles worth keeping when the posting says it's entry level.
+_OFFICE_TITLE = re.compile(
+    r"\b(analyst|coordinator|specialist|associate|administrator|consultant|assistant|"
+    r"operations|support|program|planner|technician|representative|advisor|"
+    r"generalist|processor|scheduler|dispatcher|buyer|auditor|examiner)\b",
+    re.I,
+)
+
+
+def entry_signal(title, text):
+    """True when the title or description says this is meant for new or early career people."""
+    return bool(_ENTRY_TITLE.search(title or "") or _ENTRY_TEXT.search(text or ""))
+
+
+def office_title(title):
+    return bool(_OFFICE_TITLE.search(title or ""))
+
+
+CORE_FAMILIES = {"revops", "systems", "implementation", "analyst"}
+
+
+def fit_score(job, today_ord):
+    """0 to 100: how likely this is a real entry level job worth Micah's time."""
+    s = 50
+    if job.get("entry"):
+        s += 20
+    y = job.get("min_years")
+    s += {None: 5, 0: 15, 1: 10, 2: 0}.get(y, -40)
+    if job.get("family") in CORE_FAMILIES:
+        s += 10
+    elif job.get("family") == "other":
+        s -= 5
+    if "SQL" in (job.get("tools") or []):
+        s -= 10
+    try:
+        age = today_ord - __import__("datetime").date.fromisoformat(job["first_seen"]).toordinal()
+        s += 10 if age <= 3 else 5 if age <= 7 else 0
+    except (KeyError, ValueError):
+        pass
+    if job.get("pay"):
+        s += 3
+    return max(0, min(100, s))

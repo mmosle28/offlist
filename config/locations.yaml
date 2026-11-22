@@ -19,7 +19,7 @@ regions:
     places: [", ga", "georgia"]
   - id: remote
     name: Remote (US)
-    places: [remote, anywhere, "work from home", virtual]
+    places: [remote, anywhere, "work from home", virtual, flexible]
 
 # A remote job is dropped if its location only names one of these and not the US.
 non_us_markers: [canada, united kingdom, " uk", london, india, philippines, mexico,

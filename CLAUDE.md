@@ -10,12 +10,15 @@ A daily job scraper plus a static site. `offlist/run.py` reads the three files i
 - "A company shows an error": check the Companies tab / `docs/data/status.json`, then fix its link in `companies.yaml`.
 - "Look for title Y" / "stop showing Z": `config/roles.yaml` (`titles` per family, `exclude_titles` to drop).
 - "Add a city": `config/locations.yaml`.
-- Site look or features: `docs/index.html`.
+- Site look or features: `docs/index.html`. Resume builder: `docs/resume.html` (one plan per role family).
+- "Change what's on my resume": `docs/data/profile.json`. Only facts Micah has actually stated. Never add the email or phone there.
+- Discovered companies live in `docs/data/discovered.json` (written by the Action). To stop watching one, set `"found": false` and a recent `last_try`.
 
 ## Rules
 - Run `python -m unittest -v` before committing. Add a test when changing matching rules.
 - Never commit invented or sample jobs to `docs/data/`. `--dry` writes to a temp folder on purpose. Real data only comes from the GitHub Action.
 - Don't hand-edit `docs/data/seen.json` or `ats_cache.json` except to clear a wrong cache entry.
+- Adzuna is called only on scheduled and manual runs (not on pushes) to save its small free quota.
 - Keep dependencies to the standard library plus PyYAML.
 - In user-facing text (site copy, README), avoid em dashes and words joined with hyphens where a plain phrase works.
 - Matching is word-boundary based (`filters._phrase_regex`), so "lead" does not drop "leadership".

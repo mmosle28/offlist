@@ -247,3 +247,100 @@ FETCHERS = {
     "smartrecruiters": fetch_smartrecruiters,
 }
 GUESS_ORDER = ["greenhouse", "lever", "ashby", "smartrecruiters"]
+
+
+# ---------------------------------------------------------------- discovery feeds
+# These search across thousands of employers at once. Jobs found here are shown
+# like any other, and their companies are added to the daily watch list.
+
+MUSE_LOCATIONS = ["Atlanta, GA", "Flexible / Remote"]
+
+
+def parse_muse(payload):
+    out = []
+    for j in payload.get("results", []):
+        locs = "; ".join(l.get("name", "") for l in j.get("locations") or [])
+        levels = [l.get("name", "") for l in j.get("levels") or []]
+        out.append({
+            "title": (j.get("name") or "").strip(),
+            "company": ((j.get("company") or {}).get("name") or "").strip(),
+            "location": locs,
+            "remote": "remote" in locs.lower() or "flexible" in locs.lower(),
+            "url": (j.get("refs") or {}).get("landing_page"),
+            "posted": _iso(j.get("publication_date")),
+            "description": html_to_text(j.get("contents", "")),
+            "pay": None,
+            "ats": "themuse",
+            "entry_hint": any("entry" in l.lower() for l in levels),
+        })
+    return out
+
+
+def fetch_muse(max_pages=15):
+    out = []
+    for page in range(max_pages):
+        q = urllib.parse.urlencode(
+            [("page", page), ("level", "Entry Level")] + [("location", l) for l in MUSE_LOCATIONS])
+        data = _get(f"https://www.themuse.com/api/public/jobs?{q}")
+        out += parse_muse(data)
+        if page + 1 >= data.get("page_count", 0):
+            break
+    return out
+
+
+ADZUNA_QUERIES = [
+    {"what": "entry level", "where": "Atlanta, GA"},
+    {"what": "new grad", "where": "Atlanta, GA"},
+    {"what_or": "analyst coordinator specialist associate", "what": "junior", "where": "Atlanta, GA"},
+    {"what": "implementation specialist", "where": "Atlanta, GA"},
+]
+
+
+def parse_adzuna(payload):
+    out = []
+    for j in payload.get("results", []):
+        lo, hi = j.get("salary_min"), j.get("salary_max")
+        pay = None
+        if lo and hi and not j.get("salary_is_predicted") in ("1", 1, True):
+            pay = f"${int(lo):,} - ${int(hi):,}" if lo != hi else f"${int(lo):,}"
+        loc = (j.get("location") or {}).get("display_name", "")
+        out.append({
+            "title": html_to_text(j.get("title", "")),
+            "company": ((j.get("company") or {}).get("display_name") or "").strip(),
+            "location": loc,
+            "remote": "remote" in (j.get("title", "") + loc).lower(),
+            "url": j.get("redirect_url"),
+            "posted": _iso(j.get("created")),
+            "description": html_to_text(j.get("description", "")),
+            "pay": pay,
+            "ats": "adzuna",
+            "entry_hint": False,
+        })
+    return out
+
+
+def fetch_adzuna(app_id, app_key, max_calls=4):
+    out = []
+    for q in ADZUNA_QUERIES[:max_calls]:
+        params = {"app_id": app_id, "app_key": app_key, "results_per_page": 50,
+                  "max_days_old": 21, "distance": 40, "content-type": "application/json"}
+        params.update(q)
+        out += parse_adzuna(_get("https://api.adzuna.com/v1/api/jobs/us/search/1?" +
+                                 urllib.parse.urlencode(params)))
+    return out
+
+
+def slug_guesses(company):
+    """Likely board names for a company, e.g. 'Flock Safety' -> ['flocksafety', 'flock-safety', 'flock']."""
+    base = re.sub(r"\b(inc|llc|ltd|corp|corporation|co|company|group|holdings|the)\b\.?", "",
+                  company.lower())
+    words = re.findall(r"[a-z0-9]+", base)
+    if not words:
+        return []
+    cands = ["".join(words), "-".join(words), words[0]]
+    seen, out = set(), []
+    for c in cands:
+        if len(c) >= 3 and c not in seen:
+            seen.add(c)
+            out.append(c)
+    return out

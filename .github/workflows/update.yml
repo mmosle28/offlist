@@ -29,6 +29,9 @@ jobs:
       - name: Tests
         run: python -m unittest -v
       - name: Fetch jobs
+        env:
+          ADZUNA_APP_ID: ${{ github.event_name != 'push' && secrets.ADZUNA_APP_ID || '' }}
+          ADZUNA_APP_KEY: ${{ github.event_name != 'push' && secrets.ADZUNA_APP_KEY || '' }}
         run: python -m offlist.run
       - name: Save results
         run: |

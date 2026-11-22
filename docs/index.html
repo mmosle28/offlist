@@ -89,7 +89,7 @@ footer{color:var(--mute);font-size:14px}
   <div class="wrap topgrid">
     <div>
       <h1>offlist</h1>
-      <p class="lede">Entry level jobs most people never search for, pulled every day straight from company careers sites around Atlanta and Augusta.</p>
+      <p class="lede">Entry level jobs most people never search for. Every morning it searches job feeds across thousands of employers, finds companies hiring new grads around Atlanta, and starts watching their careers sites too.</p>
       <div class="figs">
         <div><span class="num" id="fTotal">0</span><small>open roles</small></div>
         <div><span class="num" id="fNew">0</span><small>new this week</small></div>
@@ -168,13 +168,15 @@ function yearsTag(y){
 function card(j){
   const m=st.marks[j.id]||{};
   const isNew=daysAgo(j.first_seen)<=3;
-  const when=j.posted?`Posted ${j.posted}`:(j.posted_text||`Found ${j.first_seen}`);
+  const via={themuse:" · via The Muse",adzuna:" · via Adzuna"}[j.ats]||"";
+  const when=(j.posted?`Posted ${j.posted}`:(j.posted_text||`Found ${j.first_seen}`))+via;
   return `<article class="job">
     <h3>${esc(j.title)}</h3>
     <div class="co">${esc(j.company)} · ${esc(j.location||regName(j.region))}</div>
-    <div class="tags">${isNew?'<span class="tag new">New</span>':""}<span class="tag">${esc(famName(j.family))}</span>${yearsTag(j.min_years)}${j.pay?`<span class="tag good">${esc(j.pay)}</span>`:""}${j.remote?'<span class="tag">Remote</span>':""}${(j.tools||[]).map(t=>`<span class="tag${t==="SQL"?" warn":""}">${esc(t)}</span>`).join("")}</div>
+    <div class="tags">${j.score>=75?'<span class="tag good">Strong fit</span>':""}${j.entry?'<span class="tag good">Entry level</span>':""}${isNew?'<span class="tag new">New</span>':""}<span class="tag">${esc(famName(j.family))}</span>${yearsTag(j.min_years)}${j.pay?`<span class="tag good">${esc(j.pay)}</span>`:""}${j.remote?'<span class="tag">Remote</span>':""}${(j.tools||[]).map(t=>`<span class="tag${t==="SQL"?" warn":""}">${esc(t)}</span>`).join("")}</div>
     <div class="co">${esc(when)}</div>
     <div class="acts"><a class="btn go" href="${esc(j.url)}" target="_blank" rel="noopener">Open posting</a>
+    <a class="btn" href="resume.html?id=${j.id}">Tailor resume</a>
     <button class="btn" data-mark="saved" data-id="${j.id}" aria-pressed="${!!m.saved}">${m.saved?"Saved":"Save"}</button>
     <button class="btn" data-mark="applied" data-id="${j.id}" aria-pressed="${!!m.applied}">${m.applied?"Applied":"Mark applied"}</button></div>
   </article>`;
@@ -190,7 +192,7 @@ function renderBars(){
 function render(){
   const v=visible();
   $("list").innerHTML=v.length?v.map(card).join(""):`<div class="empty">${st.jobs.length?"Nothing matches these filters. Try All areas or turn off a filter.":"No jobs yet. The first daily update hasn't run. Once it does, roles show up here automatically."}</div>`;
-  $("count").textContent=st.jobs.length?`${v.length} of ${st.jobs.length} roles${st.fam?" in "+famName(st.fam):""}`:"";
+  $("count").textContent=st.jobs.length?`${v.length} of ${st.jobs.length} roles${st.fam?" in "+famName(st.fam):""}, best fits first`:"";
   renderBars();
 }
 
@@ -200,15 +202,15 @@ function renderRoles(){
     return `<div class="role"><h3><span>${esc(f.name)}</span><button class="chip" data-gofam="${f.id}">${n} open</button></h3>
     <p><span class="k">What it is.</span> ${esc(f.what)}</p>
     <p><span class="k">Why you fit.</span> ${esc(f.why)}</p>
-    <p class="co"><span class="k">Search for:</span> ${f.titles.slice(0,10).map(esc).join(", ")}</p></div>`}).join("");
+    ${f.titles.length?`<p class="co"><span class="k">Search for:</span> ${f.titles.slice(0,10).map(esc).join(", ")}</p>`:""}</div>`}).join("");
 }
 
 function renderCos(s){
   const all=(s.companies||[]);
-  const rows=all.filter(r=>!r.manual), man=all.filter(r=>r.manual);
-  const ok=rows.filter(r=>r.ok).length;
+  const rows=all.filter(r=>!r.manual&&!(r.discovered&&!r.ok)), man=all.filter(r=>r.manual);
+  const ok=rows.filter(r=>r.ok).length, disc=rows.filter(r=>r.discovered&&r.ok).length;
   $("fCos").textContent=rows.length;
-  $("cosNote").textContent=rows.length?`${ok} of ${rows.length} careers sites read on the last update. Red rows need a corrected link in config/companies.yaml.`:"No update has run yet.";
+  $("cosNote").textContent=rows.length?`${ok} of ${rows.length} sources read on the last update, including ${disc} companies offlist discovered on its own. Red rows are companies it couldn't find a readable careers site for.`:"No update has run yet.";
   $("cosBody").innerHTML=rows.map(r=>`<tr><td>${esc(r.name)}</td><td>${esc(r.ats||"")}</td><td class="n">${r.fetched||0}</td><td class="n">${r.matched||0}</td><td class="${r.ok?"okc":"bad"}">${r.ok?"OK":esc(r.error||"failed")}</td></tr>`).join("")+
     man.map(r=>`<tr><td>${esc(r.name)}</td><td>own site</td><td class="n">–</td><td class="n">–</td><td><a href="${esc(r.url)}" target="_blank" rel="noopener">Check by hand</a></td></tr>`).join("");
 }

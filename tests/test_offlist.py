@@ -125,5 +125,41 @@ class TestPipeline(unittest.TestCase):
             self.assertTrue(all(j["first_seen"] == "2026-11-21" for j in jobs2))
 
 
+class TestDiscovery(unittest.TestCase):
+    def test_feeds_and_other_family(self):
+        fx = Path(__file__).parent / "fixtures"
+        muse = sources.parse_muse(json.loads((fx / "muse.json").read_text()))
+        adz = sources.parse_adzuna(json.loads((fx / "adzuna.json").read_text()))
+        self.assertEqual(adz[0]["title"], "Junior Operations Coordinator")
+        self.assertEqual(adz[0]["pay"], "$45,000")
+        feeds = lambda: ([{"name": "The Muse (search)", "ats": "themuse", "ok": True,
+                           "fetched": 3, "error": None, "feed": True}], muse + adz)
+        with tempfile.TemporaryDirectory() as tmp:
+            cos = [{"name": n} for n in ("Fixture GH", "Fixture Lever", "Fixture Ashby")]
+            jobs, st = runner.run(fetch=runner._fixture_fetch, today="2026-11-22",
+                                  companies=cos, out_dir=Path(tmp), feeds=feeds)
+            by = {j["title"]: j for j in jobs}
+            # odd title kept because the posting says it's for new grads
+            self.assertEqual(by["Claims Processor"]["family"], "other")
+            self.assertTrue(by["Claims Processor"]["entry"])
+            self.assertNotIn("Barista", by)
+            self.assertEqual(by["Junior Operations Coordinator"]["region"], "atl")
+            # the feed copy of a job the company site already listed is dropped
+            self.assertEqual(sum(1 for j in jobs if j["title"] == "Implementation Specialist"), 1)
+            self.assertEqual(by["Implementation Specialist"]["ats"], "greenhouse")
+            # best fits come first
+            scores = [j["score"] for j in jobs]
+            self.assertEqual(scores, sorted(scores, reverse=True))
+            self.assertLess(by["Implementation Specialist"]["score"], by["Sales Operations Analyst"]["score"])
+            disc = json.loads((Path(tmp) / "discovered.json").read_text())
+            self.assertIn("Acme Freight Co", disc)
+            self.assertEqual(disc["Acme Freight Co"]["slugs"][0], "acmefreight")
+            self.assertEqual(st[-1]["matched"], 2)
+
+    def test_slug_guesses(self):
+        self.assertEqual(sources.slug_guesses("Flock Safety, Inc."), ["flocksafety", "flock-safety", "flock"])
+        self.assertEqual(sources.slug_guesses("The Home Depot"), ["homedepot", "home-depot", "home"])
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -4,10 +4,11 @@
 
 Search "information systems jobs" and you get software engineering roles you can't do and help desk roles that pay $40K. Meanwhile there are whole families of jobs that fit an IS or business degree almost perfectly (Sales Operations Analyst, Revenue Operations, Implementation Specialist, Business Systems Analyst, Salesforce Admin) that students rarely hear about and rarely search for. Many of them are also posted only on the company's own careers page, never on Handshake or LinkedIn.
 
-offlist does two things about that:
+offlist does three things about that:
 
 1. **Names the hidden roles.** A plain-English guide to job families an IS or business grad fits, what each job actually is, and the titles to search for.
-2. **Finds them at the source.** Every morning a GitHub Action reads the public job feeds behind company careers pages (Greenhouse, Lever, Ashby, SmartRecruiters and Workday), keeps only those role families in metro Atlanta, Augusta, Georgia or remote, drops senior titles, and flags postings that ask for 3+ years of experience. Results publish to a phone-friendly site on GitHub Pages.
+2. **Discovers employers.** Every morning it searches job feeds that span thousands of employers (The Muse, and Adzuna when a key is set) for entry level roles around Atlanta. Any company it finds there gets added to the watch list, so the list of careers sites grows on its own.
+3. **Finds them at the source.** Every morning a GitHub Action reads the public job feeds behind company careers pages (Greenhouse, Lever, Ashby, SmartRecruiters and Workday), keeps only those role families in metro Atlanta, Augusta, Georgia or remote, drops senior titles, and flags postings that ask for 3+ years of experience. Results publish to a phone-friendly site on GitHub Pages.
 
 ## How it works
 
@@ -21,6 +22,9 @@ config/locations.yaml ─┘        │
 
 - **Auto detection.** Give a company a `guess` name and offlist tries it on each system, then caches whichever works in `docs/data/ats_cache.json`. Or paste any careers link as `url` and it figures out the system from the link.
 - **Experience flag.** Reads each description for phrases like "3+ years of experience" and badges the job green (0 to 2 years), red (3+), or grey (not stated).
+- **Odd titles.** A job with an unusual title is kept when the posting itself says entry level, new grad, recent graduate, or 0 to 2 years.
+- **Fit score.** Each job gets a 0 to 100 score from entry level wording, years asked, role family, SQL, freshness and pay, and the site lists best fits first.
+- **Tailor resume.** Each job has a button that builds a one page resume for it from `docs/data/profile.json` (real resume facts only) and saves as PDF from the phone. The email is typed once on the phone and stored there, not in the repo.
 - **Pay.** Uses the posted salary range when the system provides one, otherwise the first salary-looking range in the description.
 - **Memory.** `docs/data/seen.json` remembers when each job first appeared, so the site can mark what's new.
 - **Status.** The Companies tab shows which careers sites were read and which links need fixing.

@@ -1,0 +1,19 @@
+{
+ "results": [
+  {
+   "title": "Junior <strong>Operations</strong> Coordinator",
+   "company": {
+    "display_name": "Peach Logistics LLC"
+   },
+   "location": {
+    "display_name": "Marietta, Cobb County"
+   },
+   "redirect_url": "https://example.test/adz/1",
+   "created": "2026-11-19T10:00:00Z",
+   "description": "Entry level role. $45,000 a year.",
+   "salary_min": 45000,
+   "salary_max": 45000,
+   "salary_is_predicted": "0"
+  }
+ ]
+}

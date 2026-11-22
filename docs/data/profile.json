@@ -1,0 +1,142 @@
+{
+ "_note": "Facts from Micah's real resume only. Email is not stored here; the site asks for it once and keeps it on the phone.",
+ "name": "Micah Mosley",
+ "location": "Kennesaw, GA",
+ "linkedin": "linkedin.com/in/micahtmo",
+ "education": {
+  "school": "Kennesaw State University, Coles College of Business",
+  "place": "Kennesaw, GA",
+  "degree": "Bachelor of Science in Information Systems",
+  "date": "Expected December 2026",
+  "leadership": "Secretary, Alpha Beta Theta Chapter of Phi Beta Sigma Fraternity, Inc. (Fall 2025 - Present)",
+  "involvement": "KSU Sales Team, Sales Club, American Marketing Association, Business Technology Association (Fall 2026)"
+ },
+ "courses": {
+  "sales": "Professional Sales",
+  "mkt": "Principles of Marketing",
+  "sad": "Systems Analysis and Design",
+  "ism": "Information Systems Management",
+  "dm": "Data Mining (CRISP-DM, RapidMiner)",
+  "ops": "Operations Management"
+ },
+ "experience": {
+  "solar": {
+   "title": "Solar Sales Intern",
+   "dates": "May 2026 - July 2026",
+   "org": "SunPower",
+   "place": "York & Altoona, PA; Petersburg & Fredericksburg, VA"
+  },
+  "founder": {
+   "title": "Founder",
+   "dates": "August 2026 - Present",
+   "org": "Eighth House & Zunoa (E-commerce Brands)",
+   "place": "Kennesaw, GA"
+  },
+  "grove": {
+   "title": "Junior Audio Engineering Extern",
+   "dates": "September 2025 - December 2025",
+   "org": "Grove House Studios",
+   "place": "Acworth, GA"
+  },
+  "ta": {
+   "title": "Teaching Assistant Intern",
+   "dates": "Spring 2025",
+   "org": "Music & Entertainment Business Program, Kennesaw State University",
+   "place": "Kennesaw, GA"
+  },
+  "walmart": {
+   "title": "Digital Team Member",
+   "dates": "June 2023 - August 2023",
+   "org": "Walmart",
+   "place": "Augusta, GA"
+  },
+  "starbucks": {
+   "title": "Barista",
+   "dates": "April 2022 - August 2022",
+   "org": "Starbucks",
+   "place": "Evans, GA"
+  }
+ },
+ "chronology": [
+  "solar",
+  "founder",
+  "grove",
+  "ta",
+  "walmart",
+  "starbucks"
+ ],
+ "bullets": {
+  "s_pipe": "Prospected cold, door to door, across four territories in two states, building a pipeline from zero that generated $143,366.30 in revenue.",
+  "s_vol": "Maintained a high outreach volume and handled objections face to face with homeowners.",
+  "s_trans": "Translated technical solar and financing details into clear pitches focused on value that moved homeowners from first contact to signed agreement.",
+  "s_relay": "Relayed customer needs to other teams across the company to keep deals moving toward close.",
+  "f_launch": "Launched a coffee and tea brand on Shopify, researching the target buyer and building the customer profile, offer structure, and pricing.",
+  "f_cold": "Prospected by cold email, reaching e-commerce creators to recruit affiliate partners paid on commission for a digital product.",
+  "f_ai": "Embedded AI into daily operations (Claude, Higgsfield AI) to research markets, write ad scripts, and produce marketing creative.",
+  "g1": "Supported engineers and artists through consecutive client sessions, communicating clearly to keep tight schedules on track.",
+  "t1": "Taught students Logic Pro and answered technical questions in real time; organized program data for instructors.",
+  "w1": "Fulfilled a high volume of digital orders, resolving availability issues to meet customer deadlines.",
+  "sb1": "Provided customer service and prepared orders for guests."
+ },
+ "bullets_by_job": {
+  "solar": [
+   "s_pipe",
+   "s_vol",
+   "s_trans",
+   "s_relay"
+  ],
+  "founder": [
+   "f_launch",
+   "f_cold",
+   "f_ai"
+  ],
+  "grove": [
+   "g1"
+  ],
+  "ta": [
+   "t1"
+  ],
+  "walmart": [
+   "w1"
+  ],
+  "starbucks": [
+   "sb1"
+  ]
+ },
+ "projects": {
+  "ncsc": {
+   "label": "Rookie Sales Competition",
+   "text": ", KSU Center for Professional Selling (Fall 2026): Competed in needs discovery and solution presentation role plays selling Gartner for Sales Leaders."
+  },
+  "ama": {
+   "label": "AMA Digital Marketing Case Competition",
+   "text": "(Fall 2026): Competed solo, building a paid ads campaign (Meta, Pinterest, Google) targeting e-commerce sellers for client CogBias AI."
+  },
+  "hack": {
+   "label": "HackATL 2026",
+   "text": "Developed Orbit, an app concept that helps young people stay social after college through third spaces."
+  }
+ },
+ "skills": {
+  "sales": {
+   "label": "Sales",
+   "text": "Cold prospecting, needs discovery, objection handling, account and buyer research, pipeline building"
+  },
+  "ai": {
+   "label": "AI & Tools",
+   "text": "Claude, Higgsfield AI, Shopify, Microsoft Excel, Tableau, Canva"
+  },
+  "tech": {
+   "label": "Technical",
+   "text": "Information systems analysis, data mining (RapidMiner), HTML/CSS"
+  },
+  "data": {
+   "label": "Data & Analysis",
+   "text": "Microsoft Excel, Tableau, data mining (RapidMiner), information systems analysis"
+  },
+  "tools2": {
+   "label": "Tools",
+   "text": "Claude, Higgsfield AI, Shopify, Canva, HTML/CSS"
+  }
+ }
+}
