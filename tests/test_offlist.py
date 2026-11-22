@@ -8,7 +8,7 @@ import yaml
 
 from offlist import run as runner
 from offlist import sources
-from offlist.filters import LocationMatcher, RoleMatcher, extract_pay, html_to_text, min_years
+from offlist.filters import LocationMatcher, RoleMatcher, extract_pay, html_to_text, min_years, tools_mentioned
 
 CFG = Path(__file__).resolve().parent.parent / "config"
 ROLES = RoleMatcher(yaml.safe_load((CFG / "roles.yaml").read_text()))
@@ -37,8 +37,15 @@ class TestTitles(unittest.TestCase):
                       "Sales Operations Manager", "Software Engineer", "Data Analyst II",
                       "Implementation Lead", "Customer Success Intern", "Marketing Manager",
                       "Product Owner, Agile - Sales Enablement / Salesforce",
-                      "Barista"]:
+                      "Barista", "Outside Sales Representative Trainee - Atlanta, GA",
+                      "Sales Rotational Development Associate", "Account Executive",
+                      "Business Development Representative", "Inside Sales Specialist"]:
             self.assertIsNone(ROLES.family(title), title)
+
+    def test_sales_ops_survives_sales_filter(self):
+        self.assertEqual(ROLES.family("Sales Operations Analyst"), "revops")
+        self.assertEqual(ROLES.family("Sales Support Specialist"), "revops")
+        self.assertEqual(ROLES.family("Sales Enablement Coordinator"), "revops")
 
     def test_leadership_is_not_lead(self):
         self.assertEqual(ROLES.family("Leadership Development Program"), "programs")
@@ -72,6 +79,11 @@ class TestText(unittest.TestCase):
         self.assertEqual(extract_pay("Starting at $55K a year"), "$55K a year")
         self.assertIsNone(extract_pay("Get a $5 coffee card"))
         self.assertEqual(extract_pay("$22.50 per hour"), "$22.50 per hour")
+
+    def test_tools(self):
+        self.assertEqual(tools_mentioned("Advanced SQL and Tableau; Excel"), ["SQL", "Tableau"])
+        self.assertEqual(tools_mentioned("Experience with PostgreSQL and Power BI"), ["SQL", "Power BI"])
+        self.assertEqual(tools_mentioned("Strong Excel skills"), [])
 
     def test_html(self):
         self.assertEqual(html_to_text("&lt;p&gt;Hi &amp;amp; bye&lt;/p&gt;"), "Hi & bye")

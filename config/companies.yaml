@@ -1,60 +1,78 @@
 # Companies offlist checks every day.
 #
 # Add a company with ONE of these:
-#   url:   paste the company's careers page link. Works for Greenhouse, Lever, Ashby,
-#          SmartRecruiters and Workday links (myworkdayjobs.com). Easiest option.
-#   guess: a short name. offlist tries it on Greenhouse, Lever, Ashby and SmartRecruiters
-#          and remembers whichever works. Good when you don't know their system.
+#   url:    paste the company's careers page link. Works for Greenhouse, Lever, Ashby,
+#           SmartRecruiters and Workday links (myworkdayjobs.com). Easiest option.
+#   guess:  a short name, or a list of names to try, e.g. [flocksafety, flock].
+#           offlist tries each on Greenhouse, Lever, Ashby and SmartRecruiters and
+#           remembers whichever works.
 #   greenhouse / lever / ashby / smartrecruiters: the board name, if you know it.
+#   manual: a careers link for a company whose system offlist can't read yet.
+#           It shows on the site's Companies tab as a link to check by hand.
 #
-# Companies that fail show up on the site's "Companies" tab so they can be fixed.
-# Entries marked "unverified" were added from memory and may need a corrected link.
+# Companies that fail show up on the Companies tab so they can be fixed.
 
 companies:
-  # Atlanta tech and SaaS
+  # Atlanta tech, SaaS and fintech
   - {name: Salesloft, guess: salesloft}
   - {name: Calendly, guess: calendly}
   - {name: OneTrust, guess: onetrust}
   - {name: Greenlight, guess: greenlight}
-  - {name: Bakkt, guess: bakkt}
-  - {name: Cardlytics, guess: cardlytics}
-  - {name: Flock Safety, guess: flocksafety}
   - {name: Fullstory, guess: fullstory}
-  - {name: Stord, guess: stord}
-  - {name: Pindrop, guess: pindrop}
-  - {name: Florence Healthcare, guess: florencehc}
-  - {name: Sharecare, guess: sharecare}
-  - {name: Terminus, guess: terminus}
-  - {name: RoadSync, guess: roadsync}
-  - {name: ParkMobile, guess: parkmobile}
   - {name: PrizePicks, guess: prizepicks}
-  - {name: BitPay, guess: bitpay}
-  - {name: Rubicon, guess: rubicon}
-  - {name: Ingenious Med, guess: ingeniousmed}
-  - {name: Patientco, guess: patientco}
   - {name: Agilysys, guess: agilysys}
-  - {name: Rently, guess: rently}
-  - {name: Vendavo, guess: vendavo}
-  - {name: Bark, guess: bark}
   - {name: Kaseya, guess: kaseya}
-  - {name: Insightsoftware, guess: insightsoftware}
+  - {name: Vendavo, guess: vendavo}
+  - {name: Bakkt, guess: [bakkt, bakktholdings, bakktinc]}
+  - {name: Cardlytics, guess: [cardlytics, cardlyticsinc]}
+  - {name: Flock Safety, guess: [flocksafety, flock-safety, flock]}
+  - {name: Stord, guess: [stord, stordinc, stord-inc]}
+  - {name: Pindrop, guess: [pindrop, pindropsecurity, pindrop-security]}
+  - {name: Florence Healthcare, guess: [florence, florencehealthcare, florence-healthcare]}
+  - {name: RoadSync, guess: [roadsync, road-sync]}
+  - {name: ParkMobile, guess: [parkmobile, parkmobilellc]}
+  - {name: BitPay, guess: [bitpay, bitpayinc]}
+  - {name: Rubicon, guess: [rubicon, rubicontechnologies, rubiconglobal]}
+  - {name: Rently, guess: [rently, rentlyinc]}
+  - {name: Terminus, guess: [terminus, terminusplatform, terminussoftware]}
+  - {name: Sharecare, guess: [sharecare, sharecareinc]}
+  - {name: Patientco, guess: [patientco, patient-co]}
+  - {name: Ingenious Med, guess: [ingeniousmed, ingenious-med]}
+  - {name: Litmos, guess: [litmos, litmoscom]}
+  - {name: Groundfloor, guess: [groundfloor, groundfloorfinance]}
+  - {name: Bark, guess: bark}
   - {name: Axon, guess: axon}
-  - {name: Gotham Enterprises, guess: gotham}
-  - {name: Homebound, guess: homebound}
   - {name: Carvana, guess: carvana}
+  - {name: Homebound, guess: homebound}
+  - {name: Insightsoftware, guess: [insightsoftware, insight-software]}
+  - {name: SecureWorks, guess: [secureworks]}
+  - {name: Mailchimp, guess: [mailchimp]}
+  - {name: Bandwidth, guess: [bandwidth]}
+  - {name: Toast, guess: [toast]}
+  - {name: Gusto, guess: [gusto]}
+  - {name: Rippling, guess: [rippling]}
+  - {name: Samsara, guess: [samsara]}
+  - {name: Klaviyo, guess: [klaviyo]}
+  - {name: HubSpot, guess: [hubspot, hubspotjobs]}
+  - {name: Brex, guess: [brex]}
+  - {name: Ramp, guess: [ramp]}
 
-  # Big Atlanta employers on Workday (unverified links)
+  # Big employers on Workday
   - {name: The Home Depot, url: "https://homedepot.wd5.myworkdayjobs.com/CareerDepot"}
   - {name: Equifax, url: "https://equifax.wd5.myworkdayjobs.com/External"}
   - {name: Global Payments, url: "https://tsys.wd1.myworkdayjobs.com/TSYS"}
   - {name: Coca-Cola, url: "https://coke.wd1.myworkdayjobs.com/coca-cola-careers"}
   - {name: Truist, url: "https://truist.wd1.myworkdayjobs.com/Careers"}
   - {name: Elevance Health, url: "https://elevancehealth.wd1.myworkdayjobs.com/ANT"}
-  - {name: Sage, url: "https://sage.wd3.myworkdayjobs.com/Sage"}
-  - {name: Cox Enterprises, url: "https://cox.wd1.myworkdayjobs.com/Cox_External"}
-  - {name: NCR Voyix, url: "https://ncr.wd1.myworkdayjobs.com/ext_non_china"}
   - {name: Manhattan Associates, url: "https://manh.wd5.myworkdayjobs.com/External"}
-  - {name: Intercontinental Exchange, url: "https://ice.wd1.myworkdayjobs.com/ICE"}
-  - {name: Southern Company, url: "https://southernco.wd1.myworkdayjobs.com/SouthernCompany"}
   - {name: Genuine Parts, url: "https://genpt.wd1.myworkdayjobs.com/Careers"}
-  - {name: Inspire Brands, url: "https://inspirebrands.wd5.myworkdayjobs.com/External"}
+
+  # Big Atlanta employers on systems offlist can't read yet: check these by hand
+  - {name: Delta Air Lines, manual: "https://www.delta.com/us/en/careers/overview"}
+  - {name: Cox Enterprises, manual: "https://jobs.coxenterprises.com/"}
+  - {name: Southern Company / Georgia Power, manual: "https://southerncompany.jobs/"}
+  - {name: NCR Voyix, manual: "https://www.ncrvoyix.com/careers"}
+  - {name: Intercontinental Exchange, manual: "https://www.ice.com/careers"}
+  - {name: Sage, manual: "https://www.sage.com/en-us/company/careers/job-search/"}
+  - {name: HD Supply, manual: "https://hdsupply.jobs/"}
+  - {name: UPS, manual: "https://www.jobs-ups.com/"}

@@ -14,7 +14,7 @@ from pathlib import Path
 import yaml
 
 from . import sources
-from .filters import LocationMatcher, RoleMatcher, extract_pay, min_years
+from .filters import LocationMatcher, RoleMatcher, extract_pay, min_years, tools_mentioned
 
 ROOT = Path(__file__).resolve().parent.parent
 CFG = ROOT / "config"
@@ -40,6 +40,8 @@ def job_id(url):
 
 def resolve(entry, cache):
     """Return (ats, key) for a company entry, or (None, reason)."""
+    if entry.get("manual"):
+        return "manual", entry["manual"]
     for ats in sources.FETCHERS:
         if entry.get(ats):
             return ats, entry[ats]
@@ -62,21 +64,29 @@ def fetch_company(entry, cache, search_terms):
     if ats is None:
         status["error"] = key
         return status, []
+    if ats == "manual":
+        status.update(manual=True, url=key)
+        return status, []
     try:
         if ats == "guess":
             last = "not found on Greenhouse, Lever, Ashby or SmartRecruiters"
-            for cand in sources.GUESS_ORDER:
-                try:
-                    jobs = sources.FETCHERS[cand](key)
-                except sources.FetchError as e:
-                    last = f"{cand}: {e}"
-                    continue
-                if jobs:
-                    cache[name] = {"ats": cand, "key": key}
-                    status.update(ats=cand)
+            slugs = key if isinstance(key, list) else [key]
+            jobs, found = [], False
+            for slug in slugs:
+                for cand in sources.GUESS_ORDER:
+                    try:
+                        jobs = sources.FETCHERS[cand](slug)
+                    except sources.FetchError:
+                        continue
+                    if jobs:
+                        cache[name] = {"ats": cand, "key": slug}
+                        status.update(ats=cand, key=slug)
+                        found = True
+                        break
+                if found:
                     break
-            else:
-                status["error"] = last
+            if not found:
+                status["error"] = last + " (tried: " + ", ".join(slugs) + ")"
                 return status, []
         elif ats == "workday":
             jobs = sources.fetch_workday(key, search_terms)
@@ -140,6 +150,7 @@ def finalize(j, seen, today):
         "first_seen": first,
         "min_years": min_years(j.get("description", "")),
         "pay": j.get("pay") or extract_pay(j.get("description", "")),
+        "tools": tools_mentioned(j.get("description", "")),
     }
 
 
@@ -185,7 +196,7 @@ def run(fetch=None, today=None, companies=None, out_dir=DATA):
     stamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
     (out_dir / "jobs.json").write_text(json.dumps({"updated": stamp, "jobs": out}, indent=1))
     (out_dir / "status.json").write_text(json.dumps({"updated": stamp, "companies": sorted(
-        statuses, key=lambda s: (s["ok"], s["name"]))}, indent=1))
+        statuses, key=lambda s: (s["ok"], bool(s.get("manual")), s["name"]))}, indent=1))
     (out_dir / "roles.json").write_text(json.dumps({
         "families": [{k: f[k] for k in ("id", "name", "what", "why", "titles")}
                      for f in roles_cfg["families"]],
@@ -194,9 +205,10 @@ def run(fetch=None, today=None, companies=None, out_dir=DATA):
     (out_dir / "ats_cache.json").write_text(json.dumps(cache, indent=1, sort_keys=True))
 
     ok = sum(1 for s in statuses if s["ok"])
+    statuses = [s for s in statuses]
     print(f"{len(out)} jobs kept from {ok}/{len(statuses)} companies")
     for s in statuses:
-        if not s["ok"]:
+        if not s["ok"] and not s.get("manual"):
             print(f"  ! {s['name']}: {s['error']}")
     return out, statuses
 

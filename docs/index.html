@@ -116,6 +116,7 @@ footer{color:var(--mute);font-size:14px}
           <button class="chip" id="optNew" aria-pressed="false">New this week</button>
           <button class="chip" id="optSaved" aria-pressed="false">Saved</button>
           <button class="chip" id="optApplied" aria-pressed="false">Hide applied</button>
+          <button class="chip" id="optSql" aria-pressed="false">Hide jobs asking for SQL</button>
         </div>
       </div>
       <p class="count" id="count"></p>
@@ -135,7 +136,7 @@ footer{color:var(--mute);font-size:14px}
 <script>
 {
 const REGIONS=[["all","All areas"],["atl","Metro Atlanta"],["aug","Augusta"],["remote","Remote"],["ga","Rest of Georgia"]];
-const st={jobs:[],fams:[],maxOk:2,region:"all",fam:null,q:"",years:true,fresh:false,saved:false,hideApplied:false,marks:{}};
+const st={jobs:[],fams:[],maxOk:2,region:"all",fam:null,q:"",years:true,fresh:false,saved:false,hideApplied:false,noSql:false,marks:{}};
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 try{st.marks=JSON.parse(localStorage.getItem("offlist-marks")||"{}")}catch(e){}
@@ -154,7 +155,8 @@ function visible(){
     (!st.years||j.min_years==null||j.min_years<=st.maxOk)&&
     (!st.fresh||daysAgo(j.first_seen)<=7)&&
     (!st.saved||st.marks[j.id]?.saved)&&
-    (!st.hideApplied||!st.marks[j.id]?.applied));
+    (!st.hideApplied||!st.marks[j.id]?.applied)&&
+    (!st.noSql||!(j.tools||[]).includes("SQL")));
 }
 
 function yearsTag(y){
@@ -170,7 +172,7 @@ function card(j){
   return `<article class="job">
     <h3>${esc(j.title)}</h3>
     <div class="co">${esc(j.company)} · ${esc(j.location||regName(j.region))}</div>
-    <div class="tags">${isNew?'<span class="tag new">New</span>':""}<span class="tag">${esc(famName(j.family))}</span>${yearsTag(j.min_years)}${j.pay?`<span class="tag good">${esc(j.pay)}</span>`:""}${j.remote?'<span class="tag">Remote</span>':""}</div>
+    <div class="tags">${isNew?'<span class="tag new">New</span>':""}<span class="tag">${esc(famName(j.family))}</span>${yearsTag(j.min_years)}${j.pay?`<span class="tag good">${esc(j.pay)}</span>`:""}${j.remote?'<span class="tag">Remote</span>':""}${(j.tools||[]).map(t=>`<span class="tag${t==="SQL"?" warn":""}">${esc(t)}</span>`).join("")}</div>
     <div class="co">${esc(when)}</div>
     <div class="acts"><a class="btn go" href="${esc(j.url)}" target="_blank" rel="noopener">Open posting</a>
     <button class="btn" data-mark="saved" data-id="${j.id}" aria-pressed="${!!m.saved}">${m.saved?"Saved":"Save"}</button>
@@ -202,11 +204,13 @@ function renderRoles(){
 }
 
 function renderCos(s){
-  const rows=(s.companies||[]);
+  const all=(s.companies||[]);
+  const rows=all.filter(r=>!r.manual), man=all.filter(r=>r.manual);
   const ok=rows.filter(r=>r.ok).length;
   $("fCos").textContent=rows.length;
   $("cosNote").textContent=rows.length?`${ok} of ${rows.length} careers sites read on the last update. Red rows need a corrected link in config/companies.yaml.`:"No update has run yet.";
-  $("cosBody").innerHTML=rows.map(r=>`<tr><td>${esc(r.name)}</td><td>${esc(r.ats||"")}</td><td class="n">${r.fetched||0}</td><td class="n">${r.matched||0}</td><td class="${r.ok?"okc":"bad"}">${r.ok?"OK":esc(r.error||"failed")}</td></tr>`).join("");
+  $("cosBody").innerHTML=rows.map(r=>`<tr><td>${esc(r.name)}</td><td>${esc(r.ats||"")}</td><td class="n">${r.fetched||0}</td><td class="n">${r.matched||0}</td><td class="${r.ok?"okc":"bad"}">${r.ok?"OK":esc(r.error||"failed")}</td></tr>`).join("")+
+    man.map(r=>`<tr><td>${esc(r.name)}</td><td>own site</td><td class="n">–</td><td class="n">–</td><td><a href="${esc(r.url)}" target="_blank" rel="noopener">Check by hand</a></td></tr>`).join("");
 }
 
 document.addEventListener("click",e=>{
@@ -217,7 +221,7 @@ document.addEventListener("click",e=>{
   if(t.dataset.gofam){st.fam=t.dataset.gofam;$("tab-jobs").click();render();window.scrollTo({top:$("jobs").offsetTop-60});return}
   if(t.dataset.region){st.region=t.dataset.region;for(const c of $("regionChips").children)c.setAttribute("aria-pressed",c===t);render();return}
   if(t.dataset.mark){const m=st.marks[t.dataset.id]||={};m[t.dataset.mark]=!m[t.dataset.mark];saveMarks();render();return}
-  const opt={optYears:"years",optNew:"fresh",optSaved:"saved",optApplied:"hideApplied"}[t.id];
+  const opt={optYears:"years",optNew:"fresh",optSaved:"saved",optApplied:"hideApplied",optSql:"noSql"}[t.id];
   if(opt){st[opt]=!st[opt];t.setAttribute("aria-pressed",st[opt]);render()}
 });
 $("q").addEventListener("input",e=>{st.q=e.target.value;render()});

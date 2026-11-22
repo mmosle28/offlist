@@ -133,3 +133,19 @@ def extract_pay(text):
         if hourly and 10 <= val <= 150:
             return s
     return None
+
+
+_TOOLS = [
+    ("SQL", re.compile(r"\b(?:t-sql|pl/sql|my\s?sql|postgre\s?sql|sql)\b", re.I)),
+    ("Python", re.compile(r"\bpython\b", re.I)),
+    ("Tableau", re.compile(r"\btableau\b", re.I)),
+    ("Power BI", re.compile(r"\bpower\s?bi\b", re.I)),
+    ("Salesforce", re.compile(r"\bsalesforce\b", re.I)),
+]
+
+
+def tools_mentioned(text):
+    """Which common tools a posting asks about, e.g. ['SQL', 'Tableau']."""
+    if not text:
+        return []
+    return [name for name, rx in _TOOLS if rx.search(text)]

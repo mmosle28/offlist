@@ -33,7 +33,7 @@ families:
       - pricing analyst
       - partner operations
       - channel operations
-      - sales support analyst
+      - sales support
       - sales coordinator
       - order management
     search: [sales operations, revenue operations, sales analyst, deal desk, enablement, pricing analyst]
@@ -213,6 +213,22 @@ exclude_titles:
   - part time
   - temporary
   - seasonal
+  # quota-carrying sales jobs (sales operations and sales support stay in)
+  - sales representative
+  - sales rep
+  - account executive
+  - business development
+  - sales development
+  - inside sales
+  - outside sales
+  - sales associate
+  - sales consultant
+  - sales trainee
+  - sales rotational
+  - sales specialist
+  - sales executive
+  - relationship development
+  - territory
 
 # Anything asking for more years than this gets a red flag on the site.
 max_years_ok: 2
