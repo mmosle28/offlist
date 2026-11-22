@@ -7,6 +7,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import sys
 from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timezone
@@ -14,7 +15,7 @@ from pathlib import Path
 
 import yaml
 
-from . import sources
+from . import filters, sources
 from .filters import (LocationMatcher, RoleMatcher, entry_signal, extract_pay, fit_score,
                       min_years, office_title, tools_mentioned)
 
@@ -200,12 +201,33 @@ def fetch_feeds():
     return statuses, jobs
 
 
+STAFFING = re.compile(
+    r"\b(robert half|experis|randstad|adecco|kforce|teksystems|insight global|manpower\w*|aerotek|"
+    r"apex systems|beacon hill|collabera|spherion|express employment|kelly services|actalent|"
+    r"staffing|recruit\w*|talent solutions|employment)\b", re.I)
+
+
+def company_key(name):
+    """'The Home Depot' and 'Home Depot', or 'Ferguson Enterprises, LLC.' and 'Ferguson Enterprises', match."""
+    n = re.sub(r"^the\s+", "", (name or "").lower().strip())
+    n = re.sub(r"[,.]?\s*\b(inc|llc|ltd|corp|corporation|co|company)\b\.?$", "", n)
+    return re.sub(r"[^a-z0-9]+", " ", n).strip()
+
+
+def worth_watching(name):
+    """Feeds sometimes list a recruiter or just a place ("Atlanta GA") as the company. Those have no careers site to watch."""
+    key = company_key(name)
+    if not key or STAFFING.search(name):
+        return False
+    return not re.fullmatch(r"[a-z ]+ (ga|georgia)", key)
+
+
 def discovered_entries(disc, known, today):
     """Company entries to probe this run from the auto-discovered list."""
     t = date.fromisoformat(today).toordinal()
     found, retry = [], []
     for name, d in disc.items():
-        if name.lower() in known:
+        if company_key(name) in known or not worth_watching(name):
             continue
         if d.get("found"):
             found.append({"name": name, "guess": d["slugs"], "discovered": True})
@@ -214,7 +236,7 @@ def discovered_entries(disc, known, today):
     return found + retry[:DISCOVER_PROBES]
 
 
-def run(fetch=None, today=None, companies=None, out_dir=DATA, feeds=None):
+def run(fetch=None, today=None, companies=None, out_dir=DATA, feeds=None, keep_adzuna=None):
     roles_cfg = load_yaml("roles.yaml")
     roles = RoleMatcher(roles_cfg)
     places = LocationMatcher(load_yaml("locations.yaml"))
@@ -225,8 +247,8 @@ def run(fetch=None, today=None, companies=None, out_dir=DATA, feeds=None):
     search_terms = sorted({t for f in roles_cfg["families"] for t in f.get("search", [])})
     live = fetch is None
     fetch = fetch or (lambda e: fetch_company(e, cache, search_terms))
-    disc = load_json(out_dir / "discovered.json", {})
-    known = {c["name"].lower() for c in companies}
+    disc = {k: v for k, v in load_json(out_dir / "discovered.json", {}).items() if worth_watching(k)}
+    known = {company_key(c["name"]) for c in companies}
     if live:
         companies = companies + discovered_entries(disc, known, today)
     if feeds is None:
@@ -256,7 +278,8 @@ def run(fetch=None, today=None, companies=None, out_dir=DATA, feeds=None):
     # remember companies the feeds found, so their own careers sites get watched
     for j in kept:
         name = j.get("company", "").strip()
-        if j["ats"] in FEED_ATS and name and name.lower() not in known and name not in disc:
+        if (j["ats"] in FEED_ATS and worth_watching(name) and company_key(name) not in known
+                and name not in disc):
             slugs = sources.slug_guesses(name)
             if slugs:
                 disc[name] = {"slugs": slugs, "first": today, "last_try": "2000-01-01", "found": False}
@@ -269,12 +292,27 @@ def run(fetch=None, today=None, companies=None, out_dir=DATA, feeds=None):
     kept.sort(key=lambda j: j["ats"] in FEED_ATS)  # company sites first
     out, urls, pairs = [], set(), set()
     for j in kept:
-        pair = (j.get("company", "").lower(), j["title"].lower())
+        pair = (company_key(j.get("company", "")), j["title"].lower())
         if j["url"] in urls or pair in pairs or not j.get("url"):
             continue
         urls.add(j["url"])
         pairs.add(pair)
         out.append(finalize(j, seen, today))
+    # Adzuna is skipped on push runs to save its quota; keep what the last full run found
+    keep = live if keep_adzuna is None else keep_adzuna
+    if keep and not any(st["ats"] == "adzuna" for st in statuses):
+        old_status = load_json(out_dir / "status.json", {}).get("companies", [])
+        statuses += [st for st in old_status if st.get("ats") == "adzuna"]
+        for r in load_json(out_dir / "jobs.json", {}).get("jobs", []):
+            pair = (company_key(r.get("company", "")), r["title"].lower())
+            if (r.get("ats") != "adzuna" or r["url"] in urls or pair in pairs
+                    or roles.is_excluded(r["title"]) or filters.manual_title(r["title"])):
+                continue
+            seen[r["id"]] = {"first_seen": r["first_seen"], "last_seen": today}
+            r["score"] = fit_score(r, date.fromisoformat(today).toordinal())
+            urls.add(r["url"])
+            pairs.add(pair)
+            out.append(r)
     out.sort(key=lambda r: (r["score"], r["first_seen"]), reverse=True)
 
     # forget jobs that have been gone a long time

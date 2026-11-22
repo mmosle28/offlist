@@ -347,6 +347,13 @@ def fetch_adzuna(app_id, app_key, max_calls=4):
     return out
 
 
+GENERIC_WORDS = {
+    "home", "atlanta", "georgia", "american", "america", "national", "united", "first", "global",
+    "general", "southern", "north", "south", "east", "west", "new", "city", "state", "metro",
+    "evidence", "smart", "digital", "data", "tech", "health", "care", "advanced", "premier",
+}
+
+
 def slug_guesses(company):
     """Likely board names for a company, e.g. 'Flock Safety' -> ['flocksafety', 'flock-safety', 'flock']."""
     base = re.sub(r"\b(inc|llc|ltd|corp|corporation|co|company|group|holdings|the)\b\.?", "",
@@ -354,7 +361,9 @@ def slug_guesses(company):
     words = re.findall(r"[a-z0-9]+", base)
     if not words:
         return []
-    cands = ["".join(words), "-".join(words), words[0]]
+    cands = ["".join(words), "-".join(words)]
+    if words[0] not in GENERIC_WORDS:  # "home" or "atlanta" alone would hit some other company's board
+        cands.append(words[0])
     seen, out = set(), []
     for c in cands:
         if len(c) >= 3 and c not in seen:

@@ -164,7 +164,7 @@ _MANUAL = re.compile(
     r"porter|detailer|shift|cook|cashier|crew|laborer|installer|nurse|nursing|medical|dental|"
     r"caregiver|behavior|pharmacy|phlebotom\w*|therap\w*|tutor|teacher|custodial|janitor|"
     r"landscap\w*|guard|security officer|production|assembly|operator|picker|packer|loader|"
-    r"housekeep\w*|server|bartender|barista|stylist|cleaner|welder|electrician|plumber|hvac)\b",
+    r"housekeep\w*|server|bartender|barista|stylist|cleaner|welder|electrician|plumber|hvac|fabricat\w*|machinist)\b",
     re.I,
 )
 _ENTRY_TITLE = re.compile(
@@ -186,6 +186,10 @@ def entry_signal(title, text, strong_only=False):
     if _ENTRY_TITLE.search(title or "") or _ENTRY_STRONG.search(text or ""):
         return True
     return False if strong_only else bool(_ENTRY_WEAK.search(text or ""))
+
+
+def manual_title(title):
+    return bool(_MANUAL.search(title))
 
 
 def office_title(title):

@@ -8,7 +8,7 @@ import yaml
 
 from offlist import run as runner
 from offlist import sources
-from offlist.filters import LocationMatcher, RoleMatcher, extract_pay, html_to_text, min_years, tools_mentioned
+from offlist.filters import office_title, LocationMatcher, RoleMatcher, extract_pay, html_to_text, min_years, tools_mentioned
 
 CFG = Path(__file__).resolve().parent.parent / "config"
 ROLES = RoleMatcher(yaml.safe_load((CFG / "roles.yaml").read_text()))
@@ -168,7 +168,33 @@ class TestDiscovery(unittest.TestCase):
 
     def test_slug_guesses(self):
         self.assertEqual(sources.slug_guesses("Flock Safety, Inc."), ["flocksafety", "flock-safety", "flock"])
-        self.assertEqual(sources.slug_guesses("The Home Depot"), ["homedepot", "home-depot", "home"])
+        self.assertEqual(sources.slug_guesses("The Home Depot"), ["homedepot", "home-depot"])
+
+    def test_push_run_keeps_last_adzuna_jobs(self):
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            row = {"id": "a1", "title": "Junior Data Analyst", "company": "Mindray", "family": "analyst",
+                   "region": "atl", "location": "Atlanta", "remote": False, "url": "https://x/1",
+                   "ats": "adzuna", "posted": None, "posted_text": None, "first_seen": "2026-11-20",
+                   "min_years": None, "pay": None, "tools": [], "entry": True, "score": 0}
+            bad = dict(row, id="a2", title="Associate Counsel", url="https://x/2")
+            (d / "jobs.json").write_text(json.dumps({"jobs": [row, bad]}))
+            runner.run(fetch=lambda e: ({"name": e["name"], "ok": True, "ats": "x"}, []),
+                       today="2026-11-22", companies=[{"name": "Acme"}], out_dir=d, keep_adzuna=True)
+            jobs = json.loads((d / "jobs.json").read_text())["jobs"]
+            self.assertEqual([j["id"] for j in jobs], ["a1"])
+            self.assertGreater(jobs[0]["score"], 0)
+
+    def test_feed_company_cleanup(self):
+        self.assertEqual(runner.company_key("The Home Depot"), runner.company_key("Home Depot"))
+        self.assertEqual(runner.company_key("Ferguson Enterprises, LLC."), "ferguson enterprises")
+        self.assertFalse(runner.worth_watching("Atlanta GA"))
+        self.assertFalse(runner.worth_watching("Robert Half"))
+        self.assertTrue(runner.worth_watching("Mindray North America"))
+        roles = RoleMatcher(runner.load_yaml("roles.yaml"))
+        self.assertTrue(roles.is_excluded("Associate Counsel, Product and Marketing"))
+        self.assertTrue(roles.is_excluded("Security Operations Analyst Fixed Term"))
+        self.assertFalse(office_title("Fabrication Associate - Entry Level"))
 
 
 if __name__ == "__main__":
