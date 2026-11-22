@@ -1,0 +1,54 @@
+{
+ "Agilysys": {
+  "ats": "greenhouse",
+  "key": "agilysys"
+ },
+ "Axon": {
+  "ats": "greenhouse",
+  "key": "axon"
+ },
+ "Bark": {
+  "ats": "greenhouse",
+  "key": "bark"
+ },
+ "Calendly": {
+  "ats": "greenhouse",
+  "key": "calendly"
+ },
+ "Carvana": {
+  "ats": "greenhouse",
+  "key": "carvana"
+ },
+ "Fullstory": {
+  "ats": "ashby",
+  "key": "fullstory"
+ },
+ "Greenlight": {
+  "ats": "lever",
+  "key": "greenlight"
+ },
+ "Homebound": {
+  "ats": "ashby",
+  "key": "homebound"
+ },
+ "Kaseya": {
+  "ats": "greenhouse",
+  "key": "kaseya"
+ },
+ "OneTrust": {
+  "ats": "greenhouse",
+  "key": "onetrust"
+ },
+ "PrizePicks": {
+  "ats": "greenhouse",
+  "key": "prizepicks"
+ },
+ "Salesloft": {
+  "ats": "greenhouse",
+  "key": "salesloft"
+ },
+ "Vendavo": {
+  "ats": "lever",
+  "key": "vendavo"
+ }
+}

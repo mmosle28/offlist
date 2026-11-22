@@ -1,4 +1,401 @@
 {
- "updated": null,
- "companies": []
+ "updated": "2026-11-22T03:46Z",
+ "companies": [
+  {
+   "name": "Bakkt",
+   "ats": "guess",
+   "key": "bakkt",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "BitPay",
+   "ats": "guess",
+   "key": "bitpay",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Cardlytics",
+   "ats": "guess",
+   "key": "cardlytics",
+   "ok": false,
+   "fetched": 0,
+   "error": "lever: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Cox Enterprises",
+   "ats": "workday",
+   "key": "https://cox.wd1.myworkdayjobs.com/Cox_External",
+   "ok": false,
+   "fetched": 0,
+   "error": "HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Flock Safety",
+   "ats": "guess",
+   "key": "flocksafety",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Florence Healthcare",
+   "ats": "guess",
+   "key": "florencehc",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Gotham Enterprises",
+   "ats": "guess",
+   "key": "gotham",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Ingenious Med",
+   "ats": "guess",
+   "key": "ingeniousmed",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Insightsoftware",
+   "ats": "guess",
+   "key": "insightsoftware",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Inspire Brands",
+   "ats": "workday",
+   "key": "https://inspirebrands.wd5.myworkdayjobs.com/External",
+   "ok": false,
+   "fetched": 0,
+   "error": "HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Intercontinental Exchange",
+   "ats": "workday",
+   "key": "https://ice.wd1.myworkdayjobs.com/ICE",
+   "ok": false,
+   "fetched": 0,
+   "error": "HTTP 422",
+   "matched": 0
+  },
+  {
+   "name": "NCR Voyix",
+   "ats": "workday",
+   "key": "https://ncr.wd1.myworkdayjobs.com/ext_non_china",
+   "ok": false,
+   "fetched": 0,
+   "error": "HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "ParkMobile",
+   "ats": "guess",
+   "key": "parkmobile",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Patientco",
+   "ats": "guess",
+   "key": "patientco",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Pindrop",
+   "ats": "guess",
+   "key": "pindrop",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Rently",
+   "ats": "guess",
+   "key": "rently",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "RoadSync",
+   "ats": "guess",
+   "key": "roadsync",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Rubicon",
+   "ats": "guess",
+   "key": "rubicon",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Sage",
+   "ats": "workday",
+   "key": "https://sage.wd3.myworkdayjobs.com/Sage",
+   "ok": false,
+   "fetched": 0,
+   "error": "HTTP 422",
+   "matched": 0
+  },
+  {
+   "name": "Sharecare",
+   "ats": "guess",
+   "key": "sharecare",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Southern Company",
+   "ats": "workday",
+   "key": "https://southernco.wd1.myworkdayjobs.com/SouthernCompany",
+   "ok": false,
+   "fetched": 0,
+   "error": "HTTP 422",
+   "matched": 0
+  },
+  {
+   "name": "Stord",
+   "ats": "guess",
+   "key": "stord",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Terminus",
+   "ats": "guess",
+   "key": "terminus",
+   "ok": false,
+   "fetched": 0,
+   "error": "ashby: HTTP 404",
+   "matched": 0
+  },
+  {
+   "name": "Agilysys",
+   "ats": "greenhouse",
+   "key": "agilysys",
+   "ok": true,
+   "fetched": 14,
+   "error": null,
+   "matched": 1
+  },
+  {
+   "name": "Axon",
+   "ats": "greenhouse",
+   "key": "axon",
+   "ok": true,
+   "fetched": 472,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "Bark",
+   "ats": "greenhouse",
+   "key": "bark",
+   "ok": true,
+   "fetched": 1,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "Calendly",
+   "ats": "greenhouse",
+   "key": "calendly",
+   "ok": true,
+   "fetched": 4,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "Carvana",
+   "ats": "greenhouse",
+   "key": "carvana",
+   "ok": true,
+   "fetched": 1637,
+   "error": null,
+   "matched": 3
+  },
+  {
+   "name": "Coca-Cola",
+   "ats": "workday",
+   "key": "https://coke.wd1.myworkdayjobs.com/coca-cola-careers",
+   "ok": true,
+   "fetched": 182,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "Elevance Health",
+   "ats": "workday",
+   "key": "https://elevancehealth.wd1.myworkdayjobs.com/ANT",
+   "ok": true,
+   "fetched": 177,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "Equifax",
+   "ats": "workday",
+   "key": "https://equifax.wd5.myworkdayjobs.com/External",
+   "ok": true,
+   "fetched": 178,
+   "error": null,
+   "matched": 1
+  },
+  {
+   "name": "Fullstory",
+   "ats": "ashby",
+   "key": "fullstory",
+   "ok": true,
+   "fetched": 10,
+   "error": null,
+   "matched": 1
+  },
+  {
+   "name": "Genuine Parts",
+   "ats": "workday",
+   "key": "https://genpt.wd1.myworkdayjobs.com/Careers",
+   "ok": true,
+   "fetched": 452,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "Global Payments",
+   "ats": "workday",
+   "key": "https://tsys.wd1.myworkdayjobs.com/TSYS",
+   "ok": true,
+   "fetched": 320,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "Greenlight",
+   "ats": "lever",
+   "key": "greenlight",
+   "ok": true,
+   "fetched": 15,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "Homebound",
+   "ats": "ashby",
+   "key": "homebound",
+   "ok": true,
+   "fetched": 10,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "Kaseya",
+   "ats": "greenhouse",
+   "key": "kaseya",
+   "ok": true,
+   "fetched": 95,
+   "error": null,
+   "matched": 0
+  },
+  {
+   "name": "Manhattan Associates",
+   "ats": "workday",
+   "key": "https://manh.wd5.myworkdayjobs.com/External",
+   "ok": true,
+   "fetched": 36,
+   "error": null,
+   "matched": 1
+  },
+  {
+   "name": "OneTrust",
+   "ats": "greenhouse",
+   "key": "onetrust",
+   "ok": true,
+   "fetched": 84,
+   "error": null,
+   "matched": 2
+  },
+  {
+   "name": "PrizePicks",
+   "ats": "greenhouse",
+   "key": "prizepicks",
+   "ok": true,
+   "fetched": 32,
+   "error": null,
+   "matched": 1
+  },
+  {
+   "name": "Salesloft",
+   "ats": "greenhouse",
+   "key": "salesloft",
+   "ok": true,
+   "fetched": 25,
+   "error": null,
+   "matched": 1
+  },
+  {
+   "name": "The Home Depot",
+   "ats": "workday",
+   "key": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot",
+   "ok": true,
+   "fetched": 635,
+   "error": null,
+   "matched": 10
+  },
+  {
+   "name": "Truist",
+   "ats": "workday",
+   "key": "https://truist.wd1.myworkdayjobs.com/Careers",
+   "ok": true,
+   "fetched": 562,
+   "error": null,
+   "matched": 3
+  },
+  {
+   "name": "Vendavo",
+   "ats": "lever",
+   "key": "vendavo",
+   "ok": true,
+   "fetched": 7,
+   "error": null,
+   "matched": 0
+  }
+ ]
 }
