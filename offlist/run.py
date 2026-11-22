@@ -180,7 +180,7 @@ def fetch_feeds():
     """Search feeds that span thousands of employers. Returns (statuses, jobs)."""
     statuses, jobs = [], []
     try:
-        got = sources.fetch_muse()
+        got = sources.fetch_muse(api_key=os.environ.get("MUSE_API_KEY") or None)
         statuses.append({"name": "The Muse (search)", "ats": "themuse", "key": None, "ok": True,
                          "fetched": len(got), "error": None, "feed": True})
         jobs += got

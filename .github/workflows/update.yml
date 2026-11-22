@@ -31,6 +31,7 @@ jobs:
       - name: Fetch jobs
         env:
           ADZUNA_APP_ID: ${{ github.event_name != 'push' && secrets.ADZUNA_APP_ID || '' }}
+          MUSE_API_KEY: ${{ secrets.MUSE_API_KEY }}
           ADZUNA_APP_KEY: ${{ github.event_name != 'push' && secrets.ADZUNA_APP_KEY || '' }}
         run: python -m offlist.run
       - name: Save results

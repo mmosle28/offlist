@@ -280,8 +280,9 @@ MUSE_ENDPOINTS = ["https://www.themuse.com/api/public/jobs",
                   "https://www.themuse.com/api/public/v2/jobs"]
 
 
-def fetch_muse(max_pages=15):
+def fetch_muse(max_pages=15, api_key=None):
     """Entry level jobs in Atlanta or remote. Tries the known endpoint and page styles in turn."""
+    headers = {"X-Muse-Api-Key": api_key} if api_key else None
     attempts = [(url, start, locs) for url in MUSE_ENDPOINTS for start in (1, 0)
                 for locs in (MUSE_LOCATIONS, MUSE_LOCATIONS[:1])]
     last = None
@@ -289,9 +290,10 @@ def fetch_muse(max_pages=15):
         out = []
         try:
             for page in range(start, start + max_pages):
-                q = urllib.parse.urlencode(
-                    [("page", page), ("level", "Entry Level")] + [("location", l) for l in locs])
-                data = _get(f"{url}?{q}")
+                params = [("page", page), ("level", "Entry Level")] + [("location", l) for l in locs]
+                if api_key:
+                    params.append(("api_key", api_key))
+                data = _get(f"{url}?{urllib.parse.urlencode(params)}", headers=headers)
                 out += parse_muse(data)
                 if page + 1 - start >= data.get("page_count", 0):
                     break
