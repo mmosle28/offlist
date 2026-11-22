@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T03:46Z",
+ "updated": "2026-11-22T03:48Z",
  "companies": [
   {
    "name": "Bakkt",
@@ -386,7 +386,7 @@
    "ok": true,
    "fetched": 562,
    "error": null,
-   "matched": 3
+   "matched": 2
   },
   {
    "name": "Vendavo",

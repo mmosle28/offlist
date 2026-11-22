@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T03:46Z",
+ "updated": "2026-11-22T03:48Z",
  "jobs": [
   {
    "id": "374da4079836",
@@ -16,22 +16,6 @@
    "first_seen": "2026-11-22",
    "min_years": null,
    "pay": null
-  },
-  {
-   "id": "d02b2e640548",
-   "title": "Product Owner, Agile - Sales Enablement / Salesforce",
-   "company": "Truist",
-   "family": "revops",
-   "region": "atl",
-   "location": "Atlanta GA - 303 Peachtree Center Avenue",
-   "remote": false,
-   "url": "https://truist.wd1.myworkdayjobs.com/Careers/job/Atlanta-GA---303-Peachtree-Center-Avenue/Product-Owner--Agile---Sales-Enablement_R0119118",
-   "ats": "workday",
-   "posted": "2026-11-20",
-   "posted_text": "Posted Yesterday",
-   "first_seen": "2026-11-22",
-   "min_years": null,
-   "pay": "$95k - $180k"
   },
   {
    "id": "8efbe2d16835",
@@ -194,22 +178,6 @@
    "pay": null
   },
   {
-   "id": "1da0bf6c5ccf",
-   "title": "Market Operations Leadership Development Program - New Graduate",
-   "company": "Carvana",
-   "family": "programs",
-   "region": "atl",
-   "location": "Atlanta, GA",
-   "remote": false,
-   "url": "https://www.carvana.com/careers/apply?gh_jid=8348312",
-   "ats": "greenhouse",
-   "posted": "2026-11-03",
-   "posted_text": null,
-   "first_seen": "2026-11-22",
-   "min_years": null,
-   "pay": null
-  },
-  {
    "id": "4dc100b4de63",
    "title": "Market Operations Leadership Development Program - New Graduate",
    "company": "Carvana",
@@ -234,6 +202,22 @@
    "location": "Atlanta, GA",
    "remote": false,
    "url": "https://www.carvana.com/careers/apply?gh_jid=8348311",
+   "ats": "greenhouse",
+   "posted": "2026-11-03",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
+   "min_years": null,
+   "pay": null
+  },
+  {
+   "id": "1da0bf6c5ccf",
+   "title": "Market Operations Leadership Development Program - New Graduate",
+   "company": "Carvana",
+   "family": "programs",
+   "region": "atl",
+   "location": "Atlanta, GA",
+   "remote": false,
+   "url": "https://www.carvana.com/careers/apply?gh_jid=8348312",
    "ats": "greenhouse",
    "posted": "2026-11-03",
    "posted_text": null,
