@@ -276,16 +276,31 @@ def parse_muse(payload):
     return out
 
 
+MUSE_ENDPOINTS = ["https://www.themuse.com/api/public/jobs",
+                  "https://www.themuse.com/api/public/v2/jobs"]
+
+
 def fetch_muse(max_pages=15):
-    out = []
-    for page in range(max_pages):
-        q = urllib.parse.urlencode(
-            [("page", page), ("level", "Entry Level")] + [("location", l) for l in MUSE_LOCATIONS])
-        data = _get(f"https://www.themuse.com/api/public/jobs?{q}")
-        out += parse_muse(data)
-        if page + 1 >= data.get("page_count", 0):
-            break
-    return out
+    """Entry level jobs in Atlanta or remote. Tries the known endpoint and page styles in turn."""
+    attempts = [(url, start, locs) for url in MUSE_ENDPOINTS for start in (1, 0)
+                for locs in (MUSE_LOCATIONS, MUSE_LOCATIONS[:1])]
+    last = None
+    for url, start, locs in attempts:
+        out = []
+        try:
+            for page in range(start, start + max_pages):
+                q = urllib.parse.urlencode(
+                    [("page", page), ("level", "Entry Level")] + [("location", l) for l in locs])
+                data = _get(f"{url}?{q}")
+                out += parse_muse(data)
+                if page + 1 - start >= data.get("page_count", 0):
+                    break
+            return out
+        except FetchError as e:
+            if out:
+                return out
+            last = e
+    raise last
 
 
 ADZUNA_QUERIES = [

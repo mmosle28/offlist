@@ -152,10 +152,19 @@ def tools_mentioned(text):
 
 
 # ---------------------------------------------------------------- entry level signals
-_ENTRY_TEXT = re.compile(
+_ENTRY_STRONG = re.compile(
     r"\b(entry[\s-]level|new grad(?:uate)?s?|recent (?:college )?grad(?:uate)?s?|early[\s-]career|"
-    r"graduating (?:seniors?|students?)|class of 202\d|no (?:prior )?experience (?:required|necessary|needed)|"
-    r"0\s*(?:-|–|to)\s*[12]\s*years?|will train|paid training|training program)\b",
+    r"graduating (?:seniors?|students?)|class of 202\d|no (?:prior )?experience (?:required|necessary|needed))\b",
+    re.I,
+)
+_ENTRY_WEAK = re.compile(r"\b(0\s*(?:-|–|to)\s*[12]\s*years?|will train|paid training|training program)\b", re.I)
+# Hands-on trade, warehouse and care work: real jobs, but not what offlist is for.
+_MANUAL = re.compile(
+    r"\b(auto(?:motive)?|body|mechanic|technician|repair|glass|brake|tire|warehouse|forklift|driver|"
+    r"porter|detailer|shift|cook|cashier|crew|laborer|installer|nurse|nursing|medical|dental|"
+    r"caregiver|behavior|pharmacy|phlebotom\w*|therap\w*|tutor|teacher|custodial|janitor|"
+    r"landscap\w*|guard|security officer|production|assembly|operator|picker|packer|loader|"
+    r"housekeep\w*|server|bartender|barista|stylist|cleaner|welder|electrician|plumber|hvac)\b",
     re.I,
 )
 _ENTRY_TITLE = re.compile(
@@ -166,19 +175,22 @@ _ENTRY_TITLE = re.compile(
 # Generic office titles worth keeping when the posting says it's entry level.
 _OFFICE_TITLE = re.compile(
     r"\b(analyst|coordinator|specialist|associate|administrator|consultant|assistant|"
-    r"operations|support|program|planner|technician|representative|advisor|"
-    r"generalist|processor|scheduler|dispatcher|buyer|auditor|examiner)\b",
+    r"operations|support|program|representative|advisor|"
+    r"generalist|processor|scheduler|buyer|auditor|examiner|underwriter|planner)\b",
     re.I,
 )
 
 
-def entry_signal(title, text):
+def entry_signal(title, text, strong_only=False):
     """True when the title or description says this is meant for new or early career people."""
-    return bool(_ENTRY_TITLE.search(title or "") or _ENTRY_TEXT.search(text or ""))
+    if _ENTRY_TITLE.search(title or "") or _ENTRY_STRONG.search(text or ""):
+        return True
+    return False if strong_only else bool(_ENTRY_WEAK.search(text or ""))
 
 
 def office_title(title):
-    return bool(_OFFICE_TITLE.search(title or ""))
+    """An office style title (analyst, coordinator...) that isn't trade, warehouse or care work."""
+    return bool(_OFFICE_TITLE.search(title or "")) and not _MANUAL.search(title or "")
 
 
 CORE_FAMILIES = {"revops", "systems", "implementation", "analyst"}
@@ -194,7 +206,7 @@ def fit_score(job, today_ord):
     if job.get("family") in CORE_FAMILIES:
         s += 10
     elif job.get("family") == "other":
-        s -= 5
+        s -= 10
     if "SQL" in (job.get("tools") or []):
         s -= 10
     try:

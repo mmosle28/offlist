@@ -136,7 +136,8 @@ def select(jobs, roles, places):
         entry = bool(j.get("entry_hint")) or entry_signal(title, desc)
         fam = roles.family(title)
         if not fam:
-            if entry and office_title(title) and not roles.is_excluded(title):
+            strong = bool(j.get("entry_hint")) or entry_signal(title, desc, strong_only=True)
+            if strong and office_title(title) and not roles.is_excluded(title):
                 fam = "other"
             else:
                 continue

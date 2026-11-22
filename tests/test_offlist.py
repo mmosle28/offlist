@@ -156,6 +156,16 @@ class TestDiscovery(unittest.TestCase):
             self.assertEqual(disc["Acme Freight Co"]["slugs"][0], "acmefreight")
             self.assertEqual(st[-1]["matched"], 2)
 
+    def test_other_skips_trade_jobs(self):
+        from offlist.filters import office_title, entry_signal
+        for t in ["Auto Body Repair Technician", "Logistics Associate - 2nd Shift",
+                  "Warehouse Associate", "Brake and Tire Technician"]:
+            self.assertFalse(office_title(t), t)
+        for t in ["Fraud Specialist I", "Claims Processor", "Logistics Coordinator"]:
+            self.assertTrue(office_title(t), t)
+        self.assertFalse(entry_signal("Logistics Coordinator", "Paid training provided", strong_only=True))
+        self.assertTrue(entry_signal("Logistics Coordinator", "Great for recent graduates", strong_only=True))
+
     def test_slug_guesses(self):
         self.assertEqual(sources.slug_guesses("Flock Safety, Inc."), ["flocksafety", "flock-safety", "flock"])
         self.assertEqual(sources.slug_guesses("The Home Depot"), ["homedepot", "home-depot", "home"])
