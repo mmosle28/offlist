@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T22:04Z",
+ "updated": "2026-11-22T22:09Z",
  "companies": [
   {
    "name": "Bakkt",
@@ -315,6 +315,16 @@
    "manual": true,
    "url": "https://www.jobs-ups.com/",
    "matched": 0
+  },
+  {
+   "name": "Adzuna (search)",
+   "ats": "adzuna",
+   "key": null,
+   "ok": true,
+   "fetched": 200,
+   "error": null,
+   "feed": true,
+   "matched": 22
   },
   {
    "name": "Agilysys",
