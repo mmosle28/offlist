@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T02:40Z",
+ "updated": "2026-11-23T02:44Z",
  "jobs": [
   {
    "id": "ffdfae039058",
@@ -80,6 +80,29 @@
    "score": 80
   },
   {
+   "id": "72c07f35fb7b",
+   "title": "Business Intelligence Analyst - Game Ops",
+   "company": "PrizePicks",
+   "family": "analyst",
+   "region": "atl",
+   "location": "Atlanta, GA preferred, Remote",
+   "remote": true,
+   "url": "http://prizepicks.com/position?gh_jid=7826517003",
+   "ats": "greenhouse",
+   "posted": "2026-08-07",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
+   "min_years": null,
+   "pay": "$80,000 to $110,000",
+   "tools": [
+    "SQL",
+    "Python",
+    "Tableau"
+   ],
+   "entry": false,
+   "score": 78
+  },
+  {
    "id": "885a9acdc830",
    "title": "People Tech Business Systems Analyst",
    "company": "Gusto",
@@ -156,48 +179,6 @@
    "score": 75
   },
   {
-   "id": "bc5ce3712ab8",
-   "title": "Business Analyst - Field Capital",
-   "company": "The Home Depot",
-   "family": "analyst",
-   "region": "atl",
-   "location": "STORE SUPPORT CENTER, ATLANTA - 9090",
-   "remote": false,
-   "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/STORE-SUPPORT-CENTER-ATLANTA---9090/Business-Analyst---Field-Capital_Req199196",
-   "ats": "workday",
-   "posted": "2026-11-16",
-   "posted_text": "Posted 6 Days Ago",
-   "first_seen": "2026-11-22",
-   "min_years": null,
-   "pay": null,
-   "tools": [],
-   "entry": false,
-   "score": 75
-  },
-  {
-   "id": "72c07f35fb7b",
-   "title": "Business Intelligence Analyst - Game Ops",
-   "company": "PrizePicks",
-   "family": "analyst",
-   "region": "atl",
-   "location": "Atlanta, GA preferred, Remote",
-   "remote": true,
-   "url": "http://prizepicks.com/position?gh_jid=7826517003",
-   "ats": "greenhouse",
-   "posted": "2026-08-07",
-   "posted_text": null,
-   "first_seen": "2026-11-22",
-   "min_years": null,
-   "pay": "$80,000 to $110,000",
-   "tools": [
-    "SQL",
-    "Python",
-    "Tableau"
-   ],
-   "entry": false,
-   "score": 68
-  },
-  {
    "id": "a5c7eb751299",
    "title": "Supply Chain Analyst \u2013 Workforce Insights",
    "company": "The Home Depot",
@@ -218,7 +199,26 @@
     "Tableau"
    ],
    "entry": false,
-   "score": 65
+   "score": 75
+  },
+  {
+   "id": "bc5ce3712ab8",
+   "title": "Business Analyst - Field Capital",
+   "company": "The Home Depot",
+   "family": "analyst",
+   "region": "atl",
+   "location": "STORE SUPPORT CENTER, ATLANTA - 9090",
+   "remote": false,
+   "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/STORE-SUPPORT-CENTER-ATLANTA---9090/Business-Analyst---Field-Capital_Req199196",
+   "ats": "workday",
+   "posted": "2026-11-16",
+   "posted_text": "Posted 6 Days Ago",
+   "first_seen": "2026-11-22",
+   "min_years": null,
+   "pay": null,
+   "tools": [],
+   "entry": false,
+   "score": 75
   },
   {
    "id": "16155a4e857b",
@@ -242,26 +242,7 @@
     "Power BI"
    ],
    "entry": false,
-   "score": 65
-  },
-  {
-   "id": "6a63a8556134",
-   "title": "Virtual Apron Support Specialist \u2013 Millwork (Remote)",
-   "company": "The Home Depot",
-   "family": "success",
-   "region": "ga",
-   "location": "GEORGIA - VIRTUAL - GA01",
-   "remote": false,
-   "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/GEORGIA---VIRTUAL---GA01/Virtual-Apron-Support-Specialist---Millwork--Remote-_Req198135",
-   "ats": "workday",
-   "posted": "2026-11-04",
-   "posted_text": "Posted 18 Days Ago",
-   "first_seen": "2026-11-22",
-   "min_years": null,
-   "pay": null,
-   "tools": [],
-   "entry": false,
-   "score": 65
+   "score": 75
   },
   {
    "id": "9498ca468098",
@@ -283,6 +264,25 @@
     "Tableau",
     "Salesforce"
    ],
+   "entry": false,
+   "score": 75
+  },
+  {
+   "id": "6a63a8556134",
+   "title": "Virtual Apron Support Specialist \u2013 Millwork (Remote)",
+   "company": "The Home Depot",
+   "family": "success",
+   "region": "ga",
+   "location": "GEORGIA - VIRTUAL - GA01",
+   "remote": false,
+   "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/GEORGIA---VIRTUAL---GA01/Virtual-Apron-Support-Specialist---Millwork--Remote-_Req198135",
+   "ats": "workday",
+   "posted": "2026-11-04",
+   "posted_text": "Posted 18 Days Ago",
+   "first_seen": "2026-11-22",
+   "min_years": null,
+   "pay": null,
+   "tools": [],
    "entry": false,
    "score": 65
   },
@@ -671,6 +671,27 @@
    "score": 33
   },
   {
+   "id": "65a8dbe7f603",
+   "title": "Operations Business Analyst- Rental Recovery",
+   "company": "The Home Depot",
+   "family": "analyst",
+   "region": "ga",
+   "location": "GEORGIA - VIRTUAL - GA01",
+   "remote": false,
+   "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/GEORGIA---VIRTUAL---GA01/Operations-Business-Analyst--Rental-Recovery_Req197446-1",
+   "ats": "workday",
+   "posted": "2026-11-02",
+   "posted_text": "Posted 20 Days Ago",
+   "first_seen": "2026-11-22",
+   "min_years": 5,
+   "pay": "$65,000",
+   "tools": [
+    "SQL"
+   ],
+   "entry": false,
+   "score": 33
+  },
+  {
    "id": "47e402ee1faa",
    "title": "Salesforce Business Systems Administrator",
    "company": "Salesloft",
@@ -791,6 +812,27 @@
    "score": 30
   },
   {
+   "id": "6ecb7e6b9c4d",
+   "title": "Deposit Pricing Analyst",
+   "company": "Truist",
+   "family": "revops",
+   "region": "atl",
+   "location": "Atlanta, GA",
+   "remote": false,
+   "url": "https://truist.wd1.myworkdayjobs.com/Careers/job/Atlanta-GA/Deposit-Pricing-Analyst_R0121010",
+   "ats": "workday",
+   "posted": "2026-11-16",
+   "posted_text": "Posted 6 Days Ago",
+   "first_seen": "2026-11-22",
+   "min_years": 2,
+   "pay": null,
+   "tools": [
+    "SQL"
+   ],
+   "entry": false,
+   "score": 30
+  },
+  {
    "id": "89178a6f675d",
    "title": "Fraud Specialist I",
    "company": "Truist",
@@ -850,27 +892,6 @@
    "score": 23
   },
   {
-   "id": "65a8dbe7f603",
-   "title": "Operations Business Analyst- Rental Recovery",
-   "company": "The Home Depot",
-   "family": "analyst",
-   "region": "ga",
-   "location": "GEORGIA - VIRTUAL - GA01",
-   "remote": false,
-   "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/GEORGIA---VIRTUAL---GA01/Operations-Business-Analyst--Rental-Recovery_Req197446-1",
-   "ats": "workday",
-   "posted": "2026-11-02",
-   "posted_text": "Posted 20 Days Ago",
-   "first_seen": "2026-11-22",
-   "min_years": 5,
-   "pay": "$65,000",
-   "tools": [
-    "SQL"
-   ],
-   "entry": false,
-   "score": 23
-  },
-  {
    "id": "122811bcc6f1",
    "title": "Product Support Specialist",
    "company": "The Home Depot",
@@ -888,46 +909,6 @@
    "tools": [],
    "entry": false,
    "score": 23
-  },
-  {
-   "id": "8efbe2d16835",
-   "title": "Fiduciary Support Specialist",
-   "company": "Truist",
-   "family": "success",
-   "region": "atl",
-   "location": "Atlanta, GA",
-   "remote": false,
-   "url": "https://truist.wd1.myworkdayjobs.com/Careers/job/Atlanta-GA/Fiduciary-Support-Specialist_R0122035",
-   "ats": "workday",
-   "posted": "2026-11-19",
-   "posted_text": "Posted 3 Days Ago",
-   "first_seen": "2026-11-22",
-   "min_years": 1,
-   "pay": null,
-   "tools": [],
-   "entry": false,
-   "score": 20
-  },
-  {
-   "id": "6ecb7e6b9c4d",
-   "title": "Deposit Pricing Analyst",
-   "company": "Truist",
-   "family": "revops",
-   "region": "atl",
-   "location": "Atlanta, GA",
-   "remote": false,
-   "url": "https://truist.wd1.myworkdayjobs.com/Careers/job/Atlanta-GA/Deposit-Pricing-Analyst_R0121010",
-   "ats": "workday",
-   "posted": "2026-11-16",
-   "posted_text": "Posted 6 Days Ago",
-   "first_seen": "2026-11-22",
-   "min_years": 2,
-   "pay": null,
-   "tools": [
-    "SQL"
-   ],
-   "entry": false,
-   "score": 20
   },
   {
    "id": "090f00145169",
@@ -948,7 +929,26 @@
     "SQL"
    ],
    "entry": false,
-   "score": 10
+   "score": 20
+  },
+  {
+   "id": "8efbe2d16835",
+   "title": "Fiduciary Support Specialist",
+   "company": "Truist",
+   "family": "success",
+   "region": "atl",
+   "location": "Atlanta, GA",
+   "remote": false,
+   "url": "https://truist.wd1.myworkdayjobs.com/Careers/job/Atlanta-GA/Fiduciary-Support-Specialist_R0122035",
+   "ats": "workday",
+   "posted": "2026-11-19",
+   "posted_text": "Posted 3 Days Ago",
+   "first_seen": "2026-11-22",
+   "min_years": 1,
+   "pay": null,
+   "tools": [],
+   "entry": false,
+   "score": 20
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T02:40Z",
+ "updated": "2026-11-23T02:44Z",
  "companies": [
   {
    "name": "Bakkt",
@@ -473,7 +473,7 @@
    "ats": "workday",
    "key": "https://genpt.wd1.myworkdayjobs.com/Careers",
    "ok": true,
-   "fetched": 466,
+   "fetched": 467,
    "error": null,
    "discovered": false,
    "matched": 0
