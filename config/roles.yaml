@@ -155,7 +155,7 @@ families:
       - associate analyst
       - analyst i
       - junior analyst
-    search: [business analyst, operations analyst, data analyst, reporting analyst, supply chain analyst, marketing operations]
+    search: [business analyst, operations analyst, data analyst, reporting analyst, supply chain analyst, marketing operations, junior analyst]
 
   - id: programs
     name: Rotational & Trainee Programs
@@ -175,7 +175,7 @@ families:
       - graduate program
       - associate program
       - academy
-    search: [trainee, rotational, development program, leadership development, early career, new grad]
+    search: [trainee, rotational, development program, leadership development, early career, new grad, junior]
 
 # Titles containing any of these are dropped (too senior, not a job, or not a fit).
 exclude_titles:

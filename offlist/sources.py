@@ -308,7 +308,9 @@ def fetch_muse(max_pages=15, api_key=None):
 ADZUNA_QUERIES = [
     {"what": "entry level", "where": "Atlanta, GA"},
     {"what": "new grad", "where": "Atlanta, GA"},
-    {"what_or": "analyst coordinator specialist associate", "what": "junior", "where": "Atlanta, GA"},
+    {"title_only": "junior", "where": "Atlanta, GA"},
+    {"title_only": "jr", "where": "Atlanta, GA"},
+    {"title_only": "junior", "where": "Augusta, GA"},
     {"what": "implementation specialist", "where": "Atlanta, GA"},
 ]
 
@@ -336,7 +338,7 @@ def parse_adzuna(payload):
     return out
 
 
-def fetch_adzuna(app_id, app_key, max_calls=4):
+def fetch_adzuna(app_id, app_key, max_calls=6):
     out = []
     for q in ADZUNA_QUERIES[:max_calls]:
         params = {"app_id": app_id, "app_key": app_key, "results_per_page": 50,
