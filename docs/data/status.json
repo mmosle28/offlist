@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T02:15Z",
+ "updated": "2026-11-23T02:37Z",
  "companies": [
   {
    "name": "Bakkt",
@@ -401,7 +401,7 @@
    "ats": "workday",
    "key": "https://coke.wd1.myworkdayjobs.com/coca-cola-careers",
    "ok": true,
-   "fetched": 181,
+   "fetched": 182,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -461,7 +461,7 @@
    "ats": "workday",
    "key": "https://genpt.wd1.myworkdayjobs.com/Careers",
    "ok": true,
-   "fetched": 468,
+   "fetched": 467,
    "error": null,
    "discovered": false,
    "matched": 0
