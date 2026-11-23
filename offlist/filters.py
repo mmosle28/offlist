@@ -206,7 +206,9 @@ def fit_score(job, today_ord):
     if job.get("entry"):
         s += 20
     y = job.get("min_years")
-    s += {None: 5, 0: 15, 1: 10, 2: 0}.get(y, -40)
+    # Adzuna only sends a short snippet, so "no years found" there means "not checked", not "none asked"
+    unknown = -10 if job.get("ats") == "adzuna" else 5
+    s += {None: unknown, 0: 15, 1: 10, 2: 0}.get(y, -40)
     if job.get("family") in CORE_FAMILIES:
         s += 10
     elif job.get("family") == "other":

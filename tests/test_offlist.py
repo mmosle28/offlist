@@ -184,6 +184,8 @@ class TestDiscovery(unittest.TestCase):
             jobs = json.loads((d / "jobs.json").read_text())["jobs"]
             self.assertEqual([j["id"] for j in jobs], ["a1"])
             self.assertGreater(jobs[0]["score"], 0)
+            company_site = runner.fit_score(dict(row, ats="greenhouse"), 0)
+            self.assertLess(runner.fit_score(row, 0), company_site)
 
     def test_feed_company_cleanup(self):
         self.assertEqual(runner.company_key("The Home Depot"), runner.company_key("Home Depot"))
