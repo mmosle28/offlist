@@ -213,8 +213,6 @@ def fit_score(job, today_ord):
         s += 10
     elif job.get("family") == "other":
         s -= 10
-    if "SQL" in (job.get("tools") or []):
-        s -= 10
     try:
         age = today_ord - __import__("datetime").date.fromisoformat(job["first_seen"]).toordinal()
         s += 10 if age <= 3 else 5 if age <= 7 else 0

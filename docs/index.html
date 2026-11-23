@@ -173,7 +173,7 @@ function card(j){
   return `<article class="job">
     <h3>${esc(j.title)}</h3>
     <div class="co">${esc(j.company)} · ${esc(j.location||regName(j.region))}</div>
-    <div class="tags">${j.score>=75?'<span class="tag good">Strong fit</span>':""}${j.entry?'<span class="tag good">Entry level</span>':""}${isNew?'<span class="tag new">New</span>':""}<span class="tag">${esc(famName(j.family))}</span>${yearsTag(j.min_years)}${j.pay?`<span class="tag good">${esc(j.pay)}</span>`:""}${j.remote?'<span class="tag">Remote</span>':""}${(j.tools||[]).map(t=>`<span class="tag${t==="SQL"?" warn":""}">${esc(t)}</span>`).join("")}</div>
+    <div class="tags">${j.score>=75?'<span class="tag good">Strong fit</span>':""}${j.entry?'<span class="tag good">Entry level</span>':""}${isNew?'<span class="tag new">New</span>':""}<span class="tag">${esc(famName(j.family))}</span>${yearsTag(j.min_years)}${j.pay?`<span class="tag good">${esc(j.pay)}</span>`:""}${j.remote?'<span class="tag">Remote</span>':""}${(j.tools||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join("")}</div>
     <div class="co">${esc(when)}</div>
     <div class="acts"><a class="btn go" href="${esc(j.url)}" target="_blank" rel="noopener">Open posting</a>
     <a class="btn" href="resume.html?id=${j.id}">Tailor resume</a>
