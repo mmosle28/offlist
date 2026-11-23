@@ -70,6 +70,7 @@ companies:
   # Big Atlanta employers on systems offlist can't read yet: check these by hand
   - {name: Delta Air Lines, manual: "https://www.delta.com/us/en/careers/overview"}
   - {name: Cox Enterprises, manual: "https://jobs.coxenterprises.com/"}
+  - {name: Atlanta Regional Commission, manual: "https://www.governmentjobs.com/careers/atlantaregional"}
   - {name: Southern Company / Georgia Power, manual: "https://southerncompany.jobs/"}
   - {name: NCR Voyix, manual: "https://www.ncrvoyix.com/careers"}
   - {name: Intercontinental Exchange, manual: "https://www.ice.com/careers"}
