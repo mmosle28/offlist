@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T02:05Z",
+ "updated": "2026-11-23T02:15Z",
  "companies": [
   {
    "name": "Bakkt",
@@ -461,7 +461,7 @@
    "ats": "workday",
    "key": "https://genpt.wd1.myworkdayjobs.com/Careers",
    "ok": true,
-   "fetched": 452,
+   "fetched": 468,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -471,7 +471,7 @@
    "ats": "workday",
    "key": "https://tsys.wd1.myworkdayjobs.com/TSYS",
    "ok": true,
-   "fetched": 318,
+   "fetched": 327,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -641,7 +641,7 @@
    "ats": "workday",
    "key": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot",
    "ok": true,
-   "fetched": 635,
+   "fetched": 639,
    "error": null,
    "discovered": false,
    "matched": 9
@@ -661,7 +661,7 @@
    "ats": "workday",
    "key": "https://truist.wd1.myworkdayjobs.com/Careers",
    "ok": true,
-   "fetched": 561,
+   "fetched": 577,
    "error": null,
    "discovered": false,
    "matched": 9
