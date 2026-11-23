@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T02:44Z",
+ "updated": "2026-11-23T22:08Z",
  "companies": [
   {
    "name": "Bakkt",
@@ -221,6 +221,16 @@
    "matched": 0
   },
   {
+   "name": "Truist",
+   "ats": "workday",
+   "key": "https://truist.wd1.myworkdayjobs.com/Careers",
+   "ok": false,
+   "fetched": 0,
+   "error": "HTTP 520",
+   "discovered": false,
+   "matched": 0
+  },
+  {
    "name": "Atlanta Regional Commission",
    "ats": "manual",
    "key": "https://www.governmentjobs.com/careers/atlantaregional",
@@ -333,7 +343,7 @@
    "ats": "adzuna",
    "key": null,
    "ok": true,
-   "fetched": 200,
+   "fetched": 208,
    "error": null,
    "feed": true,
    "matched": 22
@@ -353,7 +363,7 @@
    "ats": "greenhouse",
    "key": "axon",
    "ok": true,
-   "fetched": 472,
+   "fetched": 469,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -383,7 +393,7 @@
    "ats": "greenhouse",
    "key": "brex",
    "ok": true,
-   "fetched": 249,
+   "fetched": 259,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -403,7 +413,7 @@
    "ats": "greenhouse",
    "key": "carvana",
    "ok": true,
-   "fetched": 1634,
+   "fetched": 1615,
    "error": null,
    "discovered": false,
    "matched": 5
@@ -413,7 +423,7 @@
    "ats": "workday",
    "key": "https://coke.wd1.myworkdayjobs.com/coca-cola-careers",
    "ok": true,
-   "fetched": 182,
+   "fetched": 184,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -423,7 +433,7 @@
    "ats": "workday",
    "key": "https://elevancehealth.wd1.myworkdayjobs.com/ANT",
    "ok": true,
-   "fetched": 176,
+   "fetched": 174,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -433,7 +443,7 @@
    "ats": "workday",
    "key": "https://equifax.wd5.myworkdayjobs.com/External",
    "ok": true,
-   "fetched": 177,
+   "fetched": 171,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -473,7 +483,7 @@
    "ats": "workday",
    "key": "https://genpt.wd1.myworkdayjobs.com/Careers",
    "ok": true,
-   "fetched": 467,
+   "fetched": 457,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -483,7 +493,7 @@
    "ats": "workday",
    "key": "https://tsys.wd1.myworkdayjobs.com/TSYS",
    "ok": true,
-   "fetched": 327,
+   "fetched": 333,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -513,7 +523,7 @@
    "ats": "greenhouse",
    "key": "gusto",
    "ok": true,
-   "fetched": 82,
+   "fetched": 85,
    "error": null,
    "discovered": false,
    "matched": 1
@@ -533,7 +543,7 @@
    "ats": "greenhouse",
    "key": "hubspotjobs",
    "ok": true,
-   "fetched": 141,
+   "fetched": 138,
    "error": null,
    "discovered": false,
    "matched": 1
@@ -553,7 +563,7 @@
    "ats": "greenhouse",
    "key": "klaviyo",
    "ok": true,
-   "fetched": 124,
+   "fetched": 122,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -583,7 +593,7 @@
    "ats": "greenhouse",
    "key": "onetrust",
    "ok": true,
-   "fetched": 84,
+   "fetched": 82,
    "error": null,
    "discovered": false,
    "matched": 3
@@ -633,7 +643,7 @@
    "ats": "greenhouse",
    "key": "samsara",
    "ok": true,
-   "fetched": 301,
+   "fetched": 286,
    "error": null,
    "discovered": false,
    "matched": 5
@@ -653,7 +663,7 @@
    "ats": "workday",
    "key": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot",
    "ok": true,
-   "fetched": 639,
+   "fetched": 636,
    "error": null,
    "discovered": false,
    "matched": 9
@@ -663,20 +673,10 @@
    "ats": "greenhouse",
    "key": "toast",
    "ok": true,
-   "fetched": 324,
+   "fetched": 313,
    "error": null,
    "discovered": false,
    "matched": 0
-  },
-  {
-   "name": "Truist",
-   "ats": "workday",
-   "key": "https://truist.wd1.myworkdayjobs.com/Careers",
-   "ok": true,
-   "fetched": 577,
-   "error": null,
-   "discovered": false,
-   "matched": 9
   },
   {
    "name": "Vendavo",
