@@ -73,6 +73,13 @@ class TestText(unittest.TestCase):
         self.assertEqual(min_years("Two years of experience preferred"), 2)
         self.assertIsNone(min_years("Founded 25 years ago. Great team."))
         self.assertIsNone(min_years(""))
+        self.assertEqual(min_years("0-3 years of relevant experience"), 0)
+
+    def test_any_experience_ask_ranks_low(self):
+        base = {"entry": True, "family": "analyst", "tools": [], "first_seen": "2026-11-22", "ats": "greenhouse"}
+        none_asked = runner.fit_score(dict(base, min_years=0), 0)
+        one_year = runner.fit_score(dict(base, min_years=1), 0)
+        self.assertGreaterEqual(none_asked - one_year, 50)
 
     def test_pay(self):
         self.assertEqual(extract_pay("Pay: $60,000 - $72,000 per year."), "$60,000 - $72,000 per year")

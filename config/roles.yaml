@@ -235,4 +235,4 @@ exclude_titles:
   - territory
 
 # Anything asking for more years than this gets a red flag on the site.
-max_years_ok: 2
+max_years_ok: 0

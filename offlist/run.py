@@ -329,7 +329,7 @@ def run(fetch=None, today=None, companies=None, out_dir=DATA, feeds=None, keep_a
     (out_dir / "roles.json").write_text(json.dumps({
         "families": [{k: f[k] for k in ("id", "name", "what", "why", "titles")}
                      for f in roles_cfg["families"]] + [OTHER_FAMILY],
-        "max_years_ok": roles_cfg.get("max_years_ok", 2)}, indent=1))
+        "max_years_ok": roles_cfg.get("max_years_ok", 0)}, indent=1))
     (out_dir / "seen.json").write_text(json.dumps(seen, indent=0, sort_keys=True))
     (out_dir / "ats_cache.json").write_text(json.dumps(cache, indent=1, sort_keys=True))
 

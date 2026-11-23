@@ -112,7 +112,7 @@ footer{color:var(--mute);font-size:14px}
         <input id="q" type="search" placeholder="Search title or company" autocomplete="off">
         <div class="chips" id="regionChips"></div>
         <div class="chips">
-          <button class="chip" id="optYears" aria-pressed="true">Hide 3+ years required</button>
+          <button class="chip" id="optYears" aria-pressed="true">Hide jobs asking for experience</button>
           <button class="chip" id="optNew" aria-pressed="false">New this week</button>
           <button class="chip" id="optSaved" aria-pressed="false">Saved</button>
           <button class="chip" id="optApplied" aria-pressed="false">Hide applied</button>
@@ -136,7 +136,7 @@ footer{color:var(--mute);font-size:14px}
 <script>
 {
 const REGIONS=[["all","All areas"],["atl","Metro Atlanta"],["aug","Augusta"],["remote","Remote"],["ga","Rest of Georgia"]];
-const st={jobs:[],fams:[],maxOk:2,region:"all",fam:null,q:"",years:true,fresh:false,saved:false,hideApplied:false,noSql:false,marks:{}};
+const st={jobs:[],fams:[],maxOk:0,region:"all",fam:null,q:"",years:true,fresh:false,saved:false,hideApplied:false,noSql:false,marks:{}};
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 try{st.marks=JSON.parse(localStorage.getItem("offlist-marks")||"{}")}catch(e){}
@@ -231,7 +231,7 @@ $("regionChips").innerHTML=REGIONS.map(([id,n])=>`<button class="chip" data-regi
 
 const get=p=>fetch(p,{cache:"no-store"}).then(r=>r.ok?r.json():null).catch(()=>null);
 Promise.all([get("data/jobs.json"),get("data/roles.json"),get("data/status.json")]).then(([jd,rd,sd])=>{
-  st.jobs=(jd&&jd.jobs)||[];st.fams=(rd&&rd.families)||[];st.maxOk=(rd&&rd.max_years_ok)??2;
+  st.jobs=(jd&&jd.jobs)||[];st.fams=(rd&&rd.families)||[];st.maxOk=(rd&&rd.max_years_ok)??0;
   $("fTotal").textContent=st.jobs.length;
   $("fNew").textContent=st.jobs.filter(j=>daysAgo(j.first_seen)<=7).length;
   $("fUpd").textContent=jd&&jd.updated?new Date(jd.updated.replace("Z",":00Z")).toLocaleDateString(undefined,{month:"short",day:"numeric"}):"Pending";
