@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T02:37Z",
+ "updated": "2026-11-23T02:40Z",
  "companies": [
   {
    "name": "Bakkt",
@@ -218,6 +218,18 @@
    "fetched": 0,
    "error": "HTTP 404",
    "feed": true,
+   "matched": 0
+  },
+  {
+   "name": "Atlanta Regional Commission",
+   "ats": "manual",
+   "key": "https://www.governmentjobs.com/careers/atlantaregional",
+   "ok": false,
+   "fetched": 0,
+   "error": null,
+   "discovered": false,
+   "manual": true,
+   "url": "https://www.governmentjobs.com/careers/atlantaregional",
    "matched": 0
   },
   {
@@ -461,7 +473,7 @@
    "ats": "workday",
    "key": "https://genpt.wd1.myworkdayjobs.com/Careers",
    "ok": true,
-   "fetched": 467,
+   "fetched": 466,
    "error": null,
    "discovered": false,
    "matched": 0
