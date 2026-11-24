@@ -108,6 +108,9 @@ def fetch_company(entry, cache, search_terms):
     except sources.FetchError as e:
         status["error"] = str(e)
         return status, []
+    except Exception as e:  # a dropped connection at one company shouldn't stop the whole run
+        status["error"] = f"{type(e).__name__}: {e}"[:200]
+        return status, []
     status.update(ok=True, fetched=len(jobs))
     for j in jobs:
         j["company"] = name
@@ -124,7 +127,7 @@ def enrich(job):
             job["posted"] = job.get("posted") or start
         elif job["ats"] == "smartrecruiters":
             job["description"] = sources.smartrecruiters_detail(job)
-    except sources.FetchError:
+    except Exception:
         pass
     return job
 

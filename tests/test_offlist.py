@@ -206,6 +206,15 @@ class TestDiscovery(unittest.TestCase):
         kept = runner.select(jobs, roles, places)
         self.assertEqual([(j["title"], j["region"]) for j in kept], [("Deployment Strategist", "elsewhere")])
 
+    def test_one_company_crashing_does_not_stop_the_run(self):
+        import http.client
+        from unittest import mock
+        with mock.patch.object(runner.sources, "FETCHERS", {"greenhouse": mock.Mock(side_effect=http.client.IncompleteRead(b""))}):
+            status, jobs = runner.fetch_company({"name": "Acme", "greenhouse": "acme"}, {}, [])
+        self.assertFalse(status["ok"])
+        self.assertIn("IncompleteRead", status["error"])
+        self.assertEqual(jobs, [])
+
     def test_feed_company_cleanup(self):
         self.assertEqual(runner.company_key("The Home Depot"), runner.company_key("Home Depot"))
         self.assertEqual(runner.company_key("Ferguson Enterprises, LLC."), "ferguson enterprises")
