@@ -34,6 +34,7 @@ class RoleMatcher:
         for fam in roles_cfg["families"]:
             pats = [_phrase_regex(t) for t in fam["titles"]]
             self.families.append((fam["id"], pats))
+        self.anywhere = {f["id"] for f in roles_cfg["families"] if f.get("anywhere")}
         self.exclude = [_phrase_regex(t) for t in roles_cfg.get("exclude_titles", [])]
 
     def is_excluded(self, title):
@@ -55,6 +56,11 @@ class LocationMatcher:
     def __init__(self, loc_cfg):
         self.regions = [(r["id"], [p.lower() for p in r["places"]]) for r in loc_cfg["regions"]]
         self.non_us = [m.lower() for m in loc_cfg.get("non_us_markers", [])]
+
+    def is_foreign(self, location):
+        loc = " " + (location or "").lower() + " "
+        us = any(k in loc for k in ("united states", " us", "usa", "u.s."))
+        return any(m in loc for m in self.non_us) and not us
 
     def region(self, location, remote_flag=False):
         """Return the first matching region id, or None if the job is out of area."""
@@ -197,7 +203,7 @@ def office_title(title):
     return bool(_OFFICE_TITLE.search(title or "")) and not _MANUAL.search(title or "")
 
 
-CORE_FAMILIES = {"revops", "systems", "implementation", "analyst"}
+CORE_FAMILIES = {"revops", "systems", "implementation", "analyst", "deployment"}
 
 
 def fit_score(job, today_ord):

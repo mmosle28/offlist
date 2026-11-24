@@ -70,6 +70,25 @@ families:
       - systems administrator
     search: [business systems, salesforce, crm, systems analyst, erp, hris, application analyst]
 
+  - id: deployment
+    name: Deployment Strategy
+    anywhere: true   # mostly in New York and San Francisco, so these show wherever they are
+    what: >
+      You embed with a customer, learn how their business runs, and roll out the
+      company's software (often AI) so it actually gets used. You run the project,
+      shape the workflows, and train the people. It is the non coding partner of a
+      Forward Deployed Engineer.
+    why: >
+      Mixes customer skills from sales with systems thinking from an IS degree.
+      The best path toward Forward Deployed Engineer before you can code.
+    titles:
+      - deployment strategist
+      - ai deployment
+      - implementation strategist
+      - forward deployed strategist
+      - deployment strategy
+    search: [deployment strategist]
+
   - id: implementation
     name: Implementation & Onboarding
     what: >

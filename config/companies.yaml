@@ -67,6 +67,16 @@ companies:
   - {name: Manhattan Associates, url: "https://manh.wd5.myworkdayjobs.com/External"}
   - {name: Genuine Parts, url: "https://genpt.wd1.myworkdayjobs.com/Careers"}
 
+  # Companies that hire Deployment Strategists (the non coding side of forward deployed work)
+  - {name: Palantir, lever: palantir}
+  - {name: n8n, ashby: n8n}
+  - {name: H Company, ashby: hcompany}
+  - {name: HappyRobot, ashby: happyrobot.ai}
+  - {name: Northslope Technologies, ashby: northslope-technologies}
+  - {name: Moment, ashby: moment}
+  - {name: Serval, ashby: Serval}
+  - {name: Nooks, ashby: nooks}
+
   # Big Atlanta employers on systems offlist can't read yet: check these by hand
   - {name: Delta Air Lines, manual: "https://www.delta.com/us/en/careers/overview"}
   - {name: Cox Enterprises, manual: "https://jobs.coxenterprises.com/"}

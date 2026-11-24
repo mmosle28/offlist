@@ -194,6 +194,18 @@ class TestDiscovery(unittest.TestCase):
             company_site = runner.fit_score(dict(row, ats="greenhouse"), 0)
             self.assertLess(runner.fit_score(row, 0), company_site)
 
+    def test_deployment_roles_show_anywhere_in_us(self):
+        roles = RoleMatcher(runner.load_yaml("roles.yaml"))
+        places = LocationMatcher(runner.load_yaml("locations.yaml"))
+        self.assertEqual(roles.family("Deployment Strategist, New Grad"), "deployment")
+        self.assertIsNone(roles.family("Lead Deployment Strategist"))
+        base = {"description": "", "remote": False, "company": "X", "url": "u"}
+        jobs = [dict(base, title="Deployment Strategist", location="New York, NY"),
+                dict(base, title="Deployment Strategist", location="London, United Kingdom"),
+                dict(base, title="Business Analyst", location="New York, NY")]
+        kept = runner.select(jobs, roles, places)
+        self.assertEqual([(j["title"], j["region"]) for j in kept], [("Deployment Strategist", "elsewhere")])
+
     def test_feed_company_cleanup(self):
         self.assertEqual(runner.company_key("The Home Depot"), runner.company_key("Home Depot"))
         self.assertEqual(runner.company_key("Ferguson Enterprises, LLC."), "ferguson enterprises")

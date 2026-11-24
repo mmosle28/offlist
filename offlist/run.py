@@ -143,6 +143,8 @@ def select(jobs, roles, places):
             else:
                 continue
         reg = places.region(j["location"], j.get("remote"))
+        if not reg and fam in roles.anywhere and not places.is_foreign(j["location"]):
+            reg = "elsewhere"  # worth relocating for
         if not reg:
             continue
         j["family"], j["region"], j["entry"] = fam, reg, entry
