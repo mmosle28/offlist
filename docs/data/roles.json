@@ -52,6 +52,19 @@
    ]
   },
   {
+   "id": "deployment",
+   "name": "Deployment Strategy",
+   "what": "You embed with a customer, learn how their business runs, and roll out the company's software (often AI) so it actually gets used. You run the project, shape the workflows, and train the people. It is the non coding partner of a Forward Deployed Engineer.\n",
+   "why": "Mixes customer skills from sales with systems thinking from an IS degree. The best path toward Forward Deployed Engineer before you can code.\n",
+   "titles": [
+    "deployment strategist",
+    "ai deployment",
+    "implementation strategist",
+    "forward deployed strategist",
+    "deployment strategy"
+   ]
+  },
+  {
    "id": "implementation",
    "name": "Implementation & Onboarding",
    "what": "When a company buys software, you get them set up: learn what they need, configure the product, move their data over, and train their team. Project work with customers, usually with heavy training at the start.\n",

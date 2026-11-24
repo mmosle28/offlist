@@ -1,6 +1,18 @@
 {
- "updated": "2026-11-23T22:08Z",
+ "updated": "2026-11-24T16:20Z",
  "companies": [
+  {
+   "name": "Adoreal",
+   "ats": "guess",
+   "key": [
+    "adoreal"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: adoreal)",
+   "discovered": true,
+   "matched": 0
+  },
   {
    "name": "Bakkt",
    "ats": "guess",
@@ -39,6 +51,20 @@
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: cardlytics, cardlyticsinc)",
    "discovered": false,
+   "matched": 0
+  },
+  {
+   "name": "Gwinnett Technical College",
+   "ats": "guess",
+   "key": [
+    "gwinnetttechnicalcollege",
+    "gwinnett-technical-college",
+    "gwinnett"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: gwinnetttechnicalcollege, gwinnett-technical-college, gwinnett)",
+   "discovered": true,
    "matched": 0
   },
   {
@@ -103,6 +129,20 @@
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: patientco, patient-co)",
    "discovered": false,
+   "matched": 0
+  },
+  {
+   "name": "Raymond James Financial, Inc.",
+   "ats": "guess",
+   "key": [
+    "raymondjamesfinancial",
+    "raymond-james-financial",
+    "raymond"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: raymondjamesfinancial, raymond-james-financial, raymond)",
+   "discovered": true,
    "matched": 0
   },
   {
@@ -221,13 +261,17 @@
    "matched": 0
   },
   {
-   "name": "Truist",
-   "ats": "workday",
-   "key": "https://truist.wd1.myworkdayjobs.com/Careers",
+   "name": "Voya Financial",
+   "ats": "guess",
+   "key": [
+    "voyafinancial",
+    "voya-financial",
+    "voya"
+   ],
    "ok": false,
    "fetched": 0,
-   "error": "HTTP 520",
-   "discovered": false,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: voyafinancial, voya-financial, voya)",
+   "discovered": true,
    "matched": 0
   },
   {
@@ -363,7 +407,7 @@
    "ats": "greenhouse",
    "key": "axon",
    "ok": true,
-   "fetched": 469,
+   "fetched": 463,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -393,7 +437,7 @@
    "ats": "greenhouse",
    "key": "brex",
    "ok": true,
-   "fetched": 259,
+   "fetched": 263,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -413,7 +457,7 @@
    "ats": "greenhouse",
    "key": "carvana",
    "ok": true,
-   "fetched": 1615,
+   "fetched": 1607,
    "error": null,
    "discovered": false,
    "matched": 5
@@ -423,7 +467,7 @@
    "ats": "workday",
    "key": "https://coke.wd1.myworkdayjobs.com/coca-cola-careers",
    "ok": true,
-   "fetched": 184,
+   "fetched": 181,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -433,7 +477,7 @@
    "ats": "workday",
    "key": "https://elevancehealth.wd1.myworkdayjobs.com/ANT",
    "ok": true,
-   "fetched": 174,
+   "fetched": 171,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -443,7 +487,7 @@
    "ats": "workday",
    "key": "https://equifax.wd5.myworkdayjobs.com/External",
    "ok": true,
-   "fetched": 171,
+   "fetched": 175,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -473,7 +517,7 @@
    "ats": "ashby",
    "key": "fullstory",
    "ok": true,
-   "fetched": 10,
+   "fetched": 9,
    "error": null,
    "discovered": false,
    "matched": 1
@@ -483,7 +527,7 @@
    "ats": "workday",
    "key": "https://genpt.wd1.myworkdayjobs.com/Careers",
    "ok": true,
-   "fetched": 457,
+   "fetched": 461,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -493,7 +537,7 @@
    "ats": "workday",
    "key": "https://tsys.wd1.myworkdayjobs.com/TSYS",
    "ok": true,
-   "fetched": 333,
+   "fetched": 328,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -529,6 +573,26 @@
    "matched": 1
   },
   {
+   "name": "H Company",
+   "ats": "ashby",
+   "key": "hcompany",
+   "ok": true,
+   "fetched": 28,
+   "error": null,
+   "discovered": false,
+   "matched": 4
+  },
+  {
+   "name": "HappyRobot",
+   "ats": "ashby",
+   "key": "happyrobot.ai",
+   "ok": true,
+   "fetched": 33,
+   "error": null,
+   "discovered": false,
+   "matched": 1
+  },
+  {
    "name": "Homebound",
    "ats": "ashby",
    "key": "homebound",
@@ -543,7 +607,7 @@
    "ats": "greenhouse",
    "key": "hubspotjobs",
    "ok": true,
-   "fetched": 138,
+   "fetched": 140,
    "error": null,
    "discovered": false,
    "matched": 1
@@ -553,7 +617,7 @@
    "ats": "greenhouse",
    "key": "kaseya",
    "ok": true,
-   "fetched": 95,
+   "fetched": 93,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -563,7 +627,7 @@
    "ats": "greenhouse",
    "key": "klaviyo",
    "ok": true,
-   "fetched": 122,
+   "fetched": 117,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -573,7 +637,7 @@
    "ats": "greenhouse",
    "key": "litmos",
    "ok": true,
-   "fetched": 11,
+   "fetched": 10,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -589,6 +653,36 @@
    "matched": 0
   },
   {
+   "name": "Moment",
+   "ats": "ashby",
+   "key": "moment",
+   "ok": true,
+   "fetched": 12,
+   "error": null,
+   "discovered": false,
+   "matched": 1
+  },
+  {
+   "name": "Nooks",
+   "ats": "ashby",
+   "key": "nooks",
+   "ok": true,
+   "fetched": 64,
+   "error": null,
+   "discovered": false,
+   "matched": 2
+  },
+  {
+   "name": "Northslope Technologies",
+   "ats": "ashby",
+   "key": "northslope-technologies",
+   "ok": true,
+   "fetched": 0,
+   "error": null,
+   "discovered": false,
+   "matched": 0
+  },
+  {
    "name": "OneTrust",
    "ats": "greenhouse",
    "key": "onetrust",
@@ -597,6 +691,16 @@
    "error": null,
    "discovered": false,
    "matched": 3
+  },
+  {
+   "name": "Palantir",
+   "ats": "lever",
+   "key": "palantir",
+   "ok": true,
+   "fetched": 305,
+   "error": null,
+   "discovered": false,
+   "matched": 18
   },
   {
    "name": "Pindrop",
@@ -633,7 +737,7 @@
    "ats": "greenhouse",
    "key": "salesloft",
    "ok": true,
-   "fetched": 25,
+   "fetched": 26,
    "error": null,
    "discovered": false,
    "matched": 1
@@ -643,10 +747,10 @@
    "ats": "greenhouse",
    "key": "samsara",
    "ok": true,
-   "fetched": 286,
+   "fetched": 292,
    "error": null,
    "discovered": false,
-   "matched": 5
+   "matched": 4
   },
   {
    "name": "Scan.com",
@@ -659,11 +763,21 @@
    "matched": 2
   },
   {
+   "name": "Serval",
+   "ats": "ashby",
+   "key": "Serval",
+   "ok": true,
+   "fetched": 68,
+   "error": null,
+   "discovered": false,
+   "matched": 2
+  },
+  {
    "name": "The Home Depot",
    "ats": "workday",
    "key": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot",
    "ok": true,
-   "fetched": 636,
+   "fetched": 633,
    "error": null,
    "discovered": false,
    "matched": 9
@@ -673,20 +787,40 @@
    "ats": "greenhouse",
    "key": "toast",
    "ok": true,
-   "fetched": 313,
+   "fetched": 308,
    "error": null,
    "discovered": false,
    "matched": 0
+  },
+  {
+   "name": "Truist",
+   "ats": "workday",
+   "key": "https://truist.wd1.myworkdayjobs.com/Careers",
+   "ok": true,
+   "fetched": 569,
+   "error": null,
+   "discovered": false,
+   "matched": 8
   },
   {
    "name": "Vendavo",
    "ats": "lever",
    "key": "vendavo",
    "ok": true,
-   "fetched": 7,
+   "fetched": 8,
    "error": null,
    "discovered": false,
    "matched": 0
+  },
+  {
+   "name": "n8n",
+   "ats": "ashby",
+   "key": "n8n",
+   "ok": true,
+   "fetched": 69,
+   "error": null,
+   "discovered": false,
+   "matched": 2
   }
  ]
 }

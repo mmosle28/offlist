@@ -12,7 +12,7 @@
  "Adoreal": {
   "first": "2026-11-23",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-24",
   "slugs": [
    "adoreal"
   ]
@@ -58,7 +58,7 @@
  "Gwinnett Technical College": {
   "first": "2026-11-23",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-24",
   "slugs": [
    "gwinnetttechnicalcollege",
    "gwinnett-technical-college",
@@ -112,7 +112,7 @@
  "Raymond James Financial, Inc.": {
   "first": "2026-11-23",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-24",
   "slugs": [
    "raymondjamesfinancial",
    "raymond-james-financial",
@@ -122,7 +122,7 @@
  "Scan.com": {
   "first": "2026-11-22",
   "found": true,
-  "last_try": "2026-11-23",
+  "last_try": "2026-11-24",
   "slugs": [
    "scancom",
    "scan-com",
@@ -162,7 +162,7 @@
  "Voya Financial": {
   "first": "2026-11-23",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-24",
   "slugs": [
    "voyafinancial",
    "voya-financial",
