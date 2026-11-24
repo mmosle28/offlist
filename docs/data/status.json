@@ -1,18 +1,6 @@
 {
- "updated": "2026-11-24T16:20Z",
+ "updated": "2026-11-24T16:23Z",
  "companies": [
-  {
-   "name": "Adoreal",
-   "ats": "guess",
-   "key": [
-    "adoreal"
-   ],
-   "ok": false,
-   "fetched": 0,
-   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: adoreal)",
-   "discovered": true,
-   "matched": 0
-  },
   {
    "name": "Bakkt",
    "ats": "guess",
@@ -51,20 +39,6 @@
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: cardlytics, cardlyticsinc)",
    "discovered": false,
-   "matched": 0
-  },
-  {
-   "name": "Gwinnett Technical College",
-   "ats": "guess",
-   "key": [
-    "gwinnetttechnicalcollege",
-    "gwinnett-technical-college",
-    "gwinnett"
-   ],
-   "ok": false,
-   "fetched": 0,
-   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: gwinnetttechnicalcollege, gwinnett-technical-college, gwinnett)",
-   "discovered": true,
    "matched": 0
   },
   {
@@ -129,20 +103,6 @@
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: patientco, patient-co)",
    "discovered": false,
-   "matched": 0
-  },
-  {
-   "name": "Raymond James Financial, Inc.",
-   "ats": "guess",
-   "key": [
-    "raymondjamesfinancial",
-    "raymond-james-financial",
-    "raymond"
-   ],
-   "ok": false,
-   "fetched": 0,
-   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: raymondjamesfinancial, raymond-james-financial, raymond)",
-   "discovered": true,
    "matched": 0
   },
   {
@@ -258,20 +218,6 @@
    "fetched": 0,
    "error": "HTTP 404",
    "feed": true,
-   "matched": 0
-  },
-  {
-   "name": "Voya Financial",
-   "ats": "guess",
-   "key": [
-    "voyafinancial",
-    "voya-financial",
-    "voya"
-   ],
-   "ok": false,
-   "fetched": 0,
-   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: voyafinancial, voya-financial, voya)",
-   "discovered": true,
    "matched": 0
   },
   {
@@ -527,7 +473,7 @@
    "ats": "workday",
    "key": "https://genpt.wd1.myworkdayjobs.com/Careers",
    "ok": true,
-   "fetched": 461,
+   "fetched": 462,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -580,7 +526,7 @@
    "fetched": 28,
    "error": null,
    "discovered": false,
-   "matched": 4
+   "matched": 3
   },
   {
    "name": "HappyRobot",
@@ -700,7 +646,7 @@
    "fetched": 305,
    "error": null,
    "discovered": false,
-   "matched": 18
+   "matched": 13
   },
   {
    "name": "Pindrop",
@@ -817,7 +763,7 @@
    "ats": "ashby",
    "key": "n8n",
    "ok": true,
-   "fetched": 69,
+   "fetched": 68,
    "error": null,
    "discovered": false,
    "matched": 2

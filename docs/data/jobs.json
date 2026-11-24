@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T16:20Z",
+ "updated": "2026-11-24T16:23Z",
  "jobs": [
   {
    "id": "9dfc406adff2",
@@ -43,28 +43,6 @@
    ],
    "entry": true,
    "score": 98
-  },
-  {
-   "id": "1ed5fe798576",
-   "title": "Deployment Strategist, New Grad - Commercial",
-   "company": "Palantir",
-   "family": "deployment",
-   "region": "elsewhere",
-   "location": "Seoul, South Korea",
-   "remote": false,
-   "url": "https://jobs.lever.co/palantir/d5f11334-3a73-4094-b7e0-d05b54e475b8",
-   "ats": "lever",
-   "posted": "2026-08-10",
-   "posted_text": null,
-   "first_seen": "2026-11-24",
-   "min_years": null,
-   "pay": null,
-   "tools": [
-    "SQL",
-    "Python"
-   ],
-   "entry": true,
-   "score": 95
   },
   {
    "id": "1da0bf6c5ccf",
@@ -124,28 +102,6 @@
    "score": 80
   },
   {
-   "id": "7204d13440bd",
-   "title": "Deployment Strategist - Germany Forward Deployed",
-   "company": "Palantir",
-   "family": "deployment",
-   "region": "elsewhere",
-   "location": "Washington, D.C.",
-   "remote": false,
-   "url": "https://jobs.lever.co/palantir/6940fc9a-b79c-4935-a90f-1c6a02e54fb1",
-   "ats": "lever",
-   "posted": "2026-10-23",
-   "posted_text": null,
-   "first_seen": "2026-11-24",
-   "min_years": null,
-   "pay": "$110,000 - $170,000/year",
-   "tools": [
-    "SQL",
-    "Python"
-   ],
-   "entry": false,
-   "score": 78
-  },
-  {
    "id": "a4cbaf2330b0",
    "title": "Deployment Strategist - Intel",
    "company": "Palantir",
@@ -156,50 +112,6 @@
    "url": "https://jobs.lever.co/palantir/e5b8c2f0-aa26-4615-ba92-f4b5c175c112",
    "ats": "lever",
    "posted": "2021-10-18",
-   "posted_text": null,
-   "first_seen": "2026-11-24",
-   "min_years": null,
-   "pay": "$110,000 - $170,000/year",
-   "tools": [
-    "SQL",
-    "Python"
-   ],
-   "entry": false,
-   "score": 78
-  },
-  {
-   "id": "43647ea2371f",
-   "title": "Deployment Strategist - Japan Forward Deployed",
-   "company": "Palantir",
-   "family": "deployment",
-   "region": "elsewhere",
-   "location": "Washington, D.C.",
-   "remote": false,
-   "url": "https://jobs.lever.co/palantir/fa93a1f8-dc95-40d0-b5ca-f2aebaab0806",
-   "ats": "lever",
-   "posted": "2024-10-03",
-   "posted_text": null,
-   "first_seen": "2026-11-24",
-   "min_years": null,
-   "pay": "$110,000 - $170,000/year",
-   "tools": [
-    "SQL",
-    "Python"
-   ],
-   "entry": false,
-   "score": 78
-  },
-  {
-   "id": "0a4117d6acc9",
-   "title": "Deployment Strategist - Korea Forward Deployed",
-   "company": "Palantir",
-   "family": "deployment",
-   "region": "elsewhere",
-   "location": "Washington, D.C.",
-   "remote": false,
-   "url": "https://jobs.lever.co/palantir/1a53939d-8ffa-4570-b31a-6d0bc53fdb59",
-   "ats": "lever",
-   "posted": "2024-10-03",
    "posted_text": null,
    "first_seen": "2026-11-24",
    "min_years": null,
@@ -357,16 +269,16 @@
    "score": 78
   },
   {
-   "id": "b700a2c9e520",
+   "id": "f9acea49ce76",
    "title": "Deployment Strategist",
    "company": "Palantir",
    "family": "deployment",
    "region": "elsewhere",
-   "location": "Seoul, South Korea",
+   "location": "Chicago, IL",
    "remote": false,
-   "url": "https://jobs.lever.co/palantir/2e193bdf-e668-49c1-ba32-66cc1aa131a4",
+   "url": "https://jobs.lever.co/palantir/bc087dba-1e41-49e0-83bd-36832122363d",
    "ats": "lever",
-   "posted": "2022-04-22",
+   "posted": "2022-04-27",
    "posted_text": null,
    "first_seen": "2026-11-24",
    "min_years": null,
@@ -394,27 +306,6 @@
    "min_years": null,
    "pay": null,
    "tools": [],
-   "entry": false,
-   "score": 75
-  },
-  {
-   "id": "6c09ea41516d",
-   "title": "Implementation Strategist",
-   "company": "H Company",
-   "family": "deployment",
-   "region": "remote",
-   "location": "Hybrid Paris",
-   "remote": true,
-   "url": "https://jobs.ashbyhq.com/hcompany/f3d58db1-0e00-411c-a693-ba1f8c4ce736",
-   "ats": "ashby",
-   "posted": "2026-06-03",
-   "posted_text": null,
-   "first_seen": "2026-11-24",
-   "min_years": null,
-   "pay": null,
-   "tools": [
-    "Python"
-   ],
    "entry": false,
    "score": 75
   },
