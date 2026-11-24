@@ -25,4 +25,6 @@ regions:
 non_us_markers: [canada, united kingdom, " uk", london, india, philippines, mexico,
                  brazil, germany, ireland, poland, australia, singapore, emea, apac, latam,
                  europe, toronto, vancouver, costa rica, colombia, argentina, spain, france,
-                 netherlands, japan, israel]
+                 netherlands, japan, israel, korea, seoul, tokyo, paris, berlin, munich,
+                 amsterdam, dublin, sydney, china, taiwan, hong kong, switzerland, zurich,
+                 sweden, stockholm, denmark, italy, portugal, uae, dubai, saudi, qatar]

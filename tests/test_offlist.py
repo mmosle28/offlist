@@ -202,7 +202,10 @@ class TestDiscovery(unittest.TestCase):
         base = {"description": "", "remote": False, "company": "X", "url": "u"}
         jobs = [dict(base, title="Deployment Strategist", location="New York, NY"),
                 dict(base, title="Deployment Strategist", location="London, United Kingdom"),
-                dict(base, title="Business Analyst", location="New York, NY")]
+                dict(base, title="Business Analyst", location="New York, NY"),
+                dict(base, title="Deployment Strategist", location="Seoul, South Korea"),
+                dict(base, title="Deployment Strategist - Japan Forward Deployed", location="Washington, D.C."),
+                dict(base, title="Implementation Strategist", location="Hybrid Paris")]
         kept = runner.select(jobs, roles, places)
         self.assertEqual([(j["title"], j["region"]) for j in kept], [("Deployment Strategist", "elsewhere")])
 
