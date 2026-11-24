@@ -3,6 +3,10 @@
   "ats": "greenhouse",
   "key": "agilysys"
  },
+ "Anthropic": {
+  "ats": "greenhouse",
+  "key": "anthropic"
+ },
  "Axon": {
   "ats": "greenhouse",
   "key": "axon"
@@ -27,6 +31,10 @@
   "ats": "greenhouse",
   "key": "carvana"
  },
+ "Decagon": {
+  "ats": "ashby",
+  "key": "decagon"
+ },
  "Flock Safety": {
   "ats": "ashby",
   "key": "flock"
@@ -39,6 +47,10 @@
   "ats": "ashby",
   "key": "fullstory"
  },
+ "Glean": {
+  "ats": "greenhouse",
+  "key": "gleanwork"
+ },
  "Greenlight": {
   "ats": "lever",
   "key": "greenlight"
@@ -50,6 +62,10 @@
  "Gusto": {
   "ats": "greenhouse",
   "key": "gusto"
+ },
+ "Harvey": {
+  "ats": "ashby",
+  "key": "harvey"
  },
  "Homebound": {
   "ats": "ashby",
@@ -75,6 +91,10 @@
   "ats": "greenhouse",
   "key": "onetrust"
  },
+ "OpenAI": {
+  "ats": "ashby",
+  "key": "openai"
+ },
  "Pindrop": {
   "ats": "greenhouse",
   "key": "pindropsecurity"
@@ -99,6 +119,10 @@
   "ats": "ashby",
   "key": "scan-com"
  },
+ "Sierra": {
+  "ats": "ashby",
+  "key": "sierra"
+ },
  "Toast": {
   "ats": "greenhouse",
   "key": "toast"
@@ -106,5 +130,9 @@
  "Vendavo": {
   "ats": "lever",
   "key": "vendavo"
+ },
+ "Writer": {
+  "ats": "ashby",
+  "key": "writer"
  }
 }

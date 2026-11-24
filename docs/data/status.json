@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T16:23Z",
+ "updated": "2026-11-24T16:37Z",
  "companies": [
   {
    "name": "Bakkt",
@@ -38,6 +38,18 @@
    "ok": false,
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: cardlytics, cardlyticsinc)",
+   "discovered": false,
+   "matched": 0
+  },
+  {
+   "name": "Hebbia",
+   "ats": "guess",
+   "key": [
+    "hebbia"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: hebbia)",
    "discovered": false,
    "matched": 0
   },
@@ -349,6 +361,16 @@
    "matched": 1
   },
   {
+   "name": "Anthropic",
+   "ats": "greenhouse",
+   "key": "anthropic",
+   "ok": true,
+   "fetched": 634,
+   "error": null,
+   "discovered": false,
+   "matched": 1
+  },
+  {
    "name": "Axon",
    "ats": "greenhouse",
    "key": "axon",
@@ -403,7 +425,7 @@
    "ats": "greenhouse",
    "key": "carvana",
    "ok": true,
-   "fetched": 1607,
+   "fetched": 1608,
    "error": null,
    "discovered": false,
    "matched": 5
@@ -414,6 +436,16 @@
    "key": "https://coke.wd1.myworkdayjobs.com/coca-cola-careers",
    "ok": true,
    "fetched": 181,
+   "error": null,
+   "discovered": false,
+   "matched": 0
+  },
+  {
+   "name": "Decagon",
+   "ats": "ashby",
+   "key": "decagon",
+   "ok": true,
+   "fetched": 113,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -473,7 +505,17 @@
    "ats": "workday",
    "key": "https://genpt.wd1.myworkdayjobs.com/Careers",
    "ok": true,
-   "fetched": 462,
+   "fetched": 461,
+   "error": null,
+   "discovered": false,
+   "matched": 0
+  },
+  {
+   "name": "Glean",
+   "ats": "greenhouse",
+   "key": "gleanwork",
+   "ok": true,
+   "fetched": 128,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -493,7 +535,7 @@
    "ats": "lever",
    "key": "greenlight",
    "ok": true,
-   "fetched": 15,
+   "fetched": 14,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -539,6 +581,16 @@
    "matched": 1
   },
   {
+   "name": "Harvey",
+   "ats": "ashby",
+   "key": "harvey",
+   "ok": true,
+   "fetched": 396,
+   "error": null,
+   "discovered": false,
+   "matched": 8
+  },
+  {
    "name": "Homebound",
    "ats": "ashby",
    "key": "homebound",
@@ -573,7 +625,7 @@
    "ats": "greenhouse",
    "key": "klaviyo",
    "ok": true,
-   "fetched": 117,
+   "fetched": 118,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -639,14 +691,14 @@
    "matched": 3
   },
   {
-   "name": "Palantir",
-   "ats": "lever",
-   "key": "palantir",
+   "name": "OpenAI",
+   "ats": "ashby",
+   "key": "openai",
    "ok": true,
-   "fetched": 305,
+   "fetched": 866,
    "error": null,
    "discovered": false,
-   "matched": 13
+   "matched": 10
   },
   {
    "name": "Pindrop",
@@ -683,7 +735,7 @@
    "ats": "greenhouse",
    "key": "salesloft",
    "ok": true,
-   "fetched": 26,
+   "fetched": 25,
    "error": null,
    "discovered": false,
    "matched": 1
@@ -693,7 +745,7 @@
    "ats": "greenhouse",
    "key": "samsara",
    "ok": true,
-   "fetched": 292,
+   "fetched": 289,
    "error": null,
    "discovered": false,
    "matched": 4
@@ -719,11 +771,31 @@
    "matched": 2
   },
   {
+   "name": "Sierra",
+   "ats": "ashby",
+   "key": "sierra",
+   "ok": true,
+   "fetched": 201,
+   "error": null,
+   "discovered": false,
+   "matched": 0
+  },
+  {
+   "name": "Simile",
+   "ats": "ashby",
+   "key": "simile",
+   "ok": true,
+   "fetched": 15,
+   "error": null,
+   "discovered": false,
+   "matched": 4
+  },
+  {
    "name": "The Home Depot",
    "ats": "workday",
    "key": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot",
    "ok": true,
-   "fetched": 633,
+   "fetched": 632,
    "error": null,
    "discovered": false,
    "matched": 9
@@ -754,6 +826,16 @@
    "key": "vendavo",
    "ok": true,
    "fetched": 8,
+   "error": null,
+   "discovered": false,
+   "matched": 0
+  },
+  {
+   "name": "Writer",
+   "ats": "ashby",
+   "key": "writer",
+   "ok": true,
+   "fetched": 45,
    "error": null,
    "discovered": false,
    "matched": 0
