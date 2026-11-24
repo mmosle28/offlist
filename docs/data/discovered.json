@@ -47,6 +47,14 @@
    "ferguson"
   ]
  },
+ "Foxfruit": {
+  "first": "2026-11-24",
+  "found": false,
+  "last_try": "2000-01-01",
+  "slugs": [
+   "foxfruit"
+  ]
+ },
  "Guidehouse": {
   "first": "2026-11-22",
   "found": false,
@@ -99,6 +107,14 @@
   "last_try": "2026-11-22",
   "slugs": [
    "nexxaworks"
+  ]
+ },
+ "Pidgin": {
+  "first": "2026-11-24",
+  "found": false,
+  "last_try": "2000-01-01",
+  "slugs": [
+   "pidgin"
   ]
  },
  "PwC": {
