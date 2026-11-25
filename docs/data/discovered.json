@@ -50,7 +50,7 @@
  "Foxfruit": {
   "first": "2026-11-24",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-25",
   "slugs": [
    "foxfruit"
   ]
@@ -91,6 +91,16 @@
    "intralot"
   ]
  },
+ "Integrated Technology Strategies, Inc.": {
+  "first": "2026-11-25",
+  "found": false,
+  "last_try": "2000-01-01",
+  "slugs": [
+   "integratedtechnologystrategies",
+   "integrated-technology-strategies",
+   "integrated"
+  ]
+ },
  "Mindray North America": {
   "first": "2026-11-22",
   "found": false,
@@ -112,9 +122,17 @@
  "Pidgin": {
   "first": "2026-11-24",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-25",
   "slugs": [
    "pidgin"
+  ]
+ },
+ "Pronghorn": {
+  "first": "2026-11-25",
+  "found": false,
+  "last_try": "2000-01-01",
+  "slugs": [
+   "pronghorn"
   ]
  },
  "PwC": {
@@ -138,7 +156,7 @@
  "Scan.com": {
   "first": "2026-11-22",
   "found": true,
-  "last_try": "2026-11-24",
+  "last_try": "2026-11-25",
   "slugs": [
    "scancom",
    "scan-com",
