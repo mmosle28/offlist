@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T20:01Z",
+ "updated": "2026-11-26T19:44Z",
  "jobs": [
   {
    "id": "ffdfae039058",
@@ -20,26 +20,26 @@
     "Python"
    ],
    "entry": true,
-   "score": 98
+   "score": 93
   },
   {
-   "id": "e9923d5a16d8",
-   "title": "Market Operations Leadership Development Program - New Graduate",
-   "company": "Carvana",
-   "family": "programs",
+   "id": "7262ef311462",
+   "title": "Jr. Data Analyst",
+   "company": "Pronghorn Initiative Holdings LLC",
+   "family": "analyst",
    "region": "atl",
-   "location": "Atlanta, GA",
+   "location": "Alpharetta, Fulton County",
    "remote": false,
-   "url": "https://www.carvana.com/careers/apply?gh_jid=8348311",
-   "ats": "greenhouse",
-   "posted": "2026-11-03",
+   "url": "https://www.adzuna.com/details/5979064319?utm_medium=api&utm_source=103db4b0",
+   "ats": "adzuna",
+   "posted": "2026-11-25",
    "posted_text": null,
-   "first_seen": "2026-11-22",
+   "first_seen": "2026-11-26",
    "min_years": null,
-   "pay": null,
+   "pay": "$50,000",
    "tools": [],
    "entry": true,
-   "score": 85
+   "score": 83
   },
   {
    "id": "b0a971cefa7d",
@@ -61,37 +61,56 @@
    "score": 83
   },
   {
-   "id": "786c18c592d5",
-   "title": "Junior Data Analyst",
-   "company": "Tidal Wave Management",
-   "family": "analyst",
-   "region": "atl",
-   "location": "Peachtree Corners, Gwinnett County",
-   "remote": false,
-   "url": "https://www.adzuna.com/details/5962908482?utm_medium=api&utm_source=103db4b0",
-   "ats": "adzuna",
-   "posted": "2026-11-12",
-   "posted_text": null,
-   "first_seen": "2026-11-22",
-   "min_years": null,
-   "pay": "$65,000 - $75,000",
-   "tools": [],
-   "entry": true,
-   "score": 83
-  },
-  {
-   "id": "fc7567c6502f",
+   "id": "50378bf16cad",
    "title": "Junior Data Analyst",
    "company": "Robert Half",
    "family": "analyst",
    "region": "atl",
    "location": "Parkway, Gwinnett County",
    "remote": false,
-   "url": "https://www.adzuna.com/land/ad/5958216038?se=wBZN9Arp8RG5G-h6otYE5A&utm_medium=api&utm_source=103db4b0&v=26112DDB4FEA67868B09FE29ED58A6843AA9FB04",
+   "url": "https://www.adzuna.com/land/ad/5958216038?se=dteYztHp8RGSgvTnNGszzQ&utm_medium=api&utm_source=103db4b0&v=26112DDB4FEA67868B09FE29ED58A6843AA9FB04",
    "ats": "adzuna",
    "posted": "2026-11-08",
    "posted_text": null,
-   "first_seen": "2026-11-25",
+   "first_seen": "2026-11-26",
+   "min_years": null,
+   "pay": null,
+   "tools": [],
+   "entry": true,
+   "score": 80
+  },
+  {
+   "id": "fe7a0619cec8",
+   "title": "Data Analyst - Local f2f interview Junior level",
+   "company": "Nexiva Inc",
+   "family": "analyst",
+   "region": "atl",
+   "location": "Alpharetta, Fulton County",
+   "remote": false,
+   "url": "https://www.adzuna.com/details/5979040255?utm_medium=api&utm_source=103db4b0",
+   "ats": "adzuna",
+   "posted": "2026-11-25",
+   "posted_text": null,
+   "first_seen": "2026-11-26",
+   "min_years": null,
+   "pay": null,
+   "tools": [],
+   "entry": true,
+   "score": 80
+  },
+  {
+   "id": "1da0bf6c5ccf",
+   "title": "Market Operations Leadership Development Program - New Graduate",
+   "company": "Carvana",
+   "family": "programs",
+   "region": "atl",
+   "location": "Atlanta, GA",
+   "remote": false,
+   "url": "https://www.carvana.com/careers/apply?gh_jid=8348312",
+   "ats": "greenhouse",
+   "posted": "2026-11-03",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
    "min_years": null,
    "pay": null,
    "tools": [],
@@ -237,83 +256,22 @@
    "score": 78
   },
   {
-   "id": "72c07f35fb7b",
-   "title": "Business Intelligence Analyst - Game Ops",
-   "company": "PrizePicks",
+   "id": "786c18c592d5",
+   "title": "Junior Data Analyst",
+   "company": "Tidal Wave Management",
    "family": "analyst",
    "region": "atl",
-   "location": "Atlanta, GA preferred, Remote",
-   "remote": true,
-   "url": "http://prizepicks.com/position?gh_jid=7826517003",
-   "ats": "greenhouse",
-   "posted": "2026-08-07",
-   "posted_text": null,
-   "first_seen": "2026-11-22",
-   "min_years": null,
-   "pay": "$80,000 to $110,000",
-   "tools": [
-    "SQL",
-    "Python",
-    "Tableau"
-   ],
-   "entry": false,
-   "score": 78
-  },
-  {
-   "id": "885a9acdc830",
-   "title": "People Tech Business Systems Analyst",
-   "company": "Gusto",
-   "family": "systems",
-   "region": "atl",
-   "location": "Atlanta, GA - Hybrid; Denver, CO - Hybrid; New York, NY - Hybrid; San Francisco, CA - Hybrid; Scottsdale, AZ - Hybrid",
+   "location": "Peachtree Corners, Gwinnett County",
    "remote": false,
-   "url": "https://job-boards.greenhouse.io/gusto/jobs/8257482",
-   "ats": "greenhouse",
-   "posted": "2026-11-04",
+   "url": "https://www.adzuna.com/details/5962908482?utm_medium=api&utm_source=103db4b0",
+   "ats": "adzuna",
+   "posted": "2026-11-12",
    "posted_text": null,
    "first_seen": "2026-11-22",
    "min_years": null,
-   "pay": "$107,000/yr",
-   "tools": [],
-   "entry": false,
-   "score": 78
-  },
-  {
-   "id": "8063640993e7",
-   "title": "Accounts Receivable Associate",
-   "company": "Scan.com",
-   "family": "other",
-   "region": "atl",
-   "location": "Atlanta Office",
-   "remote": false,
-   "url": "https://jobs.ashbyhq.com/scan-com/6b3074e4-27e9-4785-add1-753f8457200d",
-   "ats": "ashby",
-   "posted": "2026-10-07",
-   "posted_text": null,
-   "first_seen": "2026-11-22",
-   "min_years": null,
-   "pay": "$60,000 - $70,000",
+   "pay": "$65,000 - $75,000",
    "tools": [],
    "entry": true,
-   "score": 78
-  },
-  {
-   "id": "5d4d0a888c89",
-   "title": "Market Implementation Specialist",
-   "company": "Scan.com",
-   "family": "implementation",
-   "region": "remote",
-   "location": "US Remote",
-   "remote": true,
-   "url": "https://jobs.ashbyhq.com/scan-com/e7f092f6-8cc6-4076-9bdb-2cefd563123b",
-   "ats": "ashby",
-   "posted": "2026-11-09",
-   "posted_text": null,
-   "first_seen": "2026-11-22",
-   "min_years": null,
-   "pay": "$80,000 - $90,000",
-   "tools": [],
-   "entry": false,
    "score": 78
   },
   {
@@ -357,23 +315,103 @@
    "score": 75
   },
   {
-   "id": "e1a206acda40",
+   "id": "72c07f35fb7b",
+   "title": "Business Intelligence Analyst - Game Ops",
+   "company": "PrizePicks",
+   "family": "analyst",
+   "region": "atl",
+   "location": "Atlanta, GA preferred, Remote",
+   "remote": true,
+   "url": "http://prizepicks.com/position?gh_jid=7826517003",
+   "ats": "greenhouse",
+   "posted": "2026-08-07",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
+   "min_years": null,
+   "pay": "$80,000 to $110,000",
+   "tools": [
+    "SQL",
+    "Python",
+    "Tableau"
+   ],
+   "entry": false,
+   "score": 73
+  },
+  {
+   "id": "885a9acdc830",
+   "title": "People Tech Business Systems Analyst",
+   "company": "Gusto",
+   "family": "systems",
+   "region": "atl",
+   "location": "Atlanta, GA - Hybrid; Denver, CO - Hybrid; New York, NY - Hybrid; San Francisco, CA - Hybrid; Scottsdale, AZ - Hybrid",
+   "remote": false,
+   "url": "https://job-boards.greenhouse.io/gusto/jobs/8257482",
+   "ats": "greenhouse",
+   "posted": "2026-11-04",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
+   "min_years": null,
+   "pay": "$107,000/yr",
+   "tools": [],
+   "entry": false,
+   "score": 73
+  },
+  {
+   "id": "8063640993e7",
+   "title": "Accounts Receivable Associate",
+   "company": "Scan.com",
+   "family": "other",
+   "region": "atl",
+   "location": "Atlanta Office",
+   "remote": false,
+   "url": "https://jobs.ashbyhq.com/scan-com/6b3074e4-27e9-4785-add1-753f8457200d",
+   "ats": "ashby",
+   "posted": "2026-10-07",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
+   "min_years": null,
+   "pay": "$60,000 - $70,000",
+   "tools": [],
+   "entry": true,
+   "score": 73
+  },
+  {
+   "id": "5d4d0a888c89",
+   "title": "Market Implementation Specialist",
+   "company": "Scan.com",
+   "family": "implementation",
+   "region": "remote",
+   "location": "US Remote",
+   "remote": true,
+   "url": "https://jobs.ashbyhq.com/scan-com/e7f092f6-8cc6-4076-9bdb-2cefd563123b",
+   "ats": "ashby",
+   "posted": "2026-11-09",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
+   "min_years": null,
+   "pay": "$80,000 - $90,000",
+   "tools": [],
+   "entry": false,
+   "score": 73
+  },
+  {
+   "id": "06f9ac3757b3",
    "title": "Logistics Associate",
    "company": "Carvana",
    "family": "other",
-   "region": "ga",
-   "location": "Winder, GA",
+   "region": "atl",
+   "location": "Fairburn, GA",
    "remote": false,
-   "url": "https://www.carvana.com/careers/apply?gh_jid=8109551",
+   "url": "https://www.carvana.com/careers/apply?gh_jid=8186631",
    "ats": "greenhouse",
-   "posted": "2026-08-05",
+   "posted": "2026-09-08",
    "posted_text": null,
-   "first_seen": "2026-11-23",
+   "first_seen": "2026-11-22",
    "min_years": null,
    "pay": null,
    "tools": [],
    "entry": true,
-   "score": 75
+   "score": 70
   },
   {
    "id": "a5c7eb751299",
@@ -386,7 +424,7 @@
    "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/STORE-SUPPORT-CENTER-ATLANTA---9090/Logistics-Analyst--Workforce-Operations_Req198452",
    "ats": "workday",
    "posted": "2026-11-16",
-   "posted_text": "Posted 9 Days Ago",
+   "posted_text": "Posted 10 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": null,
    "pay": null,
@@ -396,7 +434,7 @@
     "Tableau"
    ],
    "entry": false,
-   "score": 75
+   "score": 70
   },
   {
    "id": "bc5ce3712ab8",
@@ -409,13 +447,13 @@
    "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/STORE-SUPPORT-CENTER-ATLANTA---9090/Business-Analyst---Field-Capital_Req199196",
    "ats": "workday",
    "posted": "2026-11-16",
-   "posted_text": "Posted 9 Days Ago",
+   "posted_text": "Posted 10 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": null,
    "pay": null,
    "tools": [],
    "entry": false,
-   "score": 75
+   "score": 70
   },
   {
    "id": "16155a4e857b",
@@ -428,7 +466,7 @@
    "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/STORE-SUPPORT-CENTER-ATLANTA---9090/OPERATIONS-BUSINESS-ANALYST_Req198317-1",
    "ats": "workday",
    "posted": "2026-11-17",
-   "posted_text": "Posted 8 Days Ago",
+   "posted_text": "Posted 9 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": null,
    "pay": null,
@@ -439,7 +477,7 @@
     "Power BI"
    ],
    "entry": false,
-   "score": 75
+   "score": 70
   },
   {
    "id": "9498ca468098",
@@ -462,7 +500,7 @@
     "Salesforce"
    ],
    "entry": false,
-   "score": 75
+   "score": 70
   },
   {
    "id": "98d17ac67d59",
@@ -507,23 +545,42 @@
    "score": 65
   },
   {
-   "id": "6a63a8556134",
-   "title": "Virtual Apron Support Specialist \u2013 Millwork (Remote)",
-   "company": "The Home Depot",
-   "family": "success",
-   "region": "ga",
-   "location": "GEORGIA - VIRTUAL - GA01",
+   "id": "22ae5dbcb755",
+   "title": "Entry Level Marketing Representative",
+   "company": "Southern National Roofing",
+   "family": "other",
+   "region": "atl",
+   "location": "Marietta, Cobb County",
    "remote": false,
-   "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/GEORGIA---VIRTUAL---GA01/Virtual-Apron-Support-Specialist---Millwork--Remote-_Req198135",
-   "ats": "workday",
-   "posted": "2026-11-04",
-   "posted_text": "Posted 21 Days Ago",
-   "first_seen": "2026-11-22",
+   "url": "https://www.adzuna.com/details/5958528972?utm_medium=api&utm_source=103db4b0",
+   "ats": "adzuna",
+   "posted": "2026-11-08",
+   "posted_text": null,
+   "first_seen": "2026-11-26",
    "min_years": null,
-   "pay": null,
+   "pay": "$40,000 - $70,000",
    "tools": [],
-   "entry": false,
-   "score": 65
+   "entry": true,
+   "score": 63
+  },
+  {
+   "id": "8cd5deaacf53",
+   "title": "IM Entry Level Analyst Program - Jr. Credit Research Analyst",
+   "company": "Voya Financial",
+   "family": "other",
+   "region": "atl",
+   "location": "Atlanta, Fulton County",
+   "remote": false,
+   "url": "https://www.adzuna.com/details/5979797206?utm_medium=api&utm_source=103db4b0",
+   "ats": "adzuna",
+   "posted": "2026-11-26",
+   "posted_text": null,
+   "first_seen": "2026-11-26",
+   "min_years": null,
+   "pay": "$75,000 - $90,000",
+   "tools": [],
+   "entry": true,
+   "score": 63
   },
   {
    "id": "5db4fd0cf6df",
@@ -583,56 +640,37 @@
    "score": 63
   },
   {
-   "id": "1eb9dc81bec6",
-   "title": "Junior mortgage Processor",
-   "company": "The Mortgage Dealer",
+   "id": "9bdfb398929e",
+   "title": "Entry Level Communications Assistant",
+   "company": "Nexxaworks",
    "family": "other",
    "region": "atl",
    "location": "Atlanta, Fulton County",
    "remote": false,
-   "url": "https://www.adzuna.com/details/5961509968?utm_medium=api&utm_source=103db4b0",
+   "url": "https://www.adzuna.com/details/5962301978?utm_medium=api&utm_source=103db4b0",
    "ats": "adzuna",
    "posted": "2026-11-11",
    "posted_text": null,
-   "first_seen": "2026-11-22",
+   "first_seen": "2026-11-26",
    "min_years": null,
-   "pay": "$52,000 - $54,080",
+   "pay": null,
    "tools": [],
    "entry": true,
-   "score": 63
+   "score": 60
   },
   {
-   "id": "e16a0cbc598d",
-   "title": "System Implementation Specialist",
-   "company": "Mindray North America",
-   "family": "implementation",
-   "region": "atl",
-   "location": "Atlanta, Fulton County",
-   "remote": false,
-   "url": "https://www.adzuna.com/details/5973915647?utm_medium=api&utm_source=103db4b0",
-   "ats": "adzuna",
-   "posted": "2026-11-21",
-   "posted_text": null,
-   "first_seen": "2026-11-22",
-   "min_years": null,
-   "pay": "$80,000 - $90,000",
-   "tools": [],
-   "entry": false,
-   "score": 63
-  },
-  {
-   "id": "ef1700d29ed9",
+   "id": "4ac0dcf93e2b",
    "title": "Junior Executive Assistant",
    "company": "Robert Half",
    "family": "other",
    "region": "atl",
    "location": "Duluth, Gwinnett County",
    "remote": false,
-   "url": "https://www.adzuna.com/land/ad/5955730569?se=wBZN9Arp8RG5G-h6otYE5A&utm_medium=api&utm_source=103db4b0&v=0D91E559CD324EE1B18419A53961C82A65C90D79",
+   "url": "https://www.adzuna.com/land/ad/5955730569?se=dteYztHp8RGSgvTnNGszzQ&utm_medium=api&utm_source=103db4b0&v=0D91E559CD324EE1B18419A53961C82A65C90D79",
    "ats": "adzuna",
    "posted": "2026-11-06",
    "posted_text": null,
-   "first_seen": "2026-11-25",
+   "first_seen": "2026-11-26",
    "min_years": null,
    "pay": null,
    "tools": [],
@@ -640,18 +678,18 @@
    "score": 60
   },
   {
-   "id": "0df4a005c979",
+   "id": "f3100beba5a9",
    "title": "Junior Buyer",
    "company": "Atlanta GA",
    "family": "other",
    "region": "atl",
    "location": "Norcross, Gwinnett County",
    "remote": false,
-   "url": "https://www.adzuna.com/land/ad/5961248985?se=wBZN9Arp8RG5G-h6otYE5A&utm_medium=api&utm_source=103db4b0&v=C9F941A4EF4F40E2EFC4C19610884FFD9FD45AD4",
+   "url": "https://www.adzuna.com/land/ad/5961248985?se=dteYztHp8RGSgvTnNGszzQ&utm_medium=api&utm_source=103db4b0&v=C9F941A4EF4F40E2EFC4C19610884FFD9FD45AD4",
    "ats": "adzuna",
    "posted": "2026-11-11",
    "posted_text": null,
-   "first_seen": "2026-11-25",
+   "first_seen": "2026-11-26",
    "min_years": null,
    "pay": null,
    "tools": [],
@@ -659,18 +697,18 @@
    "score": 60
   },
   {
-   "id": "102bf03c04b2",
+   "id": "f2d704215fcd",
    "title": "Jr. Outbound AdvisorChoice Consultant",
    "company": "Raymond James Financial, Inc.",
    "family": "other",
    "region": "atl",
    "location": "Atlanta, Fulton County",
    "remote": false,
-   "url": "https://www.adzuna.com/land/ad/5967797371?se=GB4t9grp8RGwQtGPxt0HFQ&utm_medium=api&utm_source=103db4b0&v=9B57EC73507D5B692A07F5EDA7785828C51A653B",
+   "url": "https://www.adzuna.com/land/ad/5967797371?se=qKMwz9Hp8RG90fsoPGvgIQ&utm_medium=api&utm_source=103db4b0&v=9B57EC73507D5B692A07F5EDA7785828C51A653B",
    "ats": "adzuna",
    "posted": "2026-11-16",
    "posted_text": null,
-   "first_seen": "2026-11-25",
+   "first_seen": "2026-11-26",
    "min_years": null,
    "pay": null,
    "tools": [],
@@ -678,56 +716,37 @@
    "score": 60
   },
   {
-   "id": "dee7059ada53",
-   "title": "Implementation Specialist",
-   "company": "Pidgin",
-   "family": "implementation",
-   "region": "atl",
-   "location": "Atlanta, Fulton County",
-   "remote": false,
-   "url": "https://www.adzuna.com/land/ad/5971123325?se=zGQi9wrp8RGCzaY2c7Xc0w&utm_medium=api&utm_source=103db4b0&v=53847490064460529B1EEB991AC09E84141C306B",
-   "ats": "adzuna",
-   "posted": "2026-11-19",
-   "posted_text": null,
-   "first_seen": "2026-11-25",
-   "min_years": null,
-   "pay": null,
-   "tools": [],
-   "entry": false,
-   "score": 60
-  },
-  {
-   "id": "e4cdd4c5a10e",
-   "title": "ServiceNow Implementation Specialist HR",
-   "company": "Integrated Technology Strategies, Inc.",
-   "family": "implementation",
-   "region": "atl",
-   "location": "Atlanta, Fulton County",
-   "remote": false,
-   "url": "https://www.adzuna.com/land/ad/5978697702?se=zGQi9wrp8RGCzaY2c7Xc0w&utm_medium=api&utm_source=103db4b0&v=9FF380D17E66FFA5767523755BA9CDE8EF888293",
-   "ats": "adzuna",
-   "posted": "2026-11-25",
-   "posted_text": null,
-   "first_seen": "2026-11-25",
-   "min_years": null,
-   "pay": null,
-   "tools": [],
-   "entry": false,
-   "score": 60
-  },
-  {
-   "id": "b8b3d9ef23f1",
+   "id": "c9d87e57f926",
    "title": "Wholesale Payments Client Implementation Specialist",
    "company": "Truist",
    "family": "implementation",
    "region": "atl",
    "location": "Atlanta, Fulton County",
    "remote": false,
-   "url": "https://www.adzuna.com/land/ad/5971704358?se=zGQi9wrp8RGCzaY2c7Xc0w&utm_medium=api&utm_source=103db4b0&v=59D5F43490931041C22A704998CC35A9DDD333C7",
+   "url": "https://www.adzuna.com/land/ad/5971704358?se=AE-qz9Hp8RG90fsoPGvgIQ&utm_medium=api&utm_source=103db4b0&v=59D5F43490931041C22A704998CC35A9DDD333C7",
    "ats": "adzuna",
    "posted": "2026-11-19",
    "posted_text": null,
-   "first_seen": "2026-11-25",
+   "first_seen": "2026-11-26",
+   "min_years": null,
+   "pay": null,
+   "tools": [],
+   "entry": false,
+   "score": 60
+  },
+  {
+   "id": "1a6215f9b50a",
+   "title": "Cyber ServiceNow Technical Consultant",
+   "company": "Deloitte",
+   "family": "implementation",
+   "region": "atl",
+   "location": "Atlanta, Fulton County",
+   "remote": false,
+   "url": "https://www.adzuna.com/details/5979982832?utm_medium=api&utm_source=103db4b0",
+   "ats": "adzuna",
+   "posted": "2026-11-26",
+   "posted_text": null,
+   "first_seen": "2026-11-26",
    "min_years": null,
    "pay": null,
    "tools": [],
@@ -754,6 +773,63 @@
    "score": 60
   },
   {
+   "id": "6a63a8556134",
+   "title": "Virtual Apron Support Specialist \u2013 Millwork (Remote)",
+   "company": "The Home Depot",
+   "family": "success",
+   "region": "ga",
+   "location": "GEORGIA - VIRTUAL - GA01",
+   "remote": false,
+   "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/GEORGIA---VIRTUAL---GA01/Virtual-Apron-Support-Specialist---Millwork--Remote-_Req198135",
+   "ats": "workday",
+   "posted": "2026-11-04",
+   "posted_text": "Posted 22 Days Ago",
+   "first_seen": "2026-11-22",
+   "min_years": null,
+   "pay": null,
+   "tools": [],
+   "entry": false,
+   "score": 60
+  },
+  {
+   "id": "1eb9dc81bec6",
+   "title": "Junior mortgage Processor",
+   "company": "The Mortgage Dealer",
+   "family": "other",
+   "region": "atl",
+   "location": "Atlanta, Fulton County",
+   "remote": false,
+   "url": "https://www.adzuna.com/details/5961509968?utm_medium=api&utm_source=103db4b0",
+   "ats": "adzuna",
+   "posted": "2026-11-11",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
+   "min_years": null,
+   "pay": "$52,000 - $54,080",
+   "tools": [],
+   "entry": true,
+   "score": 58
+  },
+  {
+   "id": "e16a0cbc598d",
+   "title": "System Implementation Specialist",
+   "company": "Mindray North America",
+   "family": "implementation",
+   "region": "atl",
+   "location": "Atlanta, Fulton County",
+   "remote": false,
+   "url": "https://www.adzuna.com/details/5973915647?utm_medium=api&utm_source=103db4b0",
+   "ats": "adzuna",
+   "posted": "2026-11-21",
+   "posted_text": null,
+   "first_seen": "2026-11-22",
+   "min_years": null,
+   "pay": "$80,000 - $90,000",
+   "tools": [],
+   "entry": false,
+   "score": 58
+  },
+  {
    "id": "f051ec4af4bb",
    "title": "Junior Marketing Coordinator",
    "company": "Tidewater Consulting",
@@ -770,7 +846,7 @@
    "pay": null,
    "tools": [],
    "entry": true,
-   "score": 60
+   "score": 55
   },
   {
    "id": "1246a2125069",
@@ -789,7 +865,7 @@
    "pay": null,
    "tools": [],
    "entry": true,
-   "score": 60
+   "score": 55
   },
   {
    "id": "55e482654058",
@@ -808,7 +884,7 @@
    "pay": null,
    "tools": [],
    "entry": true,
-   "score": 60
+   "score": 55
   },
   {
    "id": "c22e809f67e1",
@@ -827,26 +903,7 @@
    "pay": null,
    "tools": [],
    "entry": false,
-   "score": 60
-  },
-  {
-   "id": "4fbf7133499f",
-   "title": "SAP Finance and Accounting Implementation Specialist (GA)",
-   "company": "Experis",
-   "family": "implementation",
-   "region": "atl",
-   "location": "Alpharetta, Fulton County",
-   "remote": false,
-   "url": "https://www.adzuna.com/details/5959095287?utm_medium=api&utm_source=103db4b0",
-   "ats": "adzuna",
-   "posted": "2026-11-09",
-   "posted_text": null,
-   "first_seen": "2026-11-22",
-   "min_years": null,
-   "pay": null,
-   "tools": [],
-   "entry": false,
-   "score": 60
+   "score": 55
   },
   {
    "id": "0f6531696bb6",
@@ -865,7 +922,7 @@
    "pay": null,
    "tools": [],
    "entry": false,
-   "score": 60
+   "score": 55
   },
   {
    "id": "ac036e660371",
@@ -884,7 +941,7 @@
    "pay": null,
    "tools": [],
    "entry": true,
-   "score": 50
+   "score": 45
   },
   {
    "id": "57bf0da046fe",
@@ -1192,7 +1249,7 @@
     "Salesforce"
    ],
    "entry": false,
-   "score": 33
+   "score": 28
   },
   {
    "id": "2a7d50ef663b",
@@ -1211,7 +1268,7 @@
    "pay": "$88,979",
    "tools": [],
    "entry": false,
-   "score": 33
+   "score": 28
   },
   {
    "id": "ca843fe976a8",
@@ -1232,7 +1289,7 @@
     "Python"
    ],
    "entry": false,
-   "score": 33
+   "score": 28
   },
   {
    "id": "614433667530",
@@ -1251,7 +1308,7 @@
    "pay": "$100,406",
    "tools": [],
    "entry": false,
-   "score": 33
+   "score": 28
   },
   {
    "id": "328b9c179b20",
@@ -1270,7 +1327,7 @@
    "pay": "$105,800",
    "tools": [],
    "entry": true,
-   "score": 33
+   "score": 28
   },
   {
    "id": "65a8dbe7f603",
@@ -1283,7 +1340,7 @@
    "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/GEORGIA---VIRTUAL---GA01/Operations-Business-Analyst--Rental-Recovery_Req197446-1",
    "ats": "workday",
    "posted": "2026-11-02",
-   "posted_text": "Posted 23 Days Ago",
+   "posted_text": "Posted 24 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": 5,
    "pay": "$65,000",
@@ -1291,7 +1348,7 @@
     "SQL"
    ],
    "entry": false,
-   "score": 33
+   "score": 28
   },
   {
    "id": "47e402ee1faa",
@@ -1312,7 +1369,7 @@
     "Salesforce"
    ],
    "entry": false,
-   "score": 30
+   "score": 25
   },
   {
    "id": "eaeff1cbaff0",
@@ -1331,7 +1388,7 @@
    "pay": null,
    "tools": [],
    "entry": true,
-   "score": 30
+   "score": 25
   },
   {
    "id": "d67abd852d48",
@@ -1352,7 +1409,7 @@
     "Salesforce"
    ],
    "entry": false,
-   "score": 30
+   "score": 25
   },
   {
    "id": "51fdf421a6b6",
@@ -1365,13 +1422,13 @@
    "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/PENNANT-PARK-ATLANTA---9141/Operations-Business-Analyst_Req198274-1",
    "ats": "workday",
    "posted": "2026-11-09",
-   "posted_text": "Posted 16 Days Ago",
+   "posted_text": "Posted 17 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": 1,
    "pay": null,
    "tools": [],
    "entry": false,
-   "score": 30
+   "score": 25
   },
   {
    "id": "95e19df9c927",
@@ -1390,7 +1447,7 @@
    "pay": null,
    "tools": [],
    "entry": false,
-   "score": 30
+   "score": 25
   },
   {
    "id": "814187e8dda2",
@@ -1403,7 +1460,7 @@
    "url": "https://truist.wd1.myworkdayjobs.com/Careers/job/Atlanta-GA/Brokerage-Registered-Client-Service-Associate_R0121239",
    "ats": "workday",
    "posted": "2026-11-03",
-   "posted_text": "Posted 22 Days Ago",
+   "posted_text": "Posted 23 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": 3,
    "pay": null,
@@ -1411,7 +1468,7 @@
     "Salesforce"
    ],
    "entry": true,
-   "score": 30
+   "score": 25
   },
   {
    "id": "6ecb7e6b9c4d",
@@ -1424,7 +1481,7 @@
    "url": "https://truist.wd1.myworkdayjobs.com/Careers/job/Atlanta-GA/Deposit-Pricing-Analyst_R0121010",
    "ats": "workday",
    "posted": "2026-11-16",
-   "posted_text": "Posted 9 Days Ago",
+   "posted_text": "Posted 10 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": 2,
    "pay": null,
@@ -1432,7 +1489,7 @@
     "SQL"
    ],
    "entry": false,
-   "score": 30
+   "score": 25
   },
   {
    "id": "89178a6f675d",
@@ -1445,13 +1502,13 @@
    "url": "https://truist.wd1.myworkdayjobs.com/Careers/job/Atlanta-GA/Fraud-Specialist-I_R0121104",
    "ats": "workday",
    "posted": "2026-11-12",
-   "posted_text": "Posted 13 Days Ago",
+   "posted_text": "Posted 14 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": 1,
    "pay": null,
    "tools": [],
    "entry": true,
-   "score": 30
+   "score": 25
   },
   {
    "id": "de9e16933bcd",
@@ -1464,13 +1521,13 @@
    "url": "https://truist.wd1.myworkdayjobs.com/Careers/job/Atlanta-GA/WCD-Corporate-and-Leverage-Finance-Associate_R0120899",
    "ats": "workday",
    "posted": "2026-10-30",
-   "posted_text": "Posted 26 Days Ago",
+   "posted_text": "Posted 27 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": 6,
    "pay": null,
    "tools": [],
    "entry": true,
-   "score": 30
+   "score": 25
   },
   {
    "id": "183461bc9c33",
@@ -1511,6 +1568,25 @@
    "score": 23
   },
   {
+   "id": "b8cbc8a65b38",
+   "title": "Customer Support Analyst",
+   "company": "OneTrust",
+   "family": "success",
+   "region": "atl",
+   "location": "Atlanta, Georgia",
+   "remote": false,
+   "url": "https://job-boards.greenhouse.io/onetrust/jobs/8305898",
+   "ats": "greenhouse",
+   "posted": "2026-11-23",
+   "posted_text": null,
+   "first_seen": "2026-11-23",
+   "min_years": 1,
+   "pay": null,
+   "tools": [],
+   "entry": false,
+   "score": 20
+  },
+  {
    "id": "19f881f81bee",
    "title": "Customer Success Adoption Specialist",
    "company": "Samsara",
@@ -1529,7 +1605,7 @@
     "Salesforce"
    ],
    "entry": false,
-   "score": 23
+   "score": 18
   },
   {
    "id": "122811bcc6f1",
@@ -1542,32 +1618,13 @@
    "url": "https://homedepot.wd5.myworkdayjobs.com/CareerDepot/job/STORE-SUPPORT-CENTER-ATLANTA---9090/Product-Support-Specialist_Req199465",
    "ats": "workday",
    "posted": "2026-11-18",
-   "posted_text": "Posted 7 Days Ago",
+   "posted_text": "Posted 8 Days Ago",
    "first_seen": "2026-11-22",
    "min_years": 1,
    "pay": "$50,000",
    "tools": [],
    "entry": false,
-   "score": 23
-  },
-  {
-   "id": "b8cbc8a65b38",
-   "title": "Customer Support Analyst",
-   "company": "OneTrust",
-   "family": "success",
-   "region": "atl",
-   "location": "Atlanta, Georgia",
-   "remote": false,
-   "url": "https://job-boards.greenhouse.io/onetrust/jobs/8305898",
-   "ats": "greenhouse",
-   "posted": "2026-11-23",
-   "posted_text": null,
-   "first_seen": "2026-11-23",
-   "min_years": 1,
-   "pay": null,
-   "tools": [],
-   "entry": false,
-   "score": 20
+   "score": 18
   }
  ]
 }

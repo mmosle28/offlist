@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T20:01Z",
+ "updated": "2026-11-26T19:44Z",
  "companies": [
   {
    "name": "Bakkt",
@@ -42,18 +42,6 @@
    "matched": 0
   },
   {
-   "name": "Foxfruit",
-   "ats": "guess",
-   "key": [
-    "foxfruit"
-   ],
-   "ok": false,
-   "fetched": 0,
-   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: foxfruit)",
-   "discovered": true,
-   "matched": 0
-  },
-  {
    "name": "Hebbia",
    "ats": "guess",
    "key": [
@@ -89,6 +77,20 @@
    "fetched": 0,
    "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: insightsoftware, insight-software)",
    "discovered": false,
+   "matched": 0
+  },
+  {
+   "name": "Integrated Technology Strategies, Inc.",
+   "ats": "guess",
+   "key": [
+    "integratedtechnologystrategies",
+    "integrated-technology-strategies",
+    "integrated"
+   ],
+   "ok": false,
+   "fetched": 0,
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: integratedtechnologystrategies, integrated-technology-strategies, integrated)",
+   "discovered": true,
    "matched": 0
   },
   {
@@ -130,14 +132,14 @@
    "matched": 0
   },
   {
-   "name": "Pidgin",
+   "name": "Pronghorn",
    "ats": "guess",
    "key": [
-    "pidgin"
+    "pronghorn"
    ],
    "ok": false,
    "fetched": 0,
-   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: pidgin)",
+   "error": "not found on Greenhouse, Lever, Ashby or SmartRecruiters (tried: pronghorn)",
    "discovered": true,
    "matched": 0
   },
@@ -369,10 +371,10 @@
    "ats": "adzuna",
    "key": null,
    "ok": true,
-   "fetched": 207,
+   "fetched": 211,
    "error": null,
    "feed": true,
-   "matched": 24
+   "matched": 28
   },
   {
    "name": "Agilysys",
@@ -389,7 +391,7 @@
    "ats": "greenhouse",
    "key": "anthropic",
    "ok": true,
-   "fetched": 636,
+   "fetched": 634,
    "error": null,
    "discovered": false,
    "matched": 1
@@ -399,7 +401,7 @@
    "ats": "greenhouse",
    "key": "axon",
    "ok": true,
-   "fetched": 459,
+   "fetched": 458,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -429,7 +431,7 @@
    "ats": "greenhouse",
    "key": "brex",
    "ok": true,
-   "fetched": 261,
+   "fetched": 270,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -449,7 +451,7 @@
    "ats": "greenhouse",
    "key": "carvana",
    "ok": true,
-   "fetched": 1560,
+   "fetched": 1547,
    "error": null,
    "discovered": false,
    "matched": 5
@@ -459,7 +461,7 @@
    "ats": "workday",
    "key": "https://coke.wd1.myworkdayjobs.com/coca-cola-careers",
    "ok": true,
-   "fetched": 179,
+   "fetched": 171,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -469,7 +471,7 @@
    "ats": "ashby",
    "key": "decagon",
    "ok": true,
-   "fetched": 105,
+   "fetched": 101,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -479,7 +481,7 @@
    "ats": "workday",
    "key": "https://elevancehealth.wd1.myworkdayjobs.com/ANT",
    "ok": true,
-   "fetched": 174,
+   "fetched": 177,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -489,7 +491,7 @@
    "ats": "workday",
    "key": "https://equifax.wd5.myworkdayjobs.com/External",
    "ok": true,
-   "fetched": 165,
+   "fetched": 172,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -529,7 +531,7 @@
    "ats": "workday",
    "key": "https://genpt.wd1.myworkdayjobs.com/Careers",
    "ok": true,
-   "fetched": 460,
+   "fetched": 450,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -539,7 +541,7 @@
    "ats": "greenhouse",
    "key": "gleanwork",
    "ok": true,
-   "fetched": 122,
+   "fetched": 121,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -549,7 +551,7 @@
    "ats": "workday",
    "key": "https://tsys.wd1.myworkdayjobs.com/TSYS",
    "ok": true,
-   "fetched": 328,
+   "fetched": 329,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -599,7 +601,7 @@
    "ats": "ashby",
    "key": "happyrobot.ai",
    "ok": true,
-   "fetched": 36,
+   "fetched": 31,
    "error": null,
    "discovered": false,
    "matched": 1
@@ -609,7 +611,7 @@
    "ats": "ashby",
    "key": "harvey",
    "ok": true,
-   "fetched": 388,
+   "fetched": 390,
    "error": null,
    "discovered": false,
    "matched": 8
@@ -619,7 +621,7 @@
    "ats": "ashby",
    "key": "homebound",
    "ok": true,
-   "fetched": 9,
+   "fetched": 8,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -629,7 +631,7 @@
    "ats": "greenhouse",
    "key": "hubspotjobs",
    "ok": true,
-   "fetched": 141,
+   "fetched": 142,
    "error": null,
    "discovered": false,
    "matched": 1
@@ -639,7 +641,7 @@
    "ats": "greenhouse",
    "key": "kaseya",
    "ok": true,
-   "fetched": 89,
+   "fetched": 88,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -649,7 +651,7 @@
    "ats": "greenhouse",
    "key": "klaviyo",
    "ok": true,
-   "fetched": 124,
+   "fetched": 123,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -669,7 +671,7 @@
    "ats": "workday",
    "key": "https://manh.wd5.myworkdayjobs.com/External",
    "ok": true,
-   "fetched": 36,
+   "fetched": 38,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -679,7 +681,7 @@
    "ats": "ashby",
    "key": "moment",
    "ok": true,
-   "fetched": 12,
+   "fetched": 13,
    "error": null,
    "discovered": false,
    "matched": 1
@@ -709,7 +711,7 @@
    "ats": "greenhouse",
    "key": "onetrust",
    "ok": true,
-   "fetched": 76,
+   "fetched": 82,
    "error": null,
    "discovered": false,
    "matched": 3
@@ -719,7 +721,7 @@
    "ats": "ashby",
    "key": "openai",
    "ok": true,
-   "fetched": 877,
+   "fetched": 876,
    "error": null,
    "discovered": false,
    "matched": 10
@@ -739,7 +741,7 @@
    "ats": "greenhouse",
    "key": "prizepicks",
    "ok": true,
-   "fetched": 32,
+   "fetched": 31,
    "error": null,
    "discovered": false,
    "matched": 1
@@ -769,7 +771,7 @@
    "ats": "greenhouse",
    "key": "samsara",
    "ok": true,
-   "fetched": 294,
+   "fetched": 299,
    "error": null,
    "discovered": false,
    "matched": 4
@@ -799,7 +801,7 @@
    "ats": "ashby",
    "key": "sierra",
    "ok": true,
-   "fetched": 204,
+   "fetched": 203,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -829,7 +831,7 @@
    "ats": "greenhouse",
    "key": "toast",
    "ok": true,
-   "fetched": 299,
+   "fetched": 300,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -839,7 +841,7 @@
    "ats": "workday",
    "key": "https://truist.wd1.myworkdayjobs.com/Careers",
    "ok": true,
-   "fetched": 568,
+   "fetched": 565,
    "error": null,
    "discovered": false,
    "matched": 8
@@ -849,7 +851,7 @@
    "ats": "lever",
    "key": "vendavo",
    "ok": true,
-   "fetched": 8,
+   "fetched": 10,
    "error": null,
    "discovered": false,
    "matched": 0
@@ -869,7 +871,7 @@
    "ats": "ashby",
    "key": "n8n",
    "ok": true,
-   "fetched": 74,
+   "fetched": 77,
    "error": null,
    "discovered": false,
    "matched": 2

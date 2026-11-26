@@ -27,6 +27,14 @@
    "cerner"
   ]
  },
+ "Deloitte": {
+  "first": "2026-11-26",
+  "found": false,
+  "last_try": "2000-01-01",
+  "slugs": [
+   "deloitte"
+  ]
+ },
  "Evidence Based Associates": {
   "first": "2026-11-22",
   "found": false,
@@ -94,7 +102,7 @@
  "Integrated Technology Strategies, Inc.": {
   "first": "2026-11-25",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-26",
   "slugs": [
    "integratedtechnologystrategies",
    "integrated-technology-strategies",
@@ -109,6 +117,14 @@
    "mindraynorthamerica",
    "mindray-north-america",
    "mindray"
+  ]
+ },
+ "Nexiva Inc": {
+  "first": "2026-11-26",
+  "found": false,
+  "last_try": "2000-01-01",
+  "slugs": [
+   "nexiva"
   ]
  },
  "Nexxaworks": {
@@ -130,8 +146,18 @@
  "Pronghorn": {
   "first": "2026-11-25",
   "found": false,
+  "last_try": "2026-11-26",
+  "slugs": [
+   "pronghorn"
+  ]
+ },
+ "Pronghorn Initiative Holdings LLC": {
+  "first": "2026-11-26",
+  "found": false,
   "last_try": "2000-01-01",
   "slugs": [
+   "pronghorninitiative",
+   "pronghorn-initiative",
    "pronghorn"
   ]
  },
@@ -156,11 +182,20 @@
  "Scan.com": {
   "first": "2026-11-22",
   "found": true,
-  "last_try": "2026-11-25",
+  "last_try": "2026-11-26",
   "slugs": [
    "scancom",
    "scan-com",
    "scan"
+  ]
+ },
+ "Southern National Roofing": {
+  "first": "2026-11-26",
+  "found": false,
+  "last_try": "2000-01-01",
+  "slugs": [
+   "southernnationalroofing",
+   "southern-national-roofing"
   ]
  },
  "The Mortgage Dealer": {
