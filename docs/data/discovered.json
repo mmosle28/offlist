@@ -17,6 +17,16 @@
    "adoreal"
   ]
  },
+ "Agent So Fearth": {
+  "first": "2026-11-27",
+  "found": false,
+  "last_try": "2000-01-01",
+  "slugs": [
+   "agentsofearth",
+   "agent-so-fearth",
+   "agent"
+  ]
+ },
  "Cerner Technologies": {
   "first": "2026-11-22",
   "found": false,
@@ -30,7 +40,7 @@
  "Deloitte": {
   "first": "2026-11-26",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-27",
   "slugs": [
    "deloitte"
   ]
@@ -119,10 +129,18 @@
    "mindray"
   ]
  },
+ "Modalways": {
+  "first": "2026-11-27",
+  "found": false,
+  "last_try": "2000-01-01",
+  "slugs": [
+   "modalways"
+  ]
+ },
  "Nexiva Inc": {
   "first": "2026-11-26",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-27",
   "slugs": [
    "nexiva"
   ]
@@ -154,7 +172,7 @@
  "Pronghorn Initiative Holdings LLC": {
   "first": "2026-11-26",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-27",
   "slugs": [
    "pronghorninitiative",
    "pronghorn-initiative",
@@ -182,7 +200,7 @@
  "Scan.com": {
   "first": "2026-11-22",
   "found": true,
-  "last_try": "2026-11-26",
+  "last_try": "2026-11-27",
   "slugs": [
    "scancom",
    "scan-com",
@@ -192,7 +210,7 @@
  "Southern National Roofing": {
   "first": "2026-11-26",
   "found": false,
-  "last_try": "2000-01-01",
+  "last_try": "2026-11-27",
   "slugs": [
    "southernnationalroofing",
    "southern-national-roofing"
